@@ -4,7 +4,7 @@
  */
 
 export interface paths {
-    "/api/GetHellsChickenState": {
+    "/api/AcceptReceivedFriendRequest": {
         parameters: {
             query?: never;
             header?: never;
@@ -20,9 +20,63 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_GetHellsChickenState"];
+            requestBody?: components["requestBodies"]["request_api_AcceptReceivedFriendRequest"];
             responses: {
-                200: components["responses"]["response_api_GetHellsChickenState"];
+                200: components["responses"]["response_api_AcceptReceivedFriendRequest"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/AcquireAttendanceReward": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_AcquireAttendanceReward"];
+            responses: {
+                200: components["responses"]["response_api_AcquireAttendanceReward"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/AcquireDailyLoginReward": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_AcquireDailyLoginReward"];
+            responses: {
+                200: components["responses"]["response_api_AcquireDailyLoginReward"];
             };
         };
         delete?: never;
@@ -58,6 +112,87 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/AcquireMirrorDungeonBattleReward": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_AcquireMirrorDungeonBattleReward"];
+            responses: {
+                200: components["responses"]["response_api_AcquireMirrorDungeonBattleReward"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/AcquireMirrorDungeonExitReward": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_AcquireMirrorDungeonExitReward"];
+            responses: {
+                200: components["responses"]["response_api_AcquireMirrorDungeonExitReward"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/AcquireMissionRewards": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_AcquireMissionRewards"];
+            responses: {
+                200: components["responses"]["response_api_AcquireMissionRewards"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/AcquireRailwayDungeonReward": {
         parameters: {
             query?: never;
@@ -85,7 +220,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/ChangeCurrentAnnouncer": {
+    "/api/AcquireRewardEgoGiftsMirrorDungeon": {
         parameters: {
             query?: never;
             header?: never;
@@ -101,9 +236,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_ChangeCurrentAnnouncer"];
+            requestBody?: components["requestBodies"]["request_api_AcquireRewardEgoGiftsMirrorDungeon"];
             responses: {
-                200: components["responses"]["response_api_ChangeCurrentAnnouncer"];
+                200: components["responses"]["response_api_AcquireRewardEgoGiftsMirrorDungeon"];
             };
         };
         delete?: never;
@@ -112,7 +247,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/GetAttendanceState": {
+    "/api/AcquireRewardEgoGiftsStoryMirrorDungeon": {
         parameters: {
             query?: never;
             header?: never;
@@ -128,9 +263,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_GetAttendanceState"];
+            requestBody?: components["requestBodies"]["request_api_AcquireRewardEgoGiftsStoryMirrorDungeon"];
             responses: {
-                200: components["responses"]["response_api_GetAttendanceState"];
+                200: components["responses"]["response_api_AcquireRewardEgoGiftsStoryMirrorDungeon"];
             };
         };
         delete?: never;
@@ -139,7 +274,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/AcquireAttendanceReward": {
+    "/api/AcquireRewardEgoGiftsWithEnemyBufMirrorDungeon": {
         parameters: {
             query?: never;
             header?: never;
@@ -155,9 +290,90 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_AcquireAttendanceReward"];
+            requestBody?: components["requestBodies"]["request_api_AcquireRewardEgoGiftsWithEnemyBufMirrorDungeon"];
             responses: {
-                200: components["responses"]["response_api_AcquireAttendanceReward"];
+                200: components["responses"]["response_api_AcquireRewardEgoGiftsWithEnemyBufMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/AcquireStartEgoGiftsAndCreateThemePoolMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_AcquireStartEgoGiftsAndCreateThemePoolMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_AcquireStartEgoGiftsAndCreateThemePoolMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/AcquireStartEgoGiftsStoryMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_AcquireStartEgoGiftsStoryMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_AcquireStartEgoGiftsStoryMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/BattlePassExLevelReward": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_BattlePassExLevelReward"];
+            responses: {
+                200: components["responses"]["response_api_BattlePassExLevelReward"];
             };
         };
         delete?: never;
@@ -274,7 +490,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/BattlePassExLevelReward": {
+    "/api/CancelSentFriendRequest": {
         parameters: {
             query?: never;
             header?: never;
@@ -290,9 +506,2034 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_BattlePassExLevelReward"];
+            requestBody?: components["requestBodies"]["request_api_CancelSentFriendRequest"];
             responses: {
-                200: components["responses"]["response_api_BattlePassExLevelReward"];
+                200: components["responses"]["response_api_CancelSentFriendRequest"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/ChangeCurrentAnnouncer": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_ChangeCurrentAnnouncer"];
+            responses: {
+                200: components["responses"]["response_api_ChangeCurrentAnnouncer"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/CheckSeasonLog": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_CheckSeasonLog"];
+            responses: {
+                200: components["responses"]["response_api_CheckSeasonLog"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/ClaimClosedGachaRewards": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_ClaimClosedGachaRewards"];
+            responses: {
+                200: components["responses"]["response_api_ClaimClosedGachaRewards"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/ClaimEventReward": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_ClaimEventReward"];
+            responses: {
+                200: components["responses"]["response_api_ClaimEventReward"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/ClaimEventReward_ALL": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_ClaimEventReward_ALL"];
+            responses: {
+                200: components["responses"]["response_api_ClaimEventReward_ALL"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/CombineEgoGiftMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_CombineEgoGiftMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_CombineEgoGiftMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/CombineEgoGiftStoryMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_CombineEgoGiftStoryMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_CombineEgoGiftStoryMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/CompleteMinistory": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_CompleteMinistory"];
+            responses: {
+                200: components["responses"]["response_api_CompleteMinistory"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/CompleteTheaterStory": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_CompleteTheaterStory"];
+            responses: {
+                200: components["responses"]["response_api_CompleteTheaterStory"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/ConfirmedSeasonLog": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_ConfirmedSeasonLog"];
+            responses: {
+                200: components["responses"]["response_api_ConfirmedSeasonLog"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/DeleteFriend": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_DeleteFriend"];
+            responses: {
+                200: components["responses"]["response_api_DeleteFriend"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/EgoGacksung": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_EgoGacksung"];
+            responses: {
+                200: components["responses"]["response_api_EgoGacksung"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/EgoGacksungWithItems": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_EgoGacksungWithItems"];
+            responses: {
+                200: components["responses"]["response_api_EgoGacksungWithItems"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/EnableSpecialStartBuffMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_EnableSpecialStartBuffMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_EnableSpecialStartBuffMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/EnableStartBuffMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_EnableStartBuffMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_EnableStartBuffMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/EnterExpDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_EnterExpDungeon"];
+            responses: {
+                200: components["responses"]["response_api_EnterExpDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/EnterMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_EnterMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_EnterMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/EnterMirrorDungeonMapNode": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_EnterMirrorDungeonMapNode"];
+            responses: {
+                200: components["responses"]["response_api_EnterMirrorDungeonMapNode"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/EnterMirrordungeonMapNodeBattleAfterChoice": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_EnterMirrordungeonMapNodeBattleAfterChoice"];
+            responses: {
+                200: components["responses"]["response_api_EnterMirrordungeonMapNodeBattleAfterChoice"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/EnterRailwayDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_EnterRailwayDungeon"];
+            responses: {
+                200: components["responses"]["response_api_EnterRailwayDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/EnterRailwayDungeonNode": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_EnterRailwayDungeonNode"];
+            responses: {
+                200: components["responses"]["response_api_EnterRailwayDungeonNode"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/EnterStageBattle": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_EnterStageBattle"];
+            responses: {
+                200: components["responses"]["response_api_EnterStageBattle"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/EnterStoryDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_EnterStoryDungeon"];
+            responses: {
+                200: components["responses"]["response_api_EnterStoryDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/EnterStoryDungeonMapNode": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_EnterStoryDungeonMapNode"];
+            responses: {
+                200: components["responses"]["response_api_EnterStoryDungeonMapNode"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/EnterStoryDungeonMapNodeBattleAfterChoice": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_EnterStoryDungeonMapNodeBattleAfterChoice"];
+            responses: {
+                200: components["responses"]["response_api_EnterStoryDungeonMapNodeBattleAfterChoice"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/EnterStoryMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_EnterStoryMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_EnterStoryMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/EnterStoryMirrorDungeonMapNode": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_EnterStoryMirrorDungeonMapNode"];
+            responses: {
+                200: components["responses"]["response_api_EnterStoryMirrorDungeonMapNode"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/EnterStoryMirrorDungeonMapNodeBattleAfterChoice": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_EnterStoryMirrorDungeonMapNodeBattleAfterChoice"];
+            responses: {
+                200: components["responses"]["response_api_EnterStoryMirrorDungeonMapNodeBattleAfterChoice"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/EnterThreadDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_EnterThreadDungeon"];
+            responses: {
+                200: components["responses"]["response_api_EnterThreadDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/ExchangeTwine": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_ExchangeTwine"];
+            responses: {
+                200: components["responses"]["response_api_ExchangeTwine"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/ExitExpDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_ExitExpDungeon"];
+            responses: {
+                200: components["responses"]["response_api_ExitExpDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/ExitMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_ExitMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_ExitMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/ExitMirrorDungeonMapNode": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_ExitMirrorDungeonMapNode"];
+            responses: {
+                200: components["responses"]["response_api_ExitMirrorDungeonMapNode"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/ExitRailwayDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_ExitRailwayDungeon"];
+            responses: {
+                200: components["responses"]["response_api_ExitRailwayDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/ExitRailwayDungeonNode": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_ExitRailwayDungeonNode"];
+            responses: {
+                200: components["responses"]["response_api_ExitRailwayDungeonNode"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/ExitRailwayDungeonRestNode": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_ExitRailwayDungeonRestNode"];
+            responses: {
+                200: components["responses"]["response_api_ExitRailwayDungeonRestNode"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/ExitStageBattle": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_ExitStageBattle"];
+            responses: {
+                200: components["responses"]["response_api_ExitStageBattle"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/ExitStory": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_ExitStory"];
+            responses: {
+                200: components["responses"]["response_api_ExitStory"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/ExitStoryDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_ExitStoryDungeon"];
+            responses: {
+                200: components["responses"]["response_api_ExitStoryDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/ExitStoryDungeonMapNode": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_ExitStoryDungeonMapNode"];
+            responses: {
+                200: components["responses"]["response_api_ExitStoryDungeonMapNode"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/ExitStoryMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_ExitStoryMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_ExitStoryMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/ExitStoryMirrorDungeonMapNode": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_ExitStoryMirrorDungeonMapNode"];
+            responses: {
+                200: components["responses"]["response_api_ExitStoryMirrorDungeonMapNode"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/ExitThreadDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_ExitThreadDungeon"];
+            responses: {
+                200: components["responses"]["response_api_ExitThreadDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/FetchLatestSynchronousData": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_FetchLatestSynchronousData"];
+            responses: {
+                200: components["responses"]["response_api_FetchLatestSynchronousData"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/FindFriend": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_FindFriend"];
+            responses: {
+                200: components["responses"]["response_api_FindFriend"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/GetAbnormalityLogData": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_GetAbnormalityLogData"];
+            responses: {
+                200: components["responses"]["response_api_GetAbnormalityLogData"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/GetAttendanceState": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_GetAttendanceState"];
+            responses: {
+                200: components["responses"]["response_api_GetAttendanceState"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/GetDailyDungeonInfo": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_GetDailyDungeonInfo"];
+            responses: {
+                200: components["responses"]["response_api_GetDailyDungeonInfo"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/GetDailyLoginState": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_GetDailyLoginState"];
+            responses: {
+                200: components["responses"]["response_api_GetDailyLoginState"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/GetDanteNoteState": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_GetDanteNoteState"];
+            responses: {
+                200: components["responses"]["response_api_GetDanteNoteState"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/GetDungeonSaveInfoAll": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_GetDungeonSaveInfoAll"];
+            responses: {
+                200: components["responses"]["response_api_GetDungeonSaveInfoAll"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/GetFriendsData": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_GetFriendsData"];
+            responses: {
+                200: components["responses"]["response_api_GetFriendsData"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/GetFriendSupportPersonalities": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_GetFriendSupportPersonalities"];
+            responses: {
+                200: components["responses"]["response_api_GetFriendSupportPersonalities"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/GetFriendSupportPersonalitiesByCharacterId": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_GetFriendSupportPersonalitiesByCharacterId"];
+            responses: {
+                200: components["responses"]["response_api_GetFriendSupportPersonalitiesByCharacterId"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/GetHellsChickenState": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_GetHellsChickenState"];
+            responses: {
+                200: components["responses"]["response_api_GetHellsChickenState"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/GetMirrorDungeonEgoGiftRecord": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_GetMirrorDungeonEgoGiftRecord"];
+            responses: {
+                200: components["responses"]["response_api_GetMirrorDungeonEgoGiftRecord"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/GetProfileTicketDecoDatas": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_GetProfileTicketDecoDatas"];
+            responses: {
+                200: components["responses"]["response_api_GetProfileTicketDecoDatas"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/GetRailwayDungeonNodeAndLogAll": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_GetRailwayDungeonNodeAndLogAll"];
+            responses: {
+                200: components["responses"]["response_api_GetRailwayDungeonNodeAndLogAll"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/GetRecommendFriends": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_GetRecommendFriends"];
+            responses: {
+                200: components["responses"]["response_api_GetRecommendFriends"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/GetStageProgressRateReward": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_GetStageProgressRateReward"];
+            responses: {
+                200: components["responses"]["response_api_GetStageProgressRateReward"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/GetStartBuffFInfoMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_GetStartBuffFInfoMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_GetStartBuffFInfoMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/GetStoryDungeonNodeRecord": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_GetStoryDungeonNodeRecord"];
+            responses: {
+                200: components["responses"]["response_api_GetStoryDungeonNodeRecord"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/GetStoryDungeonSaveInfo": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_GetStoryDungeonSaveInfo"];
+            responses: {
+                200: components["responses"]["response_api_GetStoryDungeonSaveInfo"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/GetTheaterInfo": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_GetTheaterInfo"];
+            responses: {
+                200: components["responses"]["response_api_GetTheaterInfo"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/GetUserBanners": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_GetUserBanners"];
+            responses: {
+                200: components["responses"]["response_api_GetUserBanners"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/GetUserCouponState": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_GetUserCouponState"];
+            responses: {
+                200: components["responses"]["response_api_GetUserCouponState"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/GiveUpRailwayDungeonNode": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_GiveUpRailwayDungeonNode"];
+            responses: {
+                200: components["responses"]["response_api_GiveUpRailwayDungeonNode"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/GiveUpRailwayDungeonNodeInBattle": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_GiveUpRailwayDungeonNodeInBattle"];
+            responses: {
+                200: components["responses"]["response_api_GiveUpRailwayDungeonNodeInBattle"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/LoadUserDataAll": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_LoadUserDataAll"];
+            responses: {
+                200: components["responses"]["response_api_LoadUserDataAll"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/PersonalityGacksung": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_PersonalityGacksung"];
+            responses: {
+                200: components["responses"]["response_api_PersonalityGacksung"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/PersonalityGacksungWithItems": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_PersonalityGacksungWithItems"];
+            responses: {
+                200: components["responses"]["response_api_PersonalityGacksungWithItems"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/PlayGacha": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_PlayGacha"];
+            responses: {
+                200: components["responses"]["response_api_PlayGacha"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/PlayVendingMachine": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_PlayVendingMachine"];
+            responses: {
+                200: components["responses"]["response_api_PlayVendingMachine"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/PreviewMirrorDungeonExitReward": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_PreviewMirrorDungeonExitReward"];
+            responses: {
+                200: components["responses"]["response_api_PreviewMirrorDungeonExitReward"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/PurchaseBattlePassByRealLunacy": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_PurchaseBattlePassByRealLunacy"];
+            responses: {
+                200: components["responses"]["response_api_PurchaseBattlePassByRealLunacy"];
             };
         };
         delete?: never;
@@ -320,6 +2561,222 @@ export interface paths {
             requestBody?: components["requestBodies"]["request_api_PurchaseBattlePassLevel"];
             responses: {
                 200: components["responses"]["response_api_PurchaseBattlePassLevel"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/PurchaseEgoGiftMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_PurchaseEgoGiftMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_PurchaseEgoGiftMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/PurchaseEgoGiftStoryMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_PurchaseEgoGiftStoryMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_PurchaseEgoGiftStoryMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/PurchaseEnkephalin": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_PurchaseEnkephalin"];
+            responses: {
+                200: components["responses"]["response_api_PurchaseEnkephalin"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/PurchaseEnkephalinModule": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_PurchaseEnkephalinModule"];
+            responses: {
+                200: components["responses"]["response_api_PurchaseEnkephalinModule"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/PurchaseFormationMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_PurchaseFormationMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_PurchaseFormationMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/PurchaseFormationStoryMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_PurchaseFormationStoryMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_PurchaseFormationStoryMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/PurchaseHealMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_PurchaseHealMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_PurchaseHealMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/PurchaseHealStoryMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_PurchaseHealStoryMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_PurchaseHealStoryMirrorDungeon"];
             };
         };
         delete?: never;
@@ -409,7 +2866,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/PurchaseBattlePassByRealLunacy": {
+    "/api/PurchaseStartBuffMirrorDungeon": {
         parameters: {
             query?: never;
             header?: never;
@@ -425,9 +2882,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_PurchaseBattlePassByRealLunacy"];
+            requestBody?: components["requestBodies"]["request_api_PurchaseStartBuffMirrorDungeon"];
             responses: {
-                200: components["responses"]["response_api_PurchaseBattlePassByRealLunacy"];
+                200: components["responses"]["response_api_PurchaseStartBuffMirrorDungeon"];
             };
         };
         delete?: never;
@@ -436,7 +2893,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/UseCoupon": {
+    "/api/PurchaseUpgradePersonalityMirrorDungeon": {
         parameters: {
             query?: never;
             header?: never;
@@ -452,9 +2909,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_UseCoupon"];
+            requestBody?: components["requestBodies"]["request_api_PurchaseUpgradePersonalityMirrorDungeon"];
             responses: {
-                200: components["responses"]["response_api_UseCoupon"];
+                200: components["responses"]["response_api_PurchaseUpgradePersonalityMirrorDungeon"];
             };
         };
         delete?: never;
@@ -463,7 +2920,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/GetUserCouponState": {
+    "/api/PurchaseUpgradePersonalityStoryMirrorDungeon": {
         parameters: {
             query?: never;
             header?: never;
@@ -479,9 +2936,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_GetUserCouponState"];
+            requestBody?: components["requestBodies"]["request_api_PurchaseUpgradePersonalityStoryMirrorDungeon"];
             responses: {
-                200: components["responses"]["response_api_GetUserCouponState"];
+                200: components["responses"]["response_api_PurchaseUpgradePersonalityStoryMirrorDungeon"];
             };
         };
         delete?: never;
@@ -490,7 +2947,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/EnterExpDungeon": {
+    "/api/RecreateThemeFloorPoolMirrorDungeon": {
         parameters: {
             query?: never;
             header?: never;
@@ -506,9 +2963,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_EnterExpDungeon"];
+            requestBody?: components["requestBodies"]["request_api_RecreateThemeFloorPoolMirrorDungeon"];
             responses: {
-                200: components["responses"]["response_api_EnterExpDungeon"];
+                200: components["responses"]["response_api_RecreateThemeFloorPoolMirrorDungeon"];
             };
         };
         delete?: never;
@@ -517,7 +2974,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/ExitExpDungeon": {
+    "/api/ReEnterMirrorDungeon": {
         parameters: {
             query?: never;
             header?: never;
@@ -533,414 +2990,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_ExitExpDungeon"];
+            requestBody?: components["requestBodies"]["request_api_ReEnterMirrorDungeon"];
             responses: {
-                200: components["responses"]["response_api_ExitExpDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/SkipExpDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_SkipExpDungeon"];
-            responses: {
-                200: components["responses"]["response_api_SkipExpDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/EnterThreadDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_EnterThreadDungeon"];
-            responses: {
-                200: components["responses"]["response_api_EnterThreadDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/ExitThreadDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_ExitThreadDungeon"];
-            responses: {
-                200: components["responses"]["response_api_ExitThreadDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/GetDailyDungeonInfo": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_GetDailyDungeonInfo"];
-            responses: {
-                200: components["responses"]["response_api_GetDailyDungeonInfo"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/SkipThreadDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_SkipThreadDungeon"];
-            responses: {
-                200: components["responses"]["response_api_SkipThreadDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/GetDailyLoginState": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_GetDailyLoginState"];
-            responses: {
-                200: components["responses"]["response_api_GetDailyLoginState"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/AcquireDailyLoginReward": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_AcquireDailyLoginReward"];
-            responses: {
-                200: components["responses"]["response_api_AcquireDailyLoginReward"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/GetDanteNoteState": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_GetDanteNoteState"];
-            responses: {
-                200: components["responses"]["response_api_GetDanteNoteState"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/SkipTutorial": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_SkipTutorial"];
-            responses: {
-                200: components["responses"]["response_api_SkipTutorial"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/GetStageProgressRateReward": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_GetStageProgressRateReward"];
-            responses: {
-                200: components["responses"]["response_api_GetStageProgressRateReward"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/EnterStageBattle": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_EnterStageBattle"];
-            responses: {
-                200: components["responses"]["response_api_EnterStageBattle"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/ExitStageBattle": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_ExitStageBattle"];
-            responses: {
-                200: components["responses"]["response_api_ExitStageBattle"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/GetDungeonSaveInfoAll": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_GetDungeonSaveInfoAll"];
-            responses: {
-                200: components["responses"]["response_api_GetDungeonSaveInfoAll"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/GetStoryDungeonSaveInfo": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_GetStoryDungeonSaveInfo"];
-            responses: {
-                200: components["responses"]["response_api_GetStoryDungeonSaveInfo"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/EnterStoryDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_EnterStoryDungeon"];
-            responses: {
-                200: components["responses"]["response_api_EnterStoryDungeon"];
+                200: components["responses"]["response_api_ReEnterMirrorDungeon"];
             };
         };
         delete?: never;
@@ -976,7 +3028,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/ExitStoryDungeon": {
+    "/api/ReEnterStoryMirrorDungeon": {
         parameters: {
             query?: never;
             header?: never;
@@ -992,9 +3044,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_ExitStoryDungeon"];
+            requestBody?: components["requestBodies"]["request_api_ReEnterStoryMirrorDungeon"];
             responses: {
-                200: components["responses"]["response_api_ExitStoryDungeon"];
+                200: components["responses"]["response_api_ReEnterStoryMirrorDungeon"];
             };
         };
         delete?: never;
@@ -1003,7 +3055,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/EnterStoryDungeonMapNode": {
+    "/api/RefreshMailbox": {
         parameters: {
             query?: never;
             header?: never;
@@ -1019,9 +3071,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_EnterStoryDungeonMapNode"];
+            requestBody?: components["requestBodies"]["request_api_RefreshMailbox"];
             responses: {
-                200: components["responses"]["response_api_EnterStoryDungeonMapNode"];
+                200: components["responses"]["response_api_RefreshMailbox"];
             };
         };
         delete?: never;
@@ -1030,7 +3082,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/UpdateStoryDungeonMapNode": {
+    "/api/RefreshShopEgoGiftsMirrorDungeon": {
         parameters: {
             query?: never;
             header?: never;
@@ -1046,9 +3098,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_UpdateStoryDungeonMapNode"];
+            requestBody?: components["requestBodies"]["request_api_RefreshShopEgoGiftsMirrorDungeon"];
             responses: {
-                200: components["responses"]["response_api_UpdateStoryDungeonMapNode"];
+                200: components["responses"]["response_api_RefreshShopEgoGiftsMirrorDungeon"];
             };
         };
         delete?: never;
@@ -1057,7 +3109,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/EnterStoryDungeonMapNodeBattleAfterChoice": {
+    "/api/RefreshShopEgoGiftsStoryMirrorDungeon": {
         parameters: {
             query?: never;
             header?: never;
@@ -1073,9 +3125,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_EnterStoryDungeonMapNodeBattleAfterChoice"];
+            requestBody?: components["requestBodies"]["request_api_RefreshShopEgoGiftsStoryMirrorDungeon"];
             responses: {
-                200: components["responses"]["response_api_EnterStoryDungeonMapNodeBattleAfterChoice"];
+                200: components["responses"]["response_api_RefreshShopEgoGiftsStoryMirrorDungeon"];
             };
         };
         delete?: never;
@@ -1084,7 +3136,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/ExitStoryDungeonMapNode": {
+    "/api/RefreshStartEgoGiftsMirrorDungeon": {
         parameters: {
             query?: never;
             header?: never;
@@ -1100,9 +3152,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_ExitStoryDungeonMapNode"];
+            requestBody?: components["requestBodies"]["request_api_RefreshStartEgoGiftsMirrorDungeon"];
             responses: {
-                200: components["responses"]["response_api_ExitStoryDungeonMapNode"];
+                200: components["responses"]["response_api_RefreshStartEgoGiftsMirrorDungeon"];
             };
         };
         delete?: never;
@@ -1111,7 +3163,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/UpdateStoryDungeonUnits": {
+    "/api/RefreshStartEgoGiftsStoryMirrorDungeon": {
         parameters: {
             query?: never;
             header?: never;
@@ -1127,9 +3179,198 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_UpdateStoryDungeonUnits"];
+            requestBody?: components["requestBodies"]["request_api_RefreshStartEgoGiftsStoryMirrorDungeon"];
             responses: {
-                200: components["responses"]["response_api_UpdateStoryDungeonUnits"];
+                200: components["responses"]["response_api_RefreshStartEgoGiftsStoryMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/RejectReceivedFriendRequest": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_RejectReceivedFriendRequest"];
+            responses: {
+                200: components["responses"]["response_api_RejectReceivedFriendRequest"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/RejectRewardEgoGiftsMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_RejectRewardEgoGiftsMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_RejectRewardEgoGiftsMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/RejectRewardEgoGiftsStoryMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_RejectRewardEgoGiftsStoryMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_RejectRewardEgoGiftsStoryMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/RejectRewardEgoGiftWithEnemyBufsMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_RejectRewardEgoGiftWithEnemyBufsMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_RejectRewardEgoGiftWithEnemyBufsMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/RemoveMirrorDungeonEgoGift": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_RemoveMirrorDungeonEgoGift"];
+            responses: {
+                200: components["responses"]["response_api_RemoveMirrorDungeonEgoGift"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/RemoveStoryMirrorDungeonEgoGift": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_RemoveStoryMirrorDungeonEgoGift"];
+            responses: {
+                200: components["responses"]["response_api_RemoveStoryMirrorDungeonEgoGift"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/ReportError": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_ReportError"];
+            responses: {
+                200: components["responses"]["response_api_ReportError"];
             };
         };
         delete?: never;
@@ -1165,7 +3406,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/ExitStory": {
+    "/api/SaveMiniStoryWeek": {
         parameters: {
             query?: never;
             header?: never;
@@ -1181,9 +3422,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_ExitStory"];
+            requestBody?: components["requestBodies"]["request_api_SaveMiniStoryWeek"];
             responses: {
-                200: components["responses"]["response_api_ExitStory"];
+                200: components["responses"]["response_api_SaveMiniStoryWeek"];
             };
         };
         delete?: never;
@@ -1192,7 +3433,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/GetAbnormalityLogData": {
+    "/api/SelectFormationMirrorDungeon": {
         parameters: {
             query?: never;
             header?: never;
@@ -1208,9 +3449,333 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_GetAbnormalityLogData"];
+            requestBody?: components["requestBodies"]["request_api_SelectFormationMirrorDungeon"];
             responses: {
-                200: components["responses"]["response_api_GetAbnormalityLogData"];
+                200: components["responses"]["response_api_SelectFormationMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/SelectRailwayDungeonBuff": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_SelectRailwayDungeonBuff"];
+            responses: {
+                200: components["responses"]["response_api_SelectRailwayDungeonBuff"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/SelectThemeFloorMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_SelectThemeFloorMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_SelectThemeFloorMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/SellEgoGiftMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_SellEgoGiftMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_SellEgoGiftMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/SellEgoGiftStoryMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_SellEgoGiftStoryMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_SellEgoGiftStoryMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/SendFriendRequest": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_SendFriendRequest"];
+            responses: {
+                200: components["responses"]["response_api_SendFriendRequest"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/SendMirrorDungeonLogError": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_SendMirrorDungeonLogError"];
+            responses: {
+                200: components["responses"]["response_api_SendMirrorDungeonLogError"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/SendMirrorDungeonShopExit": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_SendMirrorDungeonShopExit"];
+            responses: {
+                200: components["responses"]["response_api_SendMirrorDungeonShopExit"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/SetPersonalityGacksungIllust": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_SetPersonalityGacksungIllust"];
+            responses: {
+                200: components["responses"]["response_api_SetPersonalityGacksungIllust"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/SkipExpDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_SkipExpDungeon"];
+            responses: {
+                200: components["responses"]["response_api_SkipExpDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/SkipThreadDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_SkipThreadDungeon"];
+            responses: {
+                200: components["responses"]["response_api_SkipThreadDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/SkipTutorial": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_SkipTutorial"];
+            responses: {
+                200: components["responses"]["response_api_SkipTutorial"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/UnsealMails": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_UnsealMails"];
+            responses: {
+                200: components["responses"]["response_api_UnsealMails"];
             };
         };
         delete?: never;
@@ -1246,7 +3811,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/GetStoryDungeonNodeRecord": {
+    "/api/UpdateFormation": {
         parameters: {
             query?: never;
             header?: never;
@@ -1262,9 +3827,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_GetStoryDungeonNodeRecord"];
+            requestBody?: components["requestBodies"]["request_api_UpdateFormation"];
             responses: {
-                200: components["responses"]["response_api_GetStoryDungeonNodeRecord"];
+                200: components["responses"]["response_api_UpdateFormation"];
             };
         };
         delete?: never;
@@ -1273,7 +3838,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/EnterRailwayDungeon": {
+    "/api/UpdateLobbyCg": {
         parameters: {
             query?: never;
             header?: never;
@@ -1289,9 +3854,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_EnterRailwayDungeon"];
+            requestBody?: components["requestBodies"]["request_api_UpdateLobbyCg"];
             responses: {
-                200: components["responses"]["response_api_EnterRailwayDungeon"];
+                200: components["responses"]["response_api_UpdateLobbyCg"];
             };
         };
         delete?: never;
@@ -1300,7 +3865,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/EnterRailwayDungeonNode": {
+    "/api/UpdateMirrorDungeon": {
         parameters: {
             query?: never;
             header?: never;
@@ -1316,9 +3881,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_EnterRailwayDungeonNode"];
+            requestBody?: components["requestBodies"]["request_api_UpdateMirrorDungeon"];
             responses: {
-                200: components["responses"]["response_api_EnterRailwayDungeonNode"];
+                200: components["responses"]["response_api_UpdateMirrorDungeon"];
             };
         };
         delete?: never;
@@ -1327,7 +3892,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/GetRailwayDungeonNodeAndLogAll": {
+    "/api/UpdateMirrorDungeonMapNode": {
         parameters: {
             query?: never;
             header?: never;
@@ -1343,9 +3908,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_GetRailwayDungeonNodeAndLogAll"];
+            requestBody?: components["requestBodies"]["request_api_UpdateMirrorDungeonMapNode"];
             responses: {
-                200: components["responses"]["response_api_GetRailwayDungeonNodeAndLogAll"];
+                200: components["responses"]["response_api_UpdateMirrorDungeonMapNode"];
             };
         };
         delete?: never;
@@ -1354,7 +3919,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/ClaimEventReward": {
+    "/api/UpdateMirrorDungeonUnits": {
         parameters: {
             query?: never;
             header?: never;
@@ -1370,9 +3935,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_ClaimEventReward"];
+            requestBody?: components["requestBodies"]["request_api_UpdateMirrorDungeonUnits"];
             responses: {
-                200: components["responses"]["response_api_ClaimEventReward"];
+                200: components["responses"]["response_api_UpdateMirrorDungeonUnits"];
             };
         };
         delete?: never;
@@ -1381,7 +3946,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/ClaimEventReward_ALL": {
+    "/api/UpdateProfileTicketDeco": {
         parameters: {
             query?: never;
             header?: never;
@@ -1397,9 +3962,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_ClaimEventReward_ALL"];
+            requestBody?: components["requestBodies"]["request_api_UpdateProfileTicketDeco"];
             responses: {
-                200: components["responses"]["response_api_ClaimEventReward_ALL"];
+                200: components["responses"]["response_api_UpdateProfileTicketDeco"];
             };
         };
         delete?: never;
@@ -1408,7 +3973,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/ExitRailwayDungeonNode": {
+    "/api/UpdateStoryDungeonMapNode": {
         parameters: {
             query?: never;
             header?: never;
@@ -1424,9 +3989,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_ExitRailwayDungeonNode"];
+            requestBody?: components["requestBodies"]["request_api_UpdateStoryDungeonMapNode"];
             responses: {
-                200: components["responses"]["response_api_ExitRailwayDungeonNode"];
+                200: components["responses"]["response_api_UpdateStoryDungeonMapNode"];
             };
         };
         delete?: never;
@@ -1435,7 +4000,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/ExitRailwayDungeonRestNode": {
+    "/api/UpdateStoryDungeonUnits": {
         parameters: {
             query?: never;
             header?: never;
@@ -1451,9 +4016,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_ExitRailwayDungeonRestNode"];
+            requestBody?: components["requestBodies"]["request_api_UpdateStoryDungeonUnits"];
             responses: {
-                200: components["responses"]["response_api_ExitRailwayDungeonRestNode"];
+                200: components["responses"]["response_api_UpdateStoryDungeonUnits"];
             };
         };
         delete?: never;
@@ -1462,7 +4027,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/PlayGacha": {
+    "/api/UpdateStoryMirrorDungeon": {
         parameters: {
             query?: never;
             header?: never;
@@ -1478,9 +4043,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_PlayGacha"];
+            requestBody?: components["requestBodies"]["request_api_UpdateStoryMirrorDungeon"];
             responses: {
-                200: components["responses"]["response_api_PlayGacha"];
+                200: components["responses"]["response_api_UpdateStoryMirrorDungeon"];
             };
         };
         delete?: never;
@@ -1489,7 +4054,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/log/GetGachaLogAll": {
+    "/api/UpdateStoryMirrorDungeonMapNode": {
         parameters: {
             query?: never;
             header?: never;
@@ -1505,9 +4070,171 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_log_GetGachaLogAll"];
+            requestBody?: components["requestBodies"]["request_api_UpdateStoryMirrorDungeonMapNode"];
             responses: {
-                200: components["responses"]["response_log_GetGachaLogAll"];
+                200: components["responses"]["response_api_UpdateStoryMirrorDungeonMapNode"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/UpdateStoryMirrorDungeonUnits": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_UpdateStoryMirrorDungeonUnits"];
+            responses: {
+                200: components["responses"]["response_api_UpdateStoryMirrorDungeonUnits"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/UpdateUserProfile": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_UpdateUserProfile"];
+            responses: {
+                200: components["responses"]["response_api_UpdateUserProfile"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/UpgradeEgoGiftMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_UpgradeEgoGiftMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_UpgradeEgoGiftMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/UpgradeEgoGiftStoryMirrorDungeon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_UpgradeEgoGiftStoryMirrorDungeon"];
+            responses: {
+                200: components["responses"]["response_api_UpgradeEgoGiftStoryMirrorDungeon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/UseCoupon": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_UseCoupon"];
+            responses: {
+                200: components["responses"]["response_api_UseCoupon"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/UseEgoGacksungItem": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_api_UseEgoGacksungItem"];
+            responses: {
+                200: components["responses"]["response_api_UseEgoGacksungItem"];
             };
         };
         delete?: never;
@@ -1543,7 +4270,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/ClaimClosedGachaRewards": {
+    "/api/UseItem": {
         parameters: {
             query?: never;
             header?: never;
@@ -1559,9 +4286,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_ClaimClosedGachaRewards"];
+            requestBody?: components["requestBodies"]["request_api_UseItem"];
             responses: {
-                200: components["responses"]["response_api_ClaimClosedGachaRewards"];
+                200: components["responses"]["response_api_UseItem"];
             };
         };
         delete?: never;
@@ -1570,7 +4297,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/ExitRailwayDungeon": {
+    "/api/UsePersonalityExpItem": {
         parameters: {
             query?: never;
             header?: never;
@@ -1586,9 +4313,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_ExitRailwayDungeon"];
+            requestBody?: components["requestBodies"]["request_api_UsePersonalityExpItem"];
             responses: {
-                200: components["responses"]["response_api_ExitRailwayDungeon"];
+                200: components["responses"]["response_api_UsePersonalityExpItem"];
             };
         };
         delete?: never;
@@ -1597,7 +4324,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/GiveUpRailwayDungeonNode": {
+    "/iap/FinalizePurchaseAsSteam": {
         parameters: {
             query?: never;
             header?: never;
@@ -1613,9 +4340,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_GiveUpRailwayDungeonNode"];
+            requestBody?: components["requestBodies"]["request_iap_FinalizePurchaseAsSteam"];
             responses: {
-                200: components["responses"]["response_api_GiveUpRailwayDungeonNode"];
+                200: components["responses"]["response_iap_FinalizePurchaseAsSteam"];
             };
         };
         delete?: never;
@@ -1624,7 +4351,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/GiveUpRailwayDungeonNodeInBattle": {
+    "/iap/GetSteamWalletCurrency": {
         parameters: {
             query?: never;
             header?: never;
@@ -1640,36 +4367,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_GiveUpRailwayDungeonNodeInBattle"];
+            requestBody?: components["requestBodies"]["request_iap_GetSteamWalletCurrency"];
             responses: {
-                200: components["responses"]["response_api_GiveUpRailwayDungeonNodeInBattle"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/iap/Purchase": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_iap_Purchase"];
-            responses: {
-                200: components["responses"]["response_iap_Purchase"];
+                200: components["responses"]["response_iap_GetSteamWalletCurrency"];
             };
         };
         delete?: never;
@@ -1732,7 +4432,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/iap/FinalizePurchaseAsSteam": {
+    "/iap/Purchase": {
         parameters: {
             query?: never;
             header?: never;
@@ -1748,90 +4448,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_iap_FinalizePurchaseAsSteam"];
+            requestBody?: components["requestBodies"]["request_iap_Purchase"];
             responses: {
-                200: components["responses"]["response_iap_FinalizePurchaseAsSteam"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/iap/UpdateSteamPendingPurchase": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_iap_UpdateSteamPendingPurchase"];
-            responses: {
-                200: components["responses"]["response_iap_UpdateSteamPendingPurchase"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/iap/GetSteamWalletCurrency": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_iap_GetSteamWalletCurrency"];
-            responses: {
-                200: components["responses"]["response_iap_GetSteamWalletCurrency"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/iap/PurchaseAsGoogle": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_iap_PurchaseAsGoogle"];
-            responses: {
-                200: components["responses"]["response_iap_PurchaseAsGoogle"];
+                200: components["responses"]["response_iap_Purchase"];
             };
         };
         delete?: never;
@@ -1867,6 +4486,33 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/iap/PurchaseAsGoogle": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_iap_PurchaseAsGoogle"];
+            responses: {
+                200: components["responses"]["response_iap_PurchaseAsGoogle"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/iap/PurchaseIngameProduct": {
         parameters: {
             query?: never;
@@ -1894,7 +4540,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/UseItem": {
+    "/iap/UpdateSteamPendingPurchase": {
         parameters: {
             query?: never;
             header?: never;
@@ -1910,9 +4556,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_UseItem"];
+            requestBody?: components["requestBodies"]["request_iap_UpdateSteamPendingPurchase"];
             responses: {
-                200: components["responses"]["response_api_UseItem"];
+                200: components["responses"]["response_iap_UpdateSteamPendingPurchase"];
             };
         };
         delete?: never;
@@ -1921,7 +4567,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/PurchaseEnkephalinModule": {
+    "/log/GetGachaLogAll": {
         parameters: {
             query?: never;
             header?: never;
@@ -1937,9 +4583,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_PurchaseEnkephalinModule"];
+            requestBody?: components["requestBodies"]["request_log_GetGachaLogAll"];
             responses: {
-                200: components["responses"]["response_api_PurchaseEnkephalinModule"];
+                200: components["responses"]["response_log_GetGachaLogAll"];
             };
         };
         delete?: never;
@@ -1948,7 +4594,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/PurchaseEnkephalin": {
+    "/log/GetMailLogAll": {
         parameters: {
             query?: never;
             header?: never;
@@ -1964,9 +4610,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_PurchaseEnkephalin"];
+            requestBody?: components["requestBodies"]["request_log_GetMailLogAll"];
             responses: {
-                200: components["responses"]["response_api_PurchaseEnkephalin"];
+                200: components["responses"]["response_log_GetMailLogAll"];
             };
         };
         delete?: never;
@@ -1975,7 +4621,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/PersonalityGacksung": {
+    "/log/ReportModifiedHash": {
         parameters: {
             query?: never;
             header?: never;
@@ -1991,9 +4637,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_PersonalityGacksung"];
+            requestBody?: components["requestBodies"]["request_log_ReportModifiedHash"];
             responses: {
-                200: components["responses"]["response_api_PersonalityGacksung"];
+                200: components["responses"]["response_log_ReportModifiedHash"];
             };
         };
         delete?: never;
@@ -2002,7 +4648,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/SetPersonalityGacksungIllust": {
+    "/log/ReportSpeedHack": {
         parameters: {
             query?: never;
             header?: never;
@@ -2018,522 +4664,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_api_SetPersonalityGacksungIllust"];
+            requestBody?: components["requestBodies"]["request_log_ReportSpeedHack"];
             responses: {
-                200: components["responses"]["response_api_SetPersonalityGacksungIllust"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/EgoGacksung": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_EgoGacksung"];
-            responses: {
-                200: components["responses"]["response_api_EgoGacksung"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/UsePersonalityExpItem": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_UsePersonalityExpItem"];
-            responses: {
-                200: components["responses"]["response_api_UsePersonalityExpItem"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/UseEgoGacksungItem": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_UseEgoGacksungItem"];
-            responses: {
-                200: components["responses"]["response_api_UseEgoGacksungItem"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/PersonalityGacksungWithItems": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_PersonalityGacksungWithItems"];
-            responses: {
-                200: components["responses"]["response_api_PersonalityGacksungWithItems"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/EgoGacksungWithItems": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_EgoGacksungWithItems"];
-            responses: {
-                200: components["responses"]["response_api_EgoGacksungWithItems"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/LoadUserDataAll": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_LoadUserDataAll"];
-            responses: {
-                200: components["responses"]["response_api_LoadUserDataAll"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/CheckSeasonLog": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_CheckSeasonLog"];
-            responses: {
-                200: components["responses"]["response_api_CheckSeasonLog"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/ConfirmedSeasonLog": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_ConfirmedSeasonLog"];
-            responses: {
-                200: components["responses"]["response_api_ConfirmedSeasonLog"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/login/SignInAsGuest": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_login_SignInAsGuest"];
-            responses: {
-                200: components["responses"]["response_login_SignInAsGuest"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/login/SignInAsNewGuest": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_login_SignInAsNewGuest"];
-            responses: {
-                200: components["responses"]["response_login_SignInAsNewGuest"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/login/SignInAsGoogle": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_login_SignInAsGoogle"];
-            responses: {
-                200: components["responses"]["response_login_SignInAsGoogle"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/login/LinkWithGoogle": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_login_LinkWithGoogle"];
-            responses: {
-                200: components["responses"]["response_login_LinkWithGoogle"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/login/SignInAsApple": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_login_SignInAsApple"];
-            responses: {
-                200: components["responses"]["response_login_SignInAsApple"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/login/LinkWithApple": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_login_LinkWithApple"];
-            responses: {
-                200: components["responses"]["response_login_LinkWithApple"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/login/SignInAsSteam": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_login_SignInAsSteam"];
-            responses: {
-                200: components["responses"]["response_login_SignInAsSteam"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/login/RefreshLinkAuth": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_login_RefreshLinkAuth"];
-            responses: {
-                200: components["responses"]["response_login_RefreshLinkAuth"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/login/GetInfoOfLinkWith": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_login_GetInfoOfLinkWith"];
-            responses: {
-                200: components["responses"]["response_login_GetInfoOfLinkWith"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/login/LinkWithAnother": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_login_LinkWithAnother"];
-            responses: {
-                200: components["responses"]["response_login_LinkWithAnother"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/login/TryToSecede": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_login_TryToSecede"];
-            responses: {
-                200: components["responses"]["response_login_TryToSecede"];
+                200: components["responses"]["response_log_ReportSpeedHack"];
             };
         };
         delete?: never;
@@ -2623,7 +4756,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/login/UnLinkWithAnother": {
+    "/login/GetInfoOfLinkWith": {
         parameters: {
             query?: never;
             header?: never;
@@ -2639,1305 +4772,9 @@ export interface paths {
                 path?: never;
                 cookie?: never;
             };
-            requestBody?: components["requestBodies"]["request_login_UnLinkWithAnother"];
+            requestBody?: components["requestBodies"]["request_login_GetInfoOfLinkWith"];
             responses: {
-                200: components["responses"]["response_login_UnLinkWithAnother"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/RefreshMailbox": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_RefreshMailbox"];
-            responses: {
-                200: components["responses"]["response_api_RefreshMailbox"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/UnsealMails": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_UnsealMails"];
-            responses: {
-                200: components["responses"]["response_api_UnsealMails"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/log/GetMailLogAll": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_log_GetMailLogAll"];
-            responses: {
-                200: components["responses"]["response_log_GetMailLogAll"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/log/ReportSpeedHack": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_log_ReportSpeedHack"];
-            responses: {
-                200: components["responses"]["response_log_ReportSpeedHack"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/log/ReportModifiedHash": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_log_ReportModifiedHash"];
-            responses: {
-                200: components["responses"]["response_log_ReportModifiedHash"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/SaveMiniStoryWeek": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_SaveMiniStoryWeek"];
-            responses: {
-                200: components["responses"]["response_api_SaveMiniStoryWeek"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/CompleteMinistory": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_CompleteMinistory"];
-            responses: {
-                200: components["responses"]["response_api_CompleteMinistory"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/EnterMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_EnterMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_EnterMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/ReEnterMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_ReEnterMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_ReEnterMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/UpdateMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_UpdateMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_UpdateMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/SelectFormationMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_SelectFormationMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_SelectFormationMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/RecreateThemeFloorPoolMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_RecreateThemeFloorPoolMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_RecreateThemeFloorPoolMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/SelectThemeFloorMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_SelectThemeFloorMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_SelectThemeFloorMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/ExitMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_ExitMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_ExitMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/EnterMirrorDungeonMapNode": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_EnterMirrorDungeonMapNode"];
-            responses: {
-                200: components["responses"]["response_api_EnterMirrorDungeonMapNode"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/UpdateMirrorDungeonMapNode": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_UpdateMirrorDungeonMapNode"];
-            responses: {
-                200: components["responses"]["response_api_UpdateMirrorDungeonMapNode"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/EnterMirrordungeonMapNodeBattleAfterChoice": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_EnterMirrordungeonMapNodeBattleAfterChoice"];
-            responses: {
-                200: components["responses"]["response_api_EnterMirrordungeonMapNodeBattleAfterChoice"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/ExitMirrorDungeonMapNode": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_ExitMirrorDungeonMapNode"];
-            responses: {
-                200: components["responses"]["response_api_ExitMirrorDungeonMapNode"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/UpdateMirrorDungeonUnits": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_UpdateMirrorDungeonUnits"];
-            responses: {
-                200: components["responses"]["response_api_UpdateMirrorDungeonUnits"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/AcquireRewardEgoGiftsMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_AcquireRewardEgoGiftsMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_AcquireRewardEgoGiftsMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/AcquireRewardEgoGiftsWithEnemyBufMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_AcquireRewardEgoGiftsWithEnemyBufMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_AcquireRewardEgoGiftsWithEnemyBufMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/RejectRewardEgoGiftsMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_RejectRewardEgoGiftsMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_RejectRewardEgoGiftsMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/RejectRewardEgoGiftWithEnemyBufsMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_RejectRewardEgoGiftWithEnemyBufsMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_RejectRewardEgoGiftWithEnemyBufsMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/AcquireMirrorDungeonBattleReward": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_AcquireMirrorDungeonBattleReward"];
-            responses: {
-                200: components["responses"]["response_api_AcquireMirrorDungeonBattleReward"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/GetMirrorDungeonEgoGiftRecord": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_GetMirrorDungeonEgoGiftRecord"];
-            responses: {
-                200: components["responses"]["response_api_GetMirrorDungeonEgoGiftRecord"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/SendMirrorDungeonLogError": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_SendMirrorDungeonLogError"];
-            responses: {
-                200: components["responses"]["response_api_SendMirrorDungeonLogError"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/SendMirrorDungeonShopExit": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_SendMirrorDungeonShopExit"];
-            responses: {
-                200: components["responses"]["response_api_SendMirrorDungeonShopExit"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/PurchaseHealMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_PurchaseHealMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_PurchaseHealMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/PurchaseFormationMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_PurchaseFormationMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_PurchaseFormationMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/PurchaseUpgradePersonalityMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_PurchaseUpgradePersonalityMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_PurchaseUpgradePersonalityMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/PurchaseEgoGiftMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_PurchaseEgoGiftMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_PurchaseEgoGiftMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/SellEgoGiftMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_SellEgoGiftMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_SellEgoGiftMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/RefreshShopEgoGiftsMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_RefreshShopEgoGiftsMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_RefreshShopEgoGiftsMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/GetStartBuffFInfoMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_GetStartBuffFInfoMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_GetStartBuffFInfoMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/PurchaseStartBuffMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_PurchaseStartBuffMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_PurchaseStartBuffMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/EnableSpecialStartBuffMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_EnableSpecialStartBuffMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_EnableSpecialStartBuffMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/EnableStartBuffMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_EnableStartBuffMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_EnableStartBuffMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/RemoveMirrorDungeonEgoGift": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_RemoveMirrorDungeonEgoGift"];
-            responses: {
-                200: components["responses"]["response_api_RemoveMirrorDungeonEgoGift"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/AcquireStartEgoGiftsAndCreateThemePoolMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_AcquireStartEgoGiftsAndCreateThemePoolMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_AcquireStartEgoGiftsAndCreateThemePoolMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/RefreshStartEgoGiftsMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_RefreshStartEgoGiftsMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_RefreshStartEgoGiftsMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/UpgradeEgoGiftMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_UpgradeEgoGiftMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_UpgradeEgoGiftMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/CombineEgoGiftMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_CombineEgoGiftMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_CombineEgoGiftMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/PreviewMirrorDungeonExitReward": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_PreviewMirrorDungeonExitReward"];
-            responses: {
-                200: components["responses"]["response_api_PreviewMirrorDungeonExitReward"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/AcquireMirrorDungeonExitReward": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_AcquireMirrorDungeonExitReward"];
-            responses: {
-                200: components["responses"]["response_api_AcquireMirrorDungeonExitReward"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/AcquireMissionRewards": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_AcquireMissionRewards"];
-            responses: {
-                200: components["responses"]["response_api_AcquireMissionRewards"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/ReportError": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_ReportError"];
-            responses: {
-                200: components["responses"]["response_api_ReportError"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/SelectRailwayDungeonBuff": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_SelectRailwayDungeonBuff"];
-            responses: {
-                200: components["responses"]["response_api_SelectRailwayDungeonBuff"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/FetchLatestSynchronousData": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_FetchLatestSynchronousData"];
-            responses: {
-                200: components["responses"]["response_api_FetchLatestSynchronousData"];
+                200: components["responses"]["response_login_GetInfoOfLinkWith"];
             };
         };
         delete?: never;
@@ -3973,6 +4810,303 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/login/LinkWithAnother": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_login_LinkWithAnother"];
+            responses: {
+                200: components["responses"]["response_login_LinkWithAnother"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/login/LinkWithApple": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_login_LinkWithApple"];
+            responses: {
+                200: components["responses"]["response_login_LinkWithApple"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/login/LinkWithGoogle": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_login_LinkWithGoogle"];
+            responses: {
+                200: components["responses"]["response_login_LinkWithGoogle"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/login/RefreshLinkAuth": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_login_RefreshLinkAuth"];
+            responses: {
+                200: components["responses"]["response_login_RefreshLinkAuth"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/login/SignInAsApple": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_login_SignInAsApple"];
+            responses: {
+                200: components["responses"]["response_login_SignInAsApple"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/login/SignInAsGoogle": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_login_SignInAsGoogle"];
+            responses: {
+                200: components["responses"]["response_login_SignInAsGoogle"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/login/SignInAsGuest": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_login_SignInAsGuest"];
+            responses: {
+                200: components["responses"]["response_login_SignInAsGuest"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/login/SignInAsNewGuest": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_login_SignInAsNewGuest"];
+            responses: {
+                200: components["responses"]["response_login_SignInAsNewGuest"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/login/SignInAsSteam": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_login_SignInAsSteam"];
+            responses: {
+                200: components["responses"]["response_login_SignInAsSteam"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/login/TryToSecede": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_login_TryToSecede"];
+            responses: {
+                200: components["responses"]["response_login_TryToSecede"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/login/UnLinkWithAnother": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: {
+            parameters: {
+                query?: never;
+                header?: never;
+                path?: never;
+                cookie?: never;
+            };
+            requestBody?: components["requestBodies"]["request_login_UnLinkWithAnother"];
+            responses: {
+                200: components["responses"]["response_login_UnLinkWithAnother"];
+            };
+        };
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/login/UpdateTermsOfUseState": {
         parameters: {
             query?: never;
@@ -4000,2884 +5134,1006 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/GetTheaterInfo": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_GetTheaterInfo"];
-            responses: {
-                200: components["responses"]["response_api_GetTheaterInfo"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/CompleteTheaterStory": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_CompleteTheaterStory"];
-            responses: {
-                200: components["responses"]["response_api_CompleteTheaterStory"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/UpdateFormation": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_UpdateFormation"];
-            responses: {
-                200: components["responses"]["response_api_UpdateFormation"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/UpdateLobbyCg": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_UpdateLobbyCg"];
-            responses: {
-                200: components["responses"]["response_api_UpdateLobbyCg"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/GetUserBanners": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_GetUserBanners"];
-            responses: {
-                200: components["responses"]["response_api_GetUserBanners"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/GetFriendsData": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_GetFriendsData"];
-            responses: {
-                200: components["responses"]["response_api_GetFriendsData"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/FindFriend": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_FindFriend"];
-            responses: {
-                200: components["responses"]["response_api_FindFriend"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/GetRecommendFriends": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_GetRecommendFriends"];
-            responses: {
-                200: components["responses"]["response_api_GetRecommendFriends"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/SendFriendRequest": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_SendFriendRequest"];
-            responses: {
-                200: components["responses"]["response_api_SendFriendRequest"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/AcceptReceivedFriendRequest": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_AcceptReceivedFriendRequest"];
-            responses: {
-                200: components["responses"]["response_api_AcceptReceivedFriendRequest"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/RejectReceivedFriendRequest": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_RejectReceivedFriendRequest"];
-            responses: {
-                200: components["responses"]["response_api_RejectReceivedFriendRequest"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/CancelSentFriendRequest": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_CancelSentFriendRequest"];
-            responses: {
-                200: components["responses"]["response_api_CancelSentFriendRequest"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/DeleteFriend": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_DeleteFriend"];
-            responses: {
-                200: components["responses"]["response_api_DeleteFriend"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/GetFriendSupportPersonalities": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_GetFriendSupportPersonalities"];
-            responses: {
-                200: components["responses"]["response_api_GetFriendSupportPersonalities"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/GetFriendSupportPersonalitiesByCharacterId": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_GetFriendSupportPersonalitiesByCharacterId"];
-            responses: {
-                200: components["responses"]["response_api_GetFriendSupportPersonalitiesByCharacterId"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/UpdateUserProfile": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_UpdateUserProfile"];
-            responses: {
-                200: components["responses"]["response_api_UpdateUserProfile"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/GetProfileTicketDecoDatas": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_GetProfileTicketDecoDatas"];
-            responses: {
-                200: components["responses"]["response_api_GetProfileTicketDecoDatas"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/UpdateProfileTicketDeco": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_UpdateProfileTicketDeco"];
-            responses: {
-                200: components["responses"]["response_api_UpdateProfileTicketDeco"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/PlayVendingMachine": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_PlayVendingMachine"];
-            responses: {
-                200: components["responses"]["response_api_PlayVendingMachine"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/ExchangeTwine": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_ExchangeTwine"];
-            responses: {
-                200: components["responses"]["response_api_ExchangeTwine"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/EnterStoryMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_EnterStoryMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_EnterStoryMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/ReEnterStoryMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_ReEnterStoryMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_ReEnterStoryMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/UpdateStoryMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_UpdateStoryMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_UpdateStoryMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/ExitStoryMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_ExitStoryMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_ExitStoryMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/EnterStoryMirrorDungeonMapNode": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_EnterStoryMirrorDungeonMapNode"];
-            responses: {
-                200: components["responses"]["response_api_EnterStoryMirrorDungeonMapNode"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/UpdateStoryMirrorDungeonMapNode": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_UpdateStoryMirrorDungeonMapNode"];
-            responses: {
-                200: components["responses"]["response_api_UpdateStoryMirrorDungeonMapNode"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/EnterStoryMirrorDungeonMapNodeBattleAfterChoice": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_EnterStoryMirrorDungeonMapNodeBattleAfterChoice"];
-            responses: {
-                200: components["responses"]["response_api_EnterStoryMirrorDungeonMapNodeBattleAfterChoice"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/ExitStoryMirrorDungeonMapNode": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_ExitStoryMirrorDungeonMapNode"];
-            responses: {
-                200: components["responses"]["response_api_ExitStoryMirrorDungeonMapNode"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/UpdateStoryMirrorDungeonUnits": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_UpdateStoryMirrorDungeonUnits"];
-            responses: {
-                200: components["responses"]["response_api_UpdateStoryMirrorDungeonUnits"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/AcquireRewardEgoGiftsStoryMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_AcquireRewardEgoGiftsStoryMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_AcquireRewardEgoGiftsStoryMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/RejectRewardEgoGiftsStoryMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_RejectRewardEgoGiftsStoryMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_RejectRewardEgoGiftsStoryMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/PurchaseHealStoryMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_PurchaseHealStoryMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_PurchaseHealStoryMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/PurchaseFormationStoryMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_PurchaseFormationStoryMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_PurchaseFormationStoryMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/PurchaseUpgradePersonalityStoryMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_PurchaseUpgradePersonalityStoryMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_PurchaseUpgradePersonalityStoryMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/PurchaseEgoGiftStoryMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_PurchaseEgoGiftStoryMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_PurchaseEgoGiftStoryMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/SellEgoGiftStoryMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_SellEgoGiftStoryMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_SellEgoGiftStoryMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/AcquireStartEgoGiftsStoryMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_AcquireStartEgoGiftsStoryMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_AcquireStartEgoGiftsStoryMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/UpgradeEgoGiftStoryMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_UpgradeEgoGiftStoryMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_UpgradeEgoGiftStoryMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/CombineEgoGiftStoryMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_CombineEgoGiftStoryMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_CombineEgoGiftStoryMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/RefreshStartEgoGiftsStoryMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_RefreshStartEgoGiftsStoryMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_RefreshStartEgoGiftsStoryMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/RefreshShopEgoGiftsStoryMirrorDungeon": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_RefreshShopEgoGiftsStoryMirrorDungeon"];
-            responses: {
-                200: components["responses"]["response_api_RefreshShopEgoGiftsStoryMirrorDungeon"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    "/api/RemoveStoryMirrorDungeonEgoGift": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: {
-            parameters: {
-                query?: never;
-                header?: never;
-                path?: never;
-                cookie?: never;
-            };
-            requestBody?: components["requestBodies"]["request_api_RemoveStoryMirrorDungeonEgoGift"];
-            responses: {
-                200: components["responses"]["response_api_RemoveStoryMirrorDungeonEgoGift"];
-            };
-        };
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
 }
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        ServerInfo: {
-            /** @enum {string} */
-            version?: "product";
-        };
-        Synchronized: {
-            version?: number;
-            noticeList?: unknown[];
-            mailContentList?: unknown[];
-        };
-        Element: {
-            type?: string;
-            id?: number;
-            num?: number;
-            tags?: string[];
-        };
-        Egos: {
-            id?: number;
-            g?: number;
-            idx?: number;
-        };
-        Personalities: {
-            pid?: number;
-            g?: number;
-            l?: number;
-            es?: components["schemas"]["Egos"][];
-            sp?: number;
-            gi?: number;
-        };
-        Extrarewardstate: {
-            id?: number;
-            isRewarded?: boolean;
-        };
-        Buffs: {
-            id?: number;
-            count?: number;
-            targetids?: number[];
-        };
-        Buffsets: {
-            setid?: number;
-            buffs?: components["schemas"]["Buffs"][];
-            recentbuffid?: number;
-            currentbuffids?: number[];
-        };
-        RailwaySaveInfo: {
-            id?: number;
-            prevclearnode?: number;
-            currentnode?: number;
-            lastclearnode?: number;
-            personalities?: components["schemas"]["Personalities"][];
-            payreward?: number;
-            rewardstate?: number;
-            extrarewardstate?: components["schemas"]["Extrarewardstate"][];
-            /**
-             * Format: date-time
-             * @example 2024-02-01T03:20:50.000Z
-             */
-            firstcleardate?: string;
-            currentclearrotation?: number;
-            lastenternodeid?: number;
-            lastclearrotation?: number;
-            buffsets?: components["schemas"]["Buffsets"][];
-            initseed?: number;
-            currentseed?: number;
-        };
-        BattlePassParameters: {
-            enemyKillCount?: number;
-            abnormalityKillCount?: number;
-            isUsedDailyChar?: boolean;
-            isUsedSeasonEgo?: boolean;
-            isUsedSeasonAnnouncer?: boolean;
-        };
-        Personalityinfos: {
-            personalityid?: number;
-            prevlevel?: number;
-            totaladdexp?: number;
-        };
-        ExpDungeonClearInfo: {
-            dungeonid?: number;
-            clearnumber?: number;
-        };
-        Ps: {
-            id?: number;
-            atrr?: number[];
-            atkr?: number[];
-        };
         AbnormalityLogs: {
             id?: number;
             k?: number;
-            s?: number[];
             p?: number[];
             ps?: components["schemas"]["Ps"][];
-        };
-        ThreadDungeonClearInfo: {
-            dungeonid?: number;
-            clearnumber?: number;
-            dungeonlevel?: number;
-        };
-        DailyLoginRewardStates: {
-            weekid?: number;
-            id?: number;
-        };
-        MissionConditionContexts: {
-            type?: number;
-            target1?: number;
-            target2?: number;
-            target3?: number;
-            value?: number;
-        };
-        Dungeonunitlist: {
-            sp?: number;
-            gi?: number;
-            pid?: number;
-            ch?: number;
-            cm?: number;
-            mhos?: number;
-            g?: number;
-            l?: number;
-            es?: components["schemas"]["Egos"][];
-            isp?: number;
-        };
-        Currentnode: {
-            f?: number;
-            s?: number;
-            nid?: number;
-        };
-        AcquiredEgogifts: {
-            id?: number;
-            pids?: number[];
-            un?: number;
-            ul?: number;
-        };
-        ChoiceEventData: {
-            sl?: number[];
-            cs?: number;
-            ri?: number;
-        };
-        EgoSkillStock: {
-            t?: string;
-            n?: number;
-        };
-        Currentinfo: {
-            dul?: components["schemas"]["Dungeonunitlist"][];
-            scpn?: components["schemas"]["Currentnode"];
-            scpegl?: components["schemas"]["AcquiredEgogifts"][];
-            opn?: number[];
-            cn?: components["schemas"]["Currentnode"];
-            egs?: components["schemas"]["AcquiredEgogifts"][];
-            pnids?: number[];
-            nr?: number;
-            pce?: components["schemas"]["ChoiceEventData"][];
-            ess?: components["schemas"]["EgoSkillStock"][];
-            dn?: number;
-        };
-        StorySaveInfo: {
-            dungeonid?: number;
-            currentinfo?: components["schemas"]["Currentinfo"];
-        };
-        Dungeonunitlist1: {
-            upidx?: number[];
-            mlos?: number;
-            pid?: number;
-            ch?: number;
-            cm?: number;
-            mhos?: number;
-            g?: number;
-            l?: number;
-            es?: components["schemas"]["Egos"][];
-            isp?: number;
-        };
-        StartEgoGiftPoolSets: {
-            setId?: number;
-            keyword?: string;
-            pool?: number[];
-        };
-        Tfs: {
-            f?: number;
-            tid?: number;
-            idx?: number;
-            tfid?: number;
-            egs?: number[];
-        };
-        Tfps: {
-            idx?: number;
-            tfid?: number;
-            egs?: number[];
-            upegs?: number[];
-        };
-        RemainRewardEvent: {
-            rt?: string;
-            se?: number;
-            sh?: number;
-            pool?: number[];
-            pool_v2?: number[];
-            pool_v3?: number[];
-        };
-        Pcs: {
-            pid?: number;
-            so?: number;
-        };
-        ShopInfo: {
-            ph?: number;
-            pup?: number;
-            upid?: number;
-            peg?: number[];
-            pcf?: number;
-            egpool?: number[];
-            rc?: number;
-            fre?: number;
-            fkre?: number;
-            aesp?: number;
-            pcs?: components["schemas"]["Pcs"][];
-        };
-        PrevUnitInfo: {
-            pid?: number;
-            upidx?: number[];
-        };
-        Cfs: {
-            floor?: number;
-            difficulty?: number;
-        };
-        Efs: {
-            rpf?: number;
-        };
-        CurrentInfo: {
-            eid?: number;
-            dul?: components["schemas"]["Dungeonunitlist1"][];
-            sepsId?: number;
-            seps?: components["schemas"]["StartEgoGiftPoolSets"][];
-            sepsCreated?: number;
-            tfs?: components["schemas"]["Tfs"][];
-            tfps?: components["schemas"]["Tfps"][];
-            tfpsCreated?: number;
-            rre?: components["schemas"]["RemainRewardEvent"][];
-            ri?: number;
-            cost?: number;
-            usedcost?: number;
-            shop?: components["schemas"]["ShopInfo"];
-            prevdul?: components["schemas"]["PrevUnitInfo"][];
-            preves?: number[];
-            leveladders?: number[];
-            startKeyword?: string;
-            startBufPoint?: number;
-            cfs?: components["schemas"]["Cfs"][];
-            efs?: components["schemas"]["Efs"];
-            cn?: components["schemas"]["Currentnode"];
-            egs?: components["schemas"]["AcquiredEgogifts"][];
-            pnids?: number[];
-            nr?: number;
-            pce?: components["schemas"]["ChoiceEventData"][];
-            ess?: components["schemas"]["EgoSkillStock"][];
-            dn?: number;
-        };
-        Ns: {
-            f?: number;
-            s?: number;
-            nid?: number;
-            e?: number;
-            eid?: number;
-            nnids?: number[];
-        };
-        DungeonMap: {
-            ns?: components["schemas"]["Ns"][];
-        };
-        Statistics: {
-            id?: number;
-            gd?: number;
-            rd?: number;
-        };
-        MirrorOriginSaveInfo: {
-            dungeonId?: number;
-            idx?: number;
-            currentInfo?: components["schemas"]["CurrentInfo"];
-            dungeonMap?: components["schemas"]["DungeonMap"];
-            choiceEventList?: number[];
-            addUserExp?: number;
-            statistics?: components["schemas"]["Statistics"][];
-            encounterstatistics?: number[];
-            isEndDungeon?: number;
-            isReset?: number;
-            version?: number;
-        };
-        Dungeonunitlist2: {
-            sp?: number;
-            upidx?: number[];
-            mlos?: number;
-            pid?: number;
-            ch?: number;
-            cm?: number;
-            mhos?: number;
-            g?: number;
-            l?: number;
-            es?: components["schemas"]["Egos"][];
-            isp?: number;
-        };
-        UserStoryMirrorDungeonShopDataFormat: {
-            ph?: number;
-            pup?: number;
-            upid?: number;
-            peg?: number[];
-            pcf?: number;
-            egpool?: number[];
-            rc?: number;
-            fre?: number;
-        };
-        Currentinfo1: {
-            cn?: components["schemas"]["Currentnode"];
-            egs?: components["schemas"]["AcquiredEgogifts"][];
-            pnids?: number[];
-            nr?: number;
-            pce?: components["schemas"]["ChoiceEventData"][];
-            ess?: components["schemas"]["EgoSkillStock"][];
-            eid?: number;
-            dul?: components["schemas"]["Dungeonunitlist2"][];
-            rre?: components["schemas"]["RemainRewardEvent"][];
-            shop?: components["schemas"]["UserStoryMirrorDungeonShopDataFormat"];
-            cost?: number;
-            prevdul?: components["schemas"]["PrevUnitInfo"][];
-            preves?: number[];
-            seps?: components["schemas"]["StartEgoGiftPoolSets"][];
-            sepsCreated?: number;
-        };
-        StoryMirrorSaveInfo: {
-            dungeonid?: number;
-            currentinfo?: components["schemas"]["Currentinfo1"];
-            map?: components["schemas"]["DungeonMap"];
-            choiceeventlist?: number[];
-            statistics?: components["schemas"]["Statistics"][];
-        };
-        MirrorDungeonClearInfos: {
-            dungeonid?: number;
-            idx?: number;
-            clearnumber?: number;
-            defeatnumber?: number;
-        };
-        RestStatuses: {
-            pid?: number;
-            cnt?: number;
-        };
-        PrevPlayRecord: {
-            pids?: number[];
-            epsId?: number;
-            prevtfids?: number[];
-        };
-        MirrorDungeonHistories: {
-            dungeonid?: number;
-            restStatuses?: components["schemas"]["RestStatuses"][];
-            prevPlayRecord?: components["schemas"]["PrevPlayRecord"];
-        };
-        EgoSkillStock1: {
-            t?: string;
-            n?: number;
-        };
-        Sin: {
-            sp?: number[];
-            cs?: number[];
-            rs?: number;
-        };
-        PrevStatusData: {
-            pid?: number;
-            hp?: number;
-            mp?: number;
-            isp?: number;
-            sin?: components["schemas"]["Sin"];
-            egos?: components["schemas"]["Egos"][];
-            sp?: number;
-            lv?: number;
-            g?: number;
-            gi?: number;
-        };
-        Statistics1: {
-            id?: number;
-            gd?: number;
-            rd?: number;
-        };
-        OriginBs: {
-            section?: number;
-            isActive?: boolean;
-        };
-        PartsData: {
-            partHp?: number;
-            bs?: components["schemas"]["OriginBs"][];
-            originBs?: components["schemas"]["OriginBs"][];
+            s?: number[];
         };
         AbnoSaveData: {
             abnormalityHp?: number;
             abnormalityMaxHp?: number;
             abnormalityMp?: number;
-            partsData?: components["schemas"]["PartsData"][];
-            lastPhase?: number;
             checkList?: boolean[];
+            lastPhase?: number;
+            partsData?: components["schemas"]["PartsData"][];
         };
-        PrevEnemyData: {
-            lastWave?: number;
-            lastTurn?: number;
-            abnoSaveDataList?: components["schemas"]["AbnoSaveData"][];
+        AccountInfo: {
+            apple_account?: string;
+            google_account?: string;
+            steam_account?: string;
+            uid?: number;
+            unlink_date?: string;
         };
-        UpdateNodeDatas: {
-            nodeid?: number;
-            egostocks?: components["schemas"]["EgoSkillStock1"][];
-            status?: components["schemas"]["PrevStatusData"][];
+        AcquiredEgogifts: {
+            id?: number;
+            pids?: number[];
+            ul?: number;
+            un?: number;
+        };
+        AcquiredFromLostGlobalPieces: {
+            item_id?: number;
+            num?: number;
+        };
+        Announcer: {
+            announcer_ids?: number[];
+            cur_announcer_ids?: number[];
+        };
+        Banners: {
+            id?: number;
+            idx?: number;
+            value?: number;
+            value2?: number;
+        };
+        BattlePass: {
+            ex_reward_level?: number;
+            ex_reward_limbus_level?: number;
+            exp?: number;
+            is_limbus?: boolean;
+            level?: number;
+            limbus_apply_level?: number;
+            missions_state?: components["schemas"]["BattlePassMissionState"][];
+            rewards_state?: number[];
+            special_product_state?: number;
+            today_rand_value?: number;
+        };
+        BattlePassMissionState: {
+            count?: number;
+            id?: number;
+            state?: number;
+        };
+        BattlePassParameters: {
+            abnormalityKillCount?: number;
+            enemyKillCount?: number;
+            isUsedDailyChar?: boolean;
+            isUsedSeasonAnnouncer?: boolean;
+            isUsedSeasonEgo?: boolean;
+        };
+        Buffs: {
+            count?: number;
+            id?: number;
+            targetids?: number[];
+        };
+        Buffsets: {
+            buffs?: components["schemas"]["Buffs"][];
+            currentbuffids?: number[];
+            recentbuffid?: number;
+            setid?: number;
+        };
+        Cfs: {
+            difficulty?: number;
+            floor?: number;
+        };
+        Chance: {
+            id?: number;
+            value?: number;
+        };
+        ChoiceEventData: {
+            cs?: number;
+            ri?: number;
+            sl?: number[];
+        };
+        Currentinfo: {
+            cn?: components["schemas"]["Currentnode"];
+            dn?: number;
+            dul?: components["schemas"]["Dungeonunitlist"][];
+            egs?: components["schemas"]["AcquiredEgogifts"][];
+            ess?: components["schemas"]["EgoSkillStock"][];
+            nr?: number;
+            opn?: number[];
+            pce?: components["schemas"]["ChoiceEventData"][];
+            pnids?: number[];
+            scpegl?: components["schemas"]["AcquiredEgogifts"][];
+            scpn?: components["schemas"]["Currentnode"];
+        };
+        CurrentInfo: {
+            cfs?: components["schemas"]["Cfs"][];
+            cn?: components["schemas"]["Currentnode"];
+            cost?: number;
+            dn?: number;
+            dul?: components["schemas"]["Dungeonunitlist1"][];
+            efs?: components["schemas"]["Efs"];
+            egs?: components["schemas"]["AcquiredEgogifts"][];
+            eid?: number;
+            ess?: components["schemas"]["EgoSkillStock"][];
+            leveladders?: number[];
+            nr?: number;
+            pce?: components["schemas"]["ChoiceEventData"][];
+            pnids?: number[];
+            prevdul?: components["schemas"]["PrevUnitInfo"][];
+            preves?: number[];
+            ri?: number;
+            rre?: components["schemas"]["RemainRewardEvent"][];
+            seps?: components["schemas"]["StartEgoGiftPoolSets"][];
+            sepsCreated?: number;
+            sepsId?: number;
+            shop?: components["schemas"]["ShopInfo"];
+            startBufPoint?: number;
+            startKeyword?: string;
+            tfps?: components["schemas"]["Tfps"][];
+            tfpsCreated?: number;
+            tfs?: components["schemas"]["Tfs"][];
+            usedcost?: number;
+        };
+        Currentinfo1: {
+            cn?: components["schemas"]["Currentnode"];
+            cost?: number;
+            dul?: components["schemas"]["Dungeonunitlist2"][];
+            egs?: components["schemas"]["AcquiredEgogifts"][];
+            eid?: number;
+            ess?: components["schemas"]["EgoSkillStock"][];
+            nr?: number;
+            pce?: components["schemas"]["ChoiceEventData"][];
+            pnids?: number[];
+            prevdul?: components["schemas"]["PrevUnitInfo"][];
+            preves?: number[];
+            rre?: components["schemas"]["RemainRewardEvent"][];
+            seps?: components["schemas"]["StartEgoGiftPoolSets"][];
+            sepsCreated?: number;
+            shop?: components["schemas"]["UserStoryMirrorDungeonShopDataFormat"];
+        };
+        CurrentLog: {
+            buffsets?: components["schemas"]["Buffsets"][];
+            clearrotation?: number;
             clearturn?: number;
-            playturn?: number;
+            date?: string;
+            deadunitnumber?: number;
+            detailstatistics?: components["schemas"]["Detailstatistics"][];
+            idx?: number;
+            personalities?: components["schemas"]["Personalities"][];
             statistics?: components["schemas"]["Statistics1"][];
-            enemy?: components["schemas"]["PrevEnemyData"];
-            nodestate?: number;
+            turnspernode?: components["schemas"]["Turnspernode"][];
+        };
+        Currentnode: {
+            f?: number;
+            nid?: number;
+            s?: number;
+        };
+        DailyLoginRewardStates: {
+            id?: number;
+            weekid?: number;
+        };
+        DanteAbility: {
+            abilityids?: number[];
+            category?: number;
+            remaincount?: number;
         };
         Detailstatistics: {
             collectionId?: number;
             personalities?: components["schemas"]["Personalities"][];
             statistics?: components["schemas"]["Statistics1"][];
         };
-        Turnspernode: {
-            nid?: number;
-            turn?: number;
+        DungeonMap: {
+            ns?: components["schemas"]["Ns"][];
         };
-        CurrentLog: {
-            idx?: number;
-            personalities?: components["schemas"]["Personalities"][];
-            statistics?: components["schemas"]["Statistics1"][];
-            detailstatistics?: components["schemas"]["Detailstatistics"][];
-            clearturn?: number;
-            turnspernode?: components["schemas"]["Turnspernode"][];
-            clearrotation?: number;
-            buffsets?: components["schemas"]["Buffsets"][];
-            date?: string;
-            deadunitnumber?: number;
-        };
-        GachaLogDetail: {
-            type?: string;
-            id?: number;
-            ex?: components["schemas"]["Element"];
-        };
-        AcquiredFromLostGlobalPieces: {
-            item_id?: number;
-            num?: number;
-        };
-        GachaLog: {
-            gachaId?: number;
-            gachaDate?: string;
-            paymentId?: number;
-            payments?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
-            gachaLogDetails?: components["schemas"]["GachaLogDetail"][];
-        };
-        PityExpirationUIPopup_PityPoint: {
-            gachaID?: number;
-            pityNumber?: number;
-        };
-        ResultPersonality: {
-            personality_id?: number;
-            level?: number;
-            exp?: number;
-            gacksung?: number;
-            order_id?: number;
-            gacksung_illust_type?: number;
-            acquire_time?: string;
-        };
-        Egos1: {
-            idx?: number;
-            id?: number;
+        Dungeonunitlist: {
+            ch?: number;
+            cm?: number;
+            es?: components["schemas"]["Egos"][];
             g?: number;
-        };
-        Support_personalities: {
-            idx?: number;
-            pid?: number;
-            l?: number;
-            egos?: components["schemas"]["Egos1"][];
-            gl?: number;
             gi?: number;
+            isp?: number;
+            l?: number;
+            mhos?: number;
+            pid?: number;
+            sp?: number;
         };
-        Banners: {
-            id?: number;
-            value?: number;
-            value2?: number;
-            idx?: number;
+        Dungeonunitlist1: {
+            ch?: number;
+            cm?: number;
+            es?: components["schemas"]["Egos"][];
+            g?: number;
+            isp?: number;
+            l?: number;
+            mhos?: number;
+            mlos?: number;
+            pid?: number;
+            upidx?: number[];
         };
-        Profile: {
-            support_personalities?: components["schemas"]["Support_personalities"][];
-            public_uid?: string;
-            illust_id?: number;
-            illust_gacksung_level?: number;
-            leftborder_id?: number;
-            rightborder_id?: number;
-            egobackground_id?: number;
-            sentence_id?: number;
-            word_id?: number;
-            banners?: components["schemas"]["Banners"][];
-            level?: number;
-            date?: string;
+        Dungeonunitlist2: {
+            ch?: number;
+            cm?: number;
+            es?: components["schemas"]["Egos"][];
+            g?: number;
+            isp?: number;
+            l?: number;
+            mhos?: number;
+            mlos?: number;
+            pid?: number;
+            sp?: number;
+            upidx?: number[];
         };
-        Userbanners: {
-            id?: number;
-            acquiretime?: string;
-            value?: number;
-            value2?: number;
+        Efs: {
+            rpf?: number;
         };
-        RightBorders: {
-            id?: number;
-            date?: string;
+        Ego: {
+            acquire_time?: string;
+            ego_id?: number;
+            gacksung?: number;
         };
         EgoBackgrounds: {
+            date?: string;
             id?: number;
-            date?: string;
         };
-        SeasonLog: {
-            seasonTo?: number;
-            seasonFrom?: number;
-            unreceivedBattlePassRewards?: components["schemas"]["Element"][];
-            lostPieces?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
-            acquiredFromLostPieces?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
-            lostPackages?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
-            acquiredFromLostPackages?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
-            lostGlobalPieces?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
-            acquiredFromLostGlobalPieces?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
-            date?: string;
+        Egos: {
+            g?: number;
+            id?: number;
+            idx?: number;
         };
-        UserAuth: {
-            uid?: number;
-            public_id?: number;
-            db_id?: number;
-            auth_code?: string;
-            last_login_date?: string;
-            last_update_date?: string;
-            data_version?: number;
-        };
-        AccountInfo: {
-            uid?: number;
-            google_account?: string;
-            apple_account?: string;
-            steam_account?: string;
-            unlink_date?: string;
-        };
-        LinkAuth: {
-            public_id?: number;
-            password?: string;
-            expiry_date?: string;
-            details?: string;
-        };
-        InitializedMail: {
-            mail_id?: number;
-            sent_date?: string;
-            expiry_date?: string;
-            content_id?: number;
-            attachments?: components["schemas"]["Element"][];
-            parameters?: string[];
-        };
-        MailLogs: {
-            maillog_id?: number;
-            sent_date?: string;
-            content_id?: number;
-            attachments?: components["schemas"]["Element"][];
-            unsealed_date?: string;
-            parameters?: string[];
-        };
-        RecentCharacter: {
-            pid?: number;
-            egos?: components["schemas"]["Egos"][];
+        Egos1: {
+            g?: number;
+            id?: number;
+            idx?: number;
         };
         Egos2: {
-            prevEgoId?: number;
             nextEgoId?: number;
+            prevEgoId?: number;
+        };
+        EgoSkillStock: {
+            n?: number;
+            t?: string;
+        };
+        EgoSkillStock1: {
+            n?: number;
+            t?: string;
+        };
+        Element: {
+            id?: number;
+            num?: number;
+            tags?: string[];
+            type?: string;
+        };
+        EventRewardState: {
+            count?: number;
+            eventID?: number;
+            rewardID?: number;
+        };
+        ExpDungeonClearInfo: {
+            clearnumber?: number;
+            dungeonid?: number;
+        };
+        Extrarewardstate: {
+            id?: number;
+            isRewarded?: boolean;
         };
         Formation: {
-            pervPersonalityId?: number;
-            nextPersonalityId?: number;
             egos?: components["schemas"]["Egos2"][];
+            nextPersonalityId?: number;
+            pervPersonalityId?: number;
         };
-        StartBuffInfo: {
-            dungeonid?: number;
-            bufstate?: number[];
-            enabled?: number[];
-        };
-        Reward: {
-            chanceConsumption?: number;
-            rewardList?: components["schemas"]["Element"][];
-            moduleConsumption?: number;
-        };
-        SelectedBuffs: {
-            setId?: number;
-            buffId?: number;
-            targetId?: number;
-        };
-        TermsOfUseState: {
-            version?: number;
-            state?: number;
-        };
-        TheaterInfo: {
-            rewardedIDList?: string[];
+        Formation1: {
+            formationDetails?: components["schemas"]["FormationDetails"][];
+            formationNameFormat?: components["schemas"]["FormationNameFormat"][];
+            id?: number;
         };
         FormationDetails: {
-            personalityId?: number;
             egos?: number[];
             isParticipated?: boolean;
             participationOrder?: number;
+            personalityId?: number;
         };
         FormationNameFormat: {
             k?: number;
             v?: number;
         };
-        Formation1: {
-            id?: number;
-            formationDetails?: components["schemas"]["FormationDetails"][];
-            formationNameFormat?: components["schemas"]["FormationNameFormat"][];
+        Gacha: {
+            gachaId?: number;
+            pityPoint?: number;
         };
-        Lobbycgdetails: {
+        GachaLog: {
+            gachaDate?: string;
+            gachaId?: number;
+            gachaLogDetails?: components["schemas"]["GachaLogDetail"][];
+            paymentId?: number;
+            payments?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
+        };
+        GachaLogDetail: {
+            ex?: components["schemas"]["Element"];
             id?: number;
-            g?: number;
+            type?: string;
+        };
+        InitializedMail: {
+            attachments?: components["schemas"]["Element"][];
+            content_id?: number;
+            expiry_date?: string;
+            mail_id?: number;
+            parameters?: string[];
+            sent_date?: string;
+        };
+        LinkAuth: {
+            details?: string;
+            expiry_date?: string;
+            password?: string;
+            public_id?: number;
         };
         LobbyCg: {
             characterId?: number;
-            lobbycgdetails?: components["schemas"]["Lobbycgdetails"][];
             isShowProfile?: boolean;
+            lobbycgdetails?: components["schemas"]["Lobbycgdetails"][];
         };
-        RecomendedFriends: {
-            public_uid?: string;
-            illust_id?: number;
-            illust_gacksung_level?: number;
-            leftborder_id?: number;
-            rightborder_id?: number;
-            egobackground_id?: number;
-            sentence_id?: number;
-            word_id?: number;
-            banners?: components["schemas"]["Banners"][];
-            level?: number;
-            date?: string;
-        };
-        Supportpersonalities: {
-            pid?: number;
-            l?: number;
-            egos?: components["schemas"]["Egos1"][];
-            gl?: number;
-            gi?: number;
-        };
-        UserInfo: {
-            uid?: number;
-            level?: number;
-            exp?: number;
-            stamina?: number;
-            last_stamina_recover?: string;
-        };
-        Ego: {
-            ego_id?: number;
-            gacksung?: number;
-            acquire_time?: string;
-        };
-        Chance: {
+        Lobbycgdetails: {
+            g?: number;
             id?: number;
-            value?: number;
         };
-        BattlePassMissionState: {
-            id?: number;
-            count?: number;
-            state?: number;
-        };
-        BattlePass: {
-            is_limbus?: boolean;
-            level?: number;
-            exp?: number;
-            today_rand_value?: number;
-            ex_reward_level?: number;
-            limbus_apply_level?: number;
-            rewards_state?: number[];
-            missions_state?: components["schemas"]["BattlePassMissionState"][];
-            special_product_state?: number;
-            ex_reward_limbus_level?: number;
-        };
-        Nss: {
-            id?: number;
-            ct?: number;
-            cn?: number;
-            dn?: number;
-        };
-        Subcss: {
-            id?: number;
-            nss?: components["schemas"]["Nss"][];
-            rss?: number[];
+        MailLogs: {
+            attachments?: components["schemas"]["Element"][];
+            content_id?: number;
+            maillog_id?: number;
+            parameters?: string[];
+            sent_date?: string;
+            unsealed_date?: string;
         };
         MainChapterState: {
             id?: number;
             subcss?: components["schemas"]["Subcss"][];
         };
-        Announcer: {
-            announcer_ids?: number[];
-            cur_announcer_ids?: number[];
-        };
         Membership: {
-            iap_id?: number;
             expiry_date?: string;
+            iap_id?: number;
         };
-        Gacha: {
-            gachaId?: number;
-            pityPoint?: number;
+        MirrorDungeonClearInfos: {
+            clearnumber?: number;
+            defeatnumber?: number;
+            dungeonid?: number;
+            idx?: number;
         };
-        UserUnlockCode: {
-            unlockcode?: number;
-            expireDate?: string;
+        MirrorDungeonHistories: {
+            dungeonid?: number;
+            prevPlayRecord?: components["schemas"]["PrevPlayRecord"];
+            restStatuses?: components["schemas"]["RestStatuses"][];
         };
-        EventRewardState: {
-            eventID?: number;
-            rewardID?: number;
-            count?: number;
+        MirrorOriginSaveInfo: {
+            addUserExp?: number;
+            choiceEventList?: number[];
+            currentInfo?: components["schemas"]["CurrentInfo"];
+            dungeonId?: number;
+            dungeonMap?: components["schemas"]["DungeonMap"];
+            encounterstatistics?: number[];
+            idx?: number;
+            isEndDungeon?: number;
+            isReset?: number;
+            statistics?: components["schemas"]["Statistics"][];
+            version?: number;
         };
         Mission: {
             category?: number;
-            id?: number;
-            state?: number;
-            initconditionvalue?: number;
             conditionvalue?: number;
             /**
              * Format: date-time
              * @example 2024-02-01T03:20:50.000Z
              */
             expiredate?: string;
+            id?: number;
+            initconditionvalue?: number;
+            state?: number;
         };
-        DanteAbility: {
-            category?: number;
-            abilityids?: number[];
-            remaincount?: number;
+        MissionConditionContexts: {
+            target1?: number;
+            target2?: number;
+            target3?: number;
+            type?: number;
+            value?: number;
         };
-        ResponseResultApiGetHellsChickenState: {
-            dollsNum?: number;
-            rewardState?: number[];
+        Ns: {
+            e?: number;
+            eid?: number;
+            f?: number;
+            nid?: number;
+            nnids?: number[];
+            s?: number;
+        };
+        Nss: {
+            cn?: number;
+            ct?: number;
+            dn?: number;
+            id?: number;
+        };
+        OriginBs: {
+            isActive?: boolean;
+            section?: number;
+        };
+        PartsData: {
+            bs?: components["schemas"]["OriginBs"][];
+            originBs?: components["schemas"]["OriginBs"][];
+            partHp?: number;
+        };
+        Pcs: {
+            pid?: number;
+            so?: number;
+        };
+        Personalities: {
+            es?: components["schemas"]["Egos"][];
+            g?: number;
+            gi?: number;
+            l?: number;
+            pid?: number;
+            sp?: number;
+        };
+        Personalityinfos: {
+            personalityid?: number;
+            prevlevel?: number;
+            totaladdexp?: number;
+        };
+        PityExpirationUIPopup_PityPoint: {
+            gachaID?: number;
+            pityNumber?: number;
+        };
+        PrevEnemyData: {
+            abnoSaveDataList?: components["schemas"]["AbnoSaveData"][];
+            lastTurn?: number;
+            lastWave?: number;
+        };
+        PrevPlayRecord: {
+            epsId?: number;
+            pids?: number[];
+            prevtfids?: number[];
+        };
+        PrevStatusData: {
+            egos?: components["schemas"]["Egos"][];
+            g?: number;
+            gi?: number;
+            hp?: number;
+            isp?: number;
+            lv?: number;
+            mp?: number;
+            pid?: number;
+            sin?: components["schemas"]["Sin"];
+            sp?: number;
+        };
+        PrevUnitInfo: {
+            pid?: number;
+            upidx?: number[];
+        };
+        Profile: {
+            banners?: components["schemas"]["Banners"][];
+            date?: string;
+            egobackground_id?: number;
+            illust_gacksung_level?: number;
+            illust_id?: number;
+            leftborder_id?: number;
+            level?: number;
+            public_uid?: string;
+            rightborder_id?: number;
+            sentence_id?: number;
+            support_personalities?: components["schemas"]["Support_personalities"][];
+            word_id?: number;
+        };
+        Ps: {
+            atkr?: number[];
+            atrr?: number[];
+            id?: number;
+        };
+        RailwaySaveInfo: {
+            buffsets?: components["schemas"]["Buffsets"][];
+            currentclearrotation?: number;
+            currentnode?: number;
+            currentseed?: number;
+            extrarewardstate?: components["schemas"]["Extrarewardstate"][];
+            /**
+             * Format: date-time
+             * @example 2024-02-01T03:20:50.000Z
+             */
+            firstcleardate?: string;
+            id?: number;
+            initseed?: number;
+            lastclearnode?: number;
+            lastclearrotation?: number;
+            lastenternodeid?: number;
+            payreward?: number;
+            personalities?: components["schemas"]["Personalities"][];
+            prevclearnode?: number;
+            rewardstate?: number;
+        };
+        RecentCharacter: {
+            egos?: components["schemas"]["Egos"][];
+            pid?: number;
+        };
+        RecomendedFriends: {
+            banners?: components["schemas"]["Banners"][];
+            date?: string;
+            egobackground_id?: number;
+            illust_gacksung_level?: number;
+            illust_id?: number;
+            leftborder_id?: number;
+            level?: number;
+            public_uid?: string;
+            rightborder_id?: number;
+            sentence_id?: number;
+            word_id?: number;
+        };
+        RemainRewardEvent: {
+            pool?: number[];
+            pool_v2?: number[];
+            pool_v3?: number[];
+            rt?: string;
+            se?: number;
+            sh?: number;
+        };
+        RequestParamApiAcceptReceivedFriendRequest: {
+            senderPublicUID?: string;
+        };
+        RequestParamApiAcquireAttendanceReward: {
+            id?: number;
+            partid?: number;
+        };
+        RequestParamApiAcquireDailyLoginReward: {
+            id?: number;
+            weekid?: number;
         };
         RequestParamApiAcquireHellsChickenReward: {
             rewardId?: number;
         };
-        ResponseResultApiAcquireHellsChickenReward: {
-            rewardState?: number[];
-            rewards?: components["schemas"]["Element"][];
+        RequestParamApiAcquireMirrorDungeonBattleReward: {
+            isOrigin?: number;
+            selectIndexList?: number[];
+        };
+        RequestParamApiAcquireMirrorDungeonExitReward: {
+            chanceConsumption?: number;
+            useEnkephalinModule?: boolean;
+        };
+        RequestParamApiAcquireMissionRewards: {
+            missionIds?: number[];
         };
         RequestParamApiAcquireRailwayDungeonReward: {
             dungeonId?: number;
         };
-        ResponseResultApiAcquireRailwayDungeonReward: {
-            saveInfo?: components["schemas"]["RailwaySaveInfo"];
-            rewardList?: components["schemas"]["Element"][];
+        RequestParamApiAcquireRewardEgoGiftsMirrorDungeon: {
+            isOrigin?: number;
+            selectIndexList?: number[];
         };
-        RequestParamApiChangeCurrentAnnouncer: {
-            announcerIds?: number[];
+        RequestParamApiAcquireRewardEgoGiftsStoryMirrorDungeon: {
+            selectIndexList?: number[];
         };
-        ResponseResultApiGetAttendanceState: {
-            rewardState?: number[];
-            consumption?: number;
+        RequestParamApiAcquireRewardEgoGiftsWithEnemyBufMirrorDungeon: {
+            isOrigin?: number;
+            selectIndexList?: number[];
         };
-        RequestParamApiAcquireAttendanceReward: {
-            partid?: number;
-            id?: number;
+        RequestParamApiAcquireStartEgoGiftsAndCreateThemePoolMirrorDungeon: {
+            isOrigin?: number;
+            selectedEgoGiftIds?: number[];
+            selectedSetId?: number;
         };
-        ResponseResultApiAcquireAttendanceReward: {
-            rewardState?: number[];
-            rewards?: components["schemas"]["Element"][];
+        RequestParamApiAcquireStartEgoGiftsStoryMirrorDungeon: {
+            selectedEgoGiftIds?: number[];
+            selectedSetId?: number;
         };
         RequestParamApiBattlePassMissionReward: {
-            missionType?: number;
             missionId?: number;
+            missionType?: number;
         };
         RequestParamApiBattlePassReward: {
             level?: number;
         };
-        ResponseResultApiBattlePassReward_ALL: {
-            resultElements?: components["schemas"]["Element"][];
+        RequestParamApiCancelSentFriendRequest: {
+            receivedPublicUID?: string;
         };
-        ResponseResultApiBattlePassExLevelReward: {
-            resultElements?: components["schemas"]["Element"][];
-        };
-        RequestParamApiPurchaseBattlePassLevel: {
-            level?: number;
-        };
-        RequestParamApiUseCoupon: {
-            code?: string;
-        };
-        ResponseResultApiUseCoupon: {
-            state?: number;
-            rewards?: components["schemas"]["Element"][];
-            backoffdate?: string;
-            backoffduration?: number;
-        };
-        ResponseResultApiGetUserCouponState: {
-            ispossiblestate?: boolean;
-            backoffdate?: string;
-            backoffduration?: number;
-        };
-        RequestParamApiEnterExpDungeon: {
-            dungeonid?: number;
-        };
-        ResponseResultApiEnterExpDungeon: {
-            isclear?: number;
-        };
-        RequestParamApiExitExpDungeon: {
-            formationId?: number;
-            isWin?: number;
-            supportCharacterId?: number;
-            supportParticipate?: boolean;
-            battlePassParameters?: components["schemas"]["BattlePassParameters"];
-            usedDanteAbilityCount?: number;
-        };
-        ResponseResultApiExitExpDungeon: {
-            userExp?: number;
-            personalityinfos?: components["schemas"]["Personalityinfos"][];
-            acquiredtickets?: components["schemas"]["Element"][];
-            rewards?: components["schemas"]["Element"][];
-            clearInfo?: components["schemas"]["ExpDungeonClearInfo"];
-        };
-        RequestParamApiSkipExpDungeon: {
-            dungeonid?: number;
-        };
-        ResponseResultApiSkipExpDungeon: {
-            userExp?: number;
-            rewards?: components["schemas"]["Element"][];
-        };
-        RequestParamApiEnterThreadDungeon: {
-            dungeonid?: number;
-            level?: number;
-            abnormalityids?: number[];
-        };
-        ResponseResultApiEnterThreadDungeon: {
-            isClear?: number;
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-        };
-        RequestParamApiExitThreadDungeon: {
-            isWin?: number;
-            battlePassParameters?: components["schemas"]["BattlePassParameters"];
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-            usedDanteAbilityCount?: number;
-        };
-        ResponseResultApiExitThreadDungeon: {
-            userExp?: number;
-            rewards?: components["schemas"]["Element"][];
-            clearInfo?: components["schemas"]["ThreadDungeonClearInfo"];
-        };
-        ResponseResultApiGetDailyDungeonInfo: {
-            expDungeonClearInfo?: components["schemas"]["ExpDungeonClearInfo"][];
-            threadDungeonClearInfo?: components["schemas"]["ThreadDungeonClearInfo"][];
-            date?: string;
-        };
-        RequestParamApiSkipThreadDungeon: {
-            dungeonid?: number;
-            dungeonlevel?: number;
-        };
-        ResponseResultApiSkipThreadDungeon: {
-            userExp?: number;
-            rewards?: components["schemas"]["Element"][];
-        };
-        ResponseResultApiGetDailyLoginState: {
-            weekid?: number;
-            id?: number;
-            rewardstates?: components["schemas"]["DailyLoginRewardStates"][];
-        };
-        RequestParamApiAcquireDailyLoginReward: {
-            weekid?: number;
-            id?: number;
-        };
-        ResponseResultApiAcquireDailyLoginReward: {
-            rewards?: components["schemas"]["Element"][];
-        };
-        ResponseResultApiGetDanteNoteState: {
-            page?: number;
-            todayPage?: number;
-        };
-        RequestParamApiGetStageProgressRateReward: {
-            mainchapterid?: number;
-            subchapterid?: number;
-            rewardType?: number;
-        };
-        ResponseResultApiGetStageProgressRateReward: {
-            rewardList?: components["schemas"]["Element"][];
-        };
-        RequestParamApiEnterStageBattle: {
-            mainchapterid?: number;
-            subchapterid?: number;
-            nodeid?: number;
-            stageid?: number;
-            abnormalityids?: number[];
-        };
-        ResponseResultApiEnterStageBattle: {
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-        };
-        RequestParamApiExitStageBattle: {
-            mainchapterid?: number;
-            subchapterid?: number;
-            nodeid?: number;
-            stageid?: number;
-            iswin?: boolean;
-            turn?: number;
-            formationid?: number;
-            battlePassParameters?: components["schemas"]["BattlePassParameters"];
-            supportCharacterId?: number;
-            supportPersonalityId?: number;
-            supportEgoIds?: number[];
-            supportParticipate?: boolean;
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-            missionConditionContexts?: components["schemas"]["MissionConditionContexts"][];
-            usedDanteAbilityCount?: number;
-        };
-        ResponseResultApiExitStageBattle: {
-            stageid?: number;
-            iswin?: boolean;
-            cleartype?: number;
-            addexptouser?: number;
-            personalityinfos?: components["schemas"]["Personalityinfos"][];
-            expticket?: components["schemas"]["Element"][];
-            rewarditem?: components["schemas"]["Element"][];
-            exrewarditem?: components["schemas"]["Element"][];
-            firstrewarditem?: components["schemas"]["Element"][];
-            givebackstaminabyDefeat?: components["schemas"]["Element"];
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-        };
-        RequestParamApiGetDungeonSaveInfoAll: {
-            railwayDungeonId?: number;
-        };
-        ResponseResultApiGetDungeonSaveInfoAll: {
-            storySaveInfo?: components["schemas"]["StorySaveInfo"];
-            mirrorOriginSaveInfo?: components["schemas"]["MirrorOriginSaveInfo"];
-            railwaySaveInfo?: components["schemas"]["RailwaySaveInfo"];
-            storyMirrorSaveInfo?: components["schemas"]["StoryMirrorSaveInfo"];
-            mirrorDungeonClearInfos?: components["schemas"]["MirrorDungeonClearInfos"][];
-            mirrorDungeonHistories?: components["schemas"]["MirrorDungeonHistories"][];
-        };
-        ResponseResultApiGetStoryDungeonSaveInfo: {
-            saveInfo?: components["schemas"]["StorySaveInfo"];
-        };
-        RequestParamApiEnterStoryDungeon: {
-            mainchapterid?: number;
-            subchapterid?: number;
-            nodeid?: number;
-            stageid?: number;
-            personalities?: components["schemas"]["Dungeonunitlist"][];
-        };
-        ResponseResultApiEnterStoryDungeon: {
-            saveInfo?: components["schemas"]["StorySaveInfo"];
-            nodesRecord?: number[];
-        };
-        RequestParamApiReEnterStoryDungeon: {
-            stageid?: number;
-        };
-        ResponseResultApiReEnterStoryDungeon: {
-            saveInfo?: components["schemas"]["StorySaveInfo"];
-            nodesRecord?: number[];
-            isAllDie?: number;
-        };
-        RequestParamApiExitStoryDungeon: {
-            mainchapterid?: number;
-            subchapterid?: number;
-            nodeid?: number;
-            stageid?: number;
-        };
-        ResponseResultApiExitStoryDungeon: {
-            saveInfo?: components["schemas"]["StorySaveInfo"];
-            iswin?: boolean;
-            cleartype?: number;
-            addexptouser?: number;
-            personalityinfos?: components["schemas"]["Personalityinfos"][];
-            expticket?: components["schemas"]["Element"][];
-            rewarditem?: components["schemas"]["Element"][];
-            exrewarditem?: components["schemas"]["Element"][];
-            firstrewarditem?: components["schemas"]["Element"][];
-            givebackstaminabyDefeat?: components["schemas"]["Element"];
-            statistics?: components["schemas"]["Statistics"][];
-            isGacksung?: boolean;
-        };
-        RequestParamApiEnterStoryDungeonMapNode: {
-            floornumber?: number;
-            sectornumber?: number;
-            nodeid?: number;
-            abnormalityids?: number[];
-            participatedPIds?: number[];
-        };
-        ResponseResultApiEnterStoryDungeonMapNode: {
-            node?: components["schemas"]["Currentnode"];
-            nr?: number;
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-        };
-        RequestParamApiUpdateStoryDungeonMapNode: {
-            choiceEventData?: components["schemas"]["ChoiceEventData"];
-            dungeonUnitList?: components["schemas"]["Dungeonunitlist"][];
-            updatedEgoGifts?: components["schemas"]["AcquiredEgogifts"][];
-        };
-        ResponseResultApiUpdateStoryDungeonMapNode: {
-            prevChoiceEvent?: components["schemas"]["ChoiceEventData"][];
-            currentEgoGifts?: components["schemas"]["AcquiredEgogifts"][];
-        };
-        RequestParamApiEnterStoryDungeonMapNodeBattleAfterChoice: {
-            dungeonUnitList?: components["schemas"]["Dungeonunitlist"][];
-            participatedPids?: number[];
-            abnormalityids?: number[];
-        };
-        ResponseResultApiEnterStoryDungeonMapNodeBattleAfterChoice: {
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-            isAllDie?: number;
-        };
-        RequestParamApiExitStoryDungeonMapNode: {
-            noderesult?: number;
-            choiceEventData?: components["schemas"]["ChoiceEventData"];
-            dungeonunitlist?: components["schemas"]["Dungeonunitlist"][];
-            battlePassParameters?: components["schemas"]["BattlePassParameters"];
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-            openedNode?: number;
-            isupdatedEgoSkillStock?: number;
-            egoSkillStockList?: components["schemas"]["EgoSkillStock"][];
-            updatedEgoGifts?: components["schemas"]["AcquiredEgogifts"][];
-            statistics?: components["schemas"]["Statistics"][];
-            usedDanteAbilityCount?: number;
-        };
-        ResponseResultApiExitStoryDungeonMapNode: {
-            saveInfo?: components["schemas"]["StorySaveInfo"];
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-            acquiredEgogifts?: components["schemas"]["AcquiredEgogifts"][];
-            isAllDie?: number;
-        };
-        RequestParamApiUpdateStoryDungeonUnits: {
-            dungeonunitlist?: components["schemas"]["Dungeonunitlist"][];
-        };
-        ResponseResultApiReturnSavePointStoryDungeonMap: {
-            currentInfo?: components["schemas"]["Currentinfo"];
-        };
-        RequestParamApiExitStory: {
-            mainchapterid?: number;
-            subchapterid?: number;
-            nodeid?: number;
-            stageid?: number;
-        };
-        ResponseResultApiExitStory: {
-            rewarditem?: components["schemas"]["Element"][];
-            exrewarditem?: components["schemas"]["Element"][];
-        };
-        RequestParamApiGetAbnormalityLogData: {
-            abnormalityIds?: number[];
-        };
-        ResponseResultApiGetAbnormalityLogData: {
-            logdatas?: components["schemas"]["AbnormalityLogs"][];
-        };
-        RequestParamApiUpdateAbnormalityLogData: {
-            battlePassParameters?: components["schemas"]["BattlePassParameters"];
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-        };
-        ResponseResultApiUpdateAbnormalityLogData: {
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-        };
-        RequestParamApiGetStoryDungeonNodeRecord: {
-            dungeonid?: number;
-        };
-        ResponseResultApiGetStoryDungeonNodeRecord: {
-            nodes?: number[];
-        };
-        RequestParamApiEnterRailwayDungeon: {
-            dungeonId?: number;
-            personalities?: components["schemas"]["Personalities"][];
-        };
-        ResponseResultApiEnterRailwayDungeon: {
-            saveInfo?: components["schemas"]["RailwaySaveInfo"];
-            startNodeData?: components["schemas"]["UpdateNodeDatas"];
-        };
-        RequestParamApiEnterRailwayDungeonNode: {
-            dungeonId?: number;
-            nodeid?: number;
-            abnormalityids?: number[];
-            participatedPIds?: number[];
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-        };
-        ResponseResultApiEnterRailwayDungeonNode: {
-            nodeid?: number;
-            deletedNodeIds?: number[];
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-            prevStatusData?: components["schemas"]["PrevStatusData"][];
-            prevEgoStockData?: components["schemas"]["EgoSkillStock1"][];
-            prevEnemyData?: components["schemas"]["PrevEnemyData"];
-            prevClearNodeId?: number;
-            currentNodeId?: number;
-        };
-        RequestParamApiGetRailwayDungeonNodeAndLogAll: {
-            dungeonId?: number;
-        };
-        ResponseResultApiGetRailwayDungeonNodeAndLogAll: {
-            nodeDatas?: components["schemas"]["UpdateNodeDatas"][];
-            logDatas?: components["schemas"]["CurrentLog"][];
+        RequestParamApiChangeCurrentAnnouncer: {
+            announcerIds?: number[];
         };
         RequestParamApiClaimEventReward: {
+            count?: number;
             eventId?: number;
             eventRewardId?: number;
-            count?: number;
-        };
-        ResponseResultApiClaimEventReward: {
-            acquiredElements?: components["schemas"]["Element"][];
         };
         RequestParamApiClaimEventReward_ALL: {
-            eventId?: number;
             count?: number;
+            eventId?: number;
         };
-        ResponseResultApiClaimEventReward_ALL: {
-            acquiredElements?: components["schemas"]["Element"][];
+        RequestParamApiCombineEgoGiftMirrorDungeon: {
+            isOrigin?: number;
+            keyword?: string;
+            materialEgoGiftIds?: number[];
         };
-        RequestParamApiExitRailwayDungeonNode: {
-            dungeonId?: number;
-            nodeid?: number;
-            unitStatusList?: components["schemas"]["PrevStatusData"][];
-            egoSkillStockList?: components["schemas"]["EgoSkillStock1"][];
-            battlePassParameters?: components["schemas"]["BattlePassParameters"];
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-            statistics?: components["schemas"]["Statistics1"][];
-            usedDanteAbilityCount?: number;
-            usedDanteAbilityId?: number;
-            clearTurn?: number;
-            iswin?: boolean;
-            enemy?: components["schemas"]["PrevEnemyData"];
+        RequestParamApiCombineEgoGiftStoryMirrorDungeon: {
+            keyword?: string;
+            materialEgoGiftIds?: number[];
         };
-        ResponseResultApiExitRailwayDungeonNode: {
-            saveInfo?: components["schemas"]["RailwaySaveInfo"];
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-            nodeData?: components["schemas"]["UpdateNodeDatas"];
-            updateNodeDatas?: components["schemas"]["UpdateNodeDatas"][];
+        RequestParamApiCompleteMinistory: {
+            storyId?: string;
         };
-        RequestParamApiExitRailwayDungeonRestNode: {
-            dungeonId?: number;
-            nodeid?: number;
-            personalities?: components["schemas"]["Personalities"][];
+        RequestParamApiCompleteTheaterStory: {
+            storyId?: string;
         };
-        ResponseResultApiExitRailwayDungeonRestNode: {
-            saveInfo?: components["schemas"]["RailwaySaveInfo"];
-            deletedNodeIds?: number[];
-            nodeData?: components["schemas"]["UpdateNodeDatas"];
-        };
-        RequestParamApiPlayGacha: {
-            gachaId?: number;
-            paymentId?: number;
-        };
-        ResponseResultApiPlayGacha: {
-            gachaLogDetails?: components["schemas"]["GachaLogDetail"][];
-        };
-        ResponseResultLogGetGachaLogAll: {
-            gachaLogs?: components["schemas"]["GachaLog"][];
-        };
-        RequestParamApiUseGachaPityPoint: {
-            gachaId?: number;
-            targetIdx?: number;
-        };
-        ResponseResultApiUseGachaPityPoint: {
-            gachaLogDetails?: components["schemas"]["GachaLogDetail"][];
-        };
-        ResponseResultApiClaimClosedGachaRewards: {
-            pityPointDataList?: components["schemas"]["PityExpirationUIPopup_PityPoint"][];
-        };
-        RequestParamApiExitRailwayDungeon: {
-            dungeonId?: number;
-            isClear?: boolean;
-        };
-        ResponseResultApiExitRailwayDungeon: {
-            isclear?: boolean;
-            saveInfo?: components["schemas"]["RailwaySaveInfo"];
-            currentLog?: components["schemas"]["CurrentLog"];
-            rewards?: components["schemas"]["Element"][];
-        };
-        RequestParamApiGiveUpRailwayDungeonNode: {
-            dungeonId?: number;
-            nodeid?: number;
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-        };
-        ResponseResultApiGiveUpRailwayDungeonNode: {
-            saveInfo?: components["schemas"]["RailwaySaveInfo"];
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-            nodeData?: components["schemas"]["UpdateNodeDatas"];
-        };
-        RequestParamApiGiveUpRailwayDungeonNodeInBattle: {
-            dungeonid?: number;
-            nodeid?: number;
-            battlePassParameters?: components["schemas"]["BattlePassParameters"];
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-        };
-        ResponseResultApiGiveUpRailwayDungeonNodeInBattle: {
-            nodeData?: components["schemas"]["UpdateNodeDatas"];
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-        };
-        RequestParamIapPurchase: {
-            productId?: string;
-            receipt?: string;
-            platform?: number;
-        };
-        RequestParamIapInitPurchase: {
-            productId?: string;
-        };
-        ResponseResultIapInitPurchase: {
-            resultState?: string;
-        };
-        RequestParamIapInitPurchaseAsSteam: {
-            productId?: string;
-            steamId?: string;
-            language?: string;
-            productDesc?: string;
-        };
-        RequestParamIapFinalizePurchaseAsSteam: {
-            orderId?: string;
-        };
-        ResponseResultIapUpdateSteamPendingPurchase: {
-            finalizedTransactionIds?: string[];
-        };
-        RequestParamIapGetSteamWalletCurrency: {
-            steamId?: string;
-        };
-        ResponseResultIapGetSteamWalletCurrency: {
-            walletCurrency?: string;
-        };
-        RequestParamIapPurchaseAsGoogle: {
-            productId?: string;
-            receipt?: string;
-        };
-        RequestParamIapPurchaseAsApple: {
-            productId?: string;
-            receipt?: string;
-        };
-        RequestParamIapPurchaseIngameProduct: {
-            igProductId?: number;
-        };
-        RequestParamApiUseItem: {
-            itemId?: number;
-            usage?: number;
-            targetIdx?: number;
-            target?: components["schemas"]["Element"];
-        };
-        ResponseResultApiUseItem: {
-            pickedUpElementList?: components["schemas"]["Element"][];
-            resultElementList?: components["schemas"]["Element"][];
-        };
-        RequestParamApiPurchaseEnkephalinModule: {
-            num?: number;
-        };
-        RequestParamApiPurchaseEnkephalin: {
-            num?: number;
-        };
-        RequestParamApiPersonalityGacksung: {
-            personalityId?: number;
-        };
-        RequestParamApiSetPersonalityGacksungIllust: {
-            personalityId?: number;
-            type?: number;
+        RequestParamApiDeleteFriend: {
+            deletedPublicUID?: string;
         };
         RequestParamApiEgoGacksung: {
             egoId?: number;
-        };
-        RequestParamApiUsePersonalityExpItem: {
-            targetPersonalityId?: number;
-            items?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
-        };
-        ResponseResultApiUsePersonalityExpItem: {
-            resultPersonality?: components["schemas"]["ResultPersonality"];
-        };
-        RequestParamApiUseEgoGacksungItem: {
-            targetEgoId?: number;
-            usingItem?: components["schemas"]["AcquiredFromLostGlobalPieces"];
-        };
-        RequestParamApiPersonalityGacksungWithItems: {
-            personalityId?: number;
-            usingPieces?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
         };
         RequestParamApiEgoGacksungWithItems: {
             egoId?: number;
             usingPieces?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
         };
-        ResponseResultApiLoadUserDataAll: {
-            secession_Date?: string;
-            profile?: components["schemas"]["Profile"];
-            isExistReceiveFriendRequest?: boolean;
-            danteNoteTodayPage?: number;
-            dailyLoginRewardStates?: components["schemas"]["DailyLoginRewardStates"][];
-            dailyLoginWeekId?: number;
-            dailyLoginId?: number;
-            showedWeekByMinistory?: number;
-            userbanners?: components["schemas"]["Userbanners"][];
-            leftBorders?: components["schemas"]["RightBorders"][];
-            rightBorders?: components["schemas"]["RightBorders"][];
-            egoBackgrounds?: components["schemas"]["EgoBackgrounds"][];
-            date?: string;
+        RequestParamApiEnableSpecialStartBuffMirrorDungeon: {
+            buffids?: number[];
+            dungeonid?: number;
         };
-        ResponseResultApiCheckSeasonLog: {
-            seasonLog?: components["schemas"]["SeasonLog"];
+        RequestParamApiEnableStartBuffMirrorDungeon: {
+            buffids?: number[];
+            dungeonid?: number;
         };
-        RequestParamLoginSignInAsGuest: {
-            guestId?: number;
-            authToken?: string;
-            version?: string;
-            deviceModel?: string;
-        };
-        ResponseResultLoginSignInAsGuest: {
-            userAuth?: components["schemas"]["UserAuth"];
-        };
-        RequestParamLoginSignInAsNewGuest: {
-            deviceModel?: string;
-        };
-        ResponseResultLoginSignInAsNewGuest: {
-            userAuth?: components["schemas"]["UserAuth"];
-            authToken?: string;
-        };
-        RequestParamLoginSignInAsGoogle: {
-            googleToken?: string;
-            version?: string;
-            deviceModel?: string;
-        };
-        ResponseResultLoginSignInAsGoogle: {
-            userAuth?: components["schemas"]["UserAuth"];
-            accountInfo?: components["schemas"]["AccountInfo"];
-        };
-        RequestParamLoginLinkWithGoogle: {
-            googleToken?: string;
-            version?: string;
-        };
-        ResponseResultLoginLinkWithGoogle: {
-            userAuth?: components["schemas"]["UserAuth"];
-            accountInfo?: components["schemas"]["AccountInfo"];
-        };
-        RequestParamLoginSignInAsApple: {
-            appleToken?: string;
-            version?: string;
-            deviceModel?: string;
-        };
-        ResponseResultLoginSignInAsApple: {
-            userAuth?: components["schemas"]["UserAuth"];
-            accountInfo?: components["schemas"]["AccountInfo"];
-        };
-        RequestParamLoginLinkWithApple: {
-            appleToken?: string;
-            version?: string;
-        };
-        ResponseResultLoginLinkWithApple: {
-            userAuth?: components["schemas"]["UserAuth"];
-            accountInfo?: components["schemas"]["AccountInfo"];
-        };
-        RequestParamLoginSignInAsSteam: {
-            steamToken?: string;
-            version?: string;
-            deviceModel?: string;
-        };
-        ResponseResultLoginSignInAsSteam: {
-            userAuth?: components["schemas"]["UserAuth"];
-            accountInfo?: components["schemas"]["AccountInfo"];
-            walletCurrency?: string;
-        };
-        RequestParamLoginRefreshLinkAuth: {
-            details?: string;
-        };
-        ResponseResultLoginRefreshLinkAuth: {
-            linkAuth?: components["schemas"]["LinkAuth"];
-            state?: string;
-        };
-        RequestParamLoginGetInfoOfLinkWith: {
-            targetPublicId?: string;
-            password?: string;
-        };
-        ResponseResultLoginGetInfoOfLinkWith: {
-            details?: string;
-            state?: string;
-        };
-        RequestParamLoginLinkWithAnother: {
-            targetPublicId?: string;
-            password?: string;
-            mainIsTarget?: boolean;
-        };
-        ResponseResultLoginLinkWithAnother: {
-            state?: string;
-        };
-        ResponseResultLoginTryToSecede: {
-            secessionDate?: string;
-        };
-        ResponseResultLoginCheckClientVersion: {
-            timeoffset?: number;
-        };
-        ResponseResultLoginGetBanDetails: {
-            startDate?: string;
-            endDate?: string;
-            reason?: string;
-        };
-        RequestParamLoginUnLinkWithAnother: {
-            accountInfo?: components["schemas"]["AccountInfo"];
-            isUnlinkGoogle?: boolean;
-            isUnlinkApple?: boolean;
-            isUnlinkSteam?: boolean;
-            accountType?: string;
-        };
-        ResponseResultLoginUnLinkWithAnother: {
-            accountInfo?: components["schemas"]["AccountInfo"];
-        };
-        ResponseResultApiRefreshMailbox: {
-            initializedMailList?: components["schemas"]["InitializedMail"][];
-        };
-        RequestParamApiUnsealMails: {
-            mailIds?: number[];
-        };
-        ResponseResultApiUnsealMails: {
-            attachedElements?: components["schemas"]["Element"][];
-        };
-        ResponseResultLogGetMailLogAll: {
-            mailLogs?: components["schemas"]["MailLogs"][];
-        };
-        RequestParamLogReportSpeedHack: {
-            detectedDate?: string;
-            scene?: string;
-        };
-        RequestParamLogReportModifiedHash: {
-            platform?: string;
-            hashvalue?: string;
-        };
-        RequestParamApiSaveMiniStoryWeek: {
-            weekId?: number;
-        };
-        RequestParamApiCompleteMinistory: {
-            storyId?: string;
+        RequestParamApiEnterExpDungeon: {
+            dungeonid?: number;
         };
         RequestParamApiEnterMirrorDungeon: {
             dungeonid?: number;
             idx?: number;
             isOrigin?: number;
         };
-        ResponseResultApiEnterMirrorDungeon: {
-            saveInfo?: components["schemas"]["MirrorOriginSaveInfo"];
-            recentCharacterList?: components["schemas"]["RecentCharacter"][];
+        RequestParamApiEnterMirrorDungeonMapNode: {
+            abnormalityids?: number[];
+            currentnode?: components["schemas"]["Currentnode"];
+            isOrigin?: number;
+            participatedPIds?: number[];
+        };
+        RequestParamApiEnterMirrordungeonMapNodeBattleAfterChoice: {
+            abnormalityids?: number[];
+            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
+            isOrigin?: number;
+            participatedPids?: number[];
+        };
+        RequestParamApiEnterRailwayDungeon: {
+            dungeonId?: number;
+            personalities?: components["schemas"]["Personalities"][];
+        };
+        RequestParamApiEnterRailwayDungeonNode: {
+            abnormalityids?: number[];
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+            dungeonId?: number;
+            nodeid?: number;
+            participatedPIds?: number[];
+        };
+        RequestParamApiEnterStageBattle: {
+            abnormalityids?: number[];
+            mainchapterid?: number;
+            nodeid?: number;
+            stageid?: number;
+            subchapterid?: number;
+        };
+        RequestParamApiEnterStoryDungeon: {
+            mainchapterid?: number;
+            nodeid?: number;
+            personalities?: components["schemas"]["Dungeonunitlist"][];
+            stageid?: number;
+            subchapterid?: number;
+        };
+        RequestParamApiEnterStoryDungeonMapNode: {
+            abnormalityids?: number[];
+            floornumber?: number;
+            nodeid?: number;
+            participatedPIds?: number[];
+            sectornumber?: number;
+        };
+        RequestParamApiEnterStoryDungeonMapNodeBattleAfterChoice: {
+            abnormalityids?: number[];
+            dungeonUnitList?: components["schemas"]["Dungeonunitlist"][];
+            participatedPids?: number[];
+        };
+        RequestParamApiEnterStoryMirrorDungeon: {
+            dungeonid?: number;
+            idx?: number;
+        };
+        RequestParamApiEnterStoryMirrorDungeonMapNode: {
+            abnormalityids?: number[];
+            currentnode?: components["schemas"]["Currentnode"];
+            participatedPIds?: number[];
+        };
+        RequestParamApiEnterStoryMirrorDungeonMapNodeBattleAfterChoice: {
+            abnormalityids?: number[];
+            dungeonUnitList?: components["schemas"]["Dungeonunitlist2"][];
+            participatedPids?: number[];
+        };
+        RequestParamApiEnterThreadDungeon: {
+            abnormalityids?: number[];
+            dungeonid?: number;
+            level?: number;
+        };
+        RequestParamApiExchangeTwine: {
+            paidPieces?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
+        };
+        RequestParamApiExitExpDungeon: {
+            battlePassParameters?: components["schemas"]["BattlePassParameters"];
+            formationId?: number;
+            isWin?: number;
+            supportCharacterId?: number;
+            supportParticipate?: boolean;
+            usedDanteAbilityCount?: number;
+        };
+        RequestParamApiExitMirrorDungeonMapNode: {
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+            battlePassParameters?: components["schemas"]["BattlePassParameters"];
+            battleStatus?: number;
+            choiceEventData?: components["schemas"]["ChoiceEventData"];
+            currentnode?: components["schemas"]["Currentnode"];
+            dungeonunitlist?: components["schemas"]["Dungeonunitlist1"][];
+            egoSkillStockList?: components["schemas"]["EgoSkillStock"][];
+            isOrigin?: number;
+            isupdatedEgoSkillStock?: number;
+            noderesult?: number;
+            statistics?: components["schemas"]["Statistics"][];
+            updatedEgoGifts?: components["schemas"]["AcquiredEgogifts"][];
+            usedDanteAbilityCount?: number;
+        };
+        RequestParamApiExitRailwayDungeon: {
+            dungeonId?: number;
+            isClear?: boolean;
+        };
+        RequestParamApiExitRailwayDungeonNode: {
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+            battlePassParameters?: components["schemas"]["BattlePassParameters"];
+            clearTurn?: number;
+            dungeonId?: number;
+            egoSkillStockList?: components["schemas"]["EgoSkillStock1"][];
+            enemy?: components["schemas"]["PrevEnemyData"];
+            iswin?: boolean;
+            nodeid?: number;
+            statistics?: components["schemas"]["Statistics1"][];
+            unitStatusList?: components["schemas"]["PrevStatusData"][];
+            usedDanteAbilityCount?: number;
+            usedDanteAbilityId?: number;
+        };
+        RequestParamApiExitRailwayDungeonRestNode: {
+            dungeonId?: number;
+            nodeid?: number;
+            personalities?: components["schemas"]["Personalities"][];
+        };
+        RequestParamApiExitStageBattle: {
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+            battlePassParameters?: components["schemas"]["BattlePassParameters"];
+            formationid?: number;
+            iswin?: boolean;
+            mainchapterid?: number;
+            missionConditionContexts?: components["schemas"]["MissionConditionContexts"][];
+            nodeid?: number;
+            stageid?: number;
+            subchapterid?: number;
+            supportCharacterId?: number;
+            supportEgoIds?: number[];
+            supportParticipate?: boolean;
+            supportPersonalityId?: number;
+            turn?: number;
+            usedDanteAbilityCount?: number;
+        };
+        RequestParamApiExitStory: {
+            mainchapterid?: number;
+            nodeid?: number;
+            stageid?: number;
+            subchapterid?: number;
+        };
+        RequestParamApiExitStoryDungeon: {
+            mainchapterid?: number;
+            nodeid?: number;
+            stageid?: number;
+            subchapterid?: number;
+        };
+        RequestParamApiExitStoryDungeonMapNode: {
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+            battlePassParameters?: components["schemas"]["BattlePassParameters"];
+            choiceEventData?: components["schemas"]["ChoiceEventData"];
+            dungeonunitlist?: components["schemas"]["Dungeonunitlist"][];
+            egoSkillStockList?: components["schemas"]["EgoSkillStock"][];
+            isupdatedEgoSkillStock?: number;
+            noderesult?: number;
+            openedNode?: number;
+            statistics?: components["schemas"]["Statistics"][];
+            updatedEgoGifts?: components["schemas"]["AcquiredEgogifts"][];
+            usedDanteAbilityCount?: number;
+        };
+        RequestParamApiExitStoryMirrorDungeonMapNode: {
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+            battlePassParameters?: components["schemas"]["BattlePassParameters"];
+            choiceEventData?: components["schemas"]["ChoiceEventData"];
+            currentnode?: components["schemas"]["Currentnode"];
+            dungeonunitlist?: components["schemas"]["Dungeonunitlist2"][];
+            egoSkillStockList?: components["schemas"]["EgoSkillStock"][];
+            isupdatedEgoSkillStock?: number;
+            noderesult?: number;
+            statistics?: components["schemas"]["Statistics"][];
+            updatedEgoGifts?: components["schemas"]["AcquiredEgogifts"][];
+            usedDanteAbilityCount?: number;
+        };
+        RequestParamApiExitThreadDungeon: {
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+            battlePassParameters?: components["schemas"]["BattlePassParameters"];
+            isWin?: number;
+            usedDanteAbilityCount?: number;
+        };
+        RequestParamApiFindFriend: {
+            publicUID?: string;
+        };
+        RequestParamApiGetAbnormalityLogData: {
+            abnormalityIds?: number[];
+        };
+        RequestParamApiGetDungeonSaveInfoAll: {
+            railwayDungeonId?: number;
+        };
+        RequestParamApiGetFriendSupportPersonalities: {
+            publicUID?: string;
+        };
+        RequestParamApiGetFriendSupportPersonalitiesByCharacterId: {
+            characterid?: number;
+        };
+        RequestParamApiGetRailwayDungeonNodeAndLogAll: {
+            dungeonId?: number;
+        };
+        RequestParamApiGetStageProgressRateReward: {
+            mainchapterid?: number;
+            rewardType?: number;
+            subchapterid?: number;
+        };
+        RequestParamApiGetStartBuffFInfoMirrorDungeon: {
+            dungeonid?: number;
+        };
+        RequestParamApiGetStoryDungeonNodeRecord: {
+            dungeonid?: number;
+        };
+        RequestParamApiGiveUpRailwayDungeonNode: {
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+            dungeonId?: number;
+            nodeid?: number;
+        };
+        RequestParamApiGiveUpRailwayDungeonNodeInBattle: {
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+            battlePassParameters?: components["schemas"]["BattlePassParameters"];
+            dungeonid?: number;
+            nodeid?: number;
+        };
+        RequestParamApiPersonalityGacksung: {
+            personalityId?: number;
+        };
+        RequestParamApiPersonalityGacksungWithItems: {
+            personalityId?: number;
+            usingPieces?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
+        };
+        RequestParamApiPlayGacha: {
+            gachaId?: number;
+            paymentId?: number;
+        };
+        RequestParamApiPlayVendingMachine: {
+            coupons?: number[];
+            isPaidByLunacy?: boolean;
+            targetId?: number;
+            targetType?: string;
+            vendingMachineId?: number;
+        };
+        RequestParamApiPurchaseBattlePassLevel: {
+            level?: number;
+        };
+        RequestParamApiPurchaseEgoGiftMirrorDungeon: {
+            idx?: number;
+        };
+        RequestParamApiPurchaseEgoGiftStoryMirrorDungeon: {
+            idx?: number;
+        };
+        RequestParamApiPurchaseEnkephalin: {
+            num?: number;
+        };
+        RequestParamApiPurchaseEnkephalinModule: {
+            num?: number;
+        };
+        RequestParamApiPurchaseFormationMirrorDungeon: {
+            formation?: components["schemas"]["Formation"][];
+        };
+        RequestParamApiPurchaseFormationStoryMirrorDungeon: {
+            formation?: components["schemas"]["Formation"][];
+        };
+        RequestParamApiPurchaseHealMirrorDungeon: {
+            idx?: number;
+            pid?: number;
+        };
+        RequestParamApiPurchaseHealStoryMirrorDungeon: {
+            idx?: number;
+            pid?: number;
+        };
+        RequestParamApiPurchaseStartBuffMirrorDungeon: {
+            buffids?: number[];
+            dungeonid?: number;
+        };
+        RequestParamApiPurchaseUpgradePersonalityMirrorDungeon: {
+            idx?: number;
+            pid?: number;
+        };
+        RequestParamApiPurchaseUpgradePersonalityStoryMirrorDungeon: {
+            idx?: number;
         };
         RequestParamApiReEnterMirrorDungeon: {
             dungeonid?: number;
             idx?: number;
             isOrigin?: number;
         };
-        ResponseResultApiReEnterMirrorDungeon: {
-            saveInfo?: components["schemas"]["MirrorOriginSaveInfo"];
+        RequestParamApiReEnterStoryDungeon: {
+            stageid?: number;
         };
-        RequestParamApiUpdateMirrorDungeon: {
-            characterInfos?: components["schemas"]["RecentCharacter"][];
-            formation?: components["schemas"]["Formation"][];
+        RequestParamApiReEnterStoryMirrorDungeon: {
+            dungeonid?: number;
+        };
+        RequestParamApiRefreshShopEgoGiftsMirrorDungeon: {
+            isOrigin?: number;
+            keyword?: string;
+        };
+        RequestParamApiRefreshShopEgoGiftsStoryMirrorDungeon: {
+            keyword?: string;
+        };
+        RequestParamApiRefreshStartEgoGiftsMirrorDungeon: {
             isOrigin?: number;
         };
-        ResponseResultApiUpdateMirrorDungeon: {
-            saveInfo?: components["schemas"]["MirrorOriginSaveInfo"];
+        RequestParamApiRefreshStartEgoGiftsStoryMirrorDungeon: Record<string, never>;
+        RequestParamApiRejectReceivedFriendRequest: {
+            senderPublicUID?: string;
+        };
+        RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon: Record<string, never>;
+        RequestParamApiRemoveMirrorDungeonEgoGift: {
+            egogiftId?: number;
+        };
+        RequestParamApiRemoveStoryMirrorDungeonEgoGift: {
+            egogiftId?: number;
+        };
+        RequestParamApiReportError: {
+            errorCode?: string;
+            message?: string;
+            requestJson?: string;
+            url?: string;
+        };
+        RequestParamApiSaveMiniStoryWeek: {
+            weekId?: number;
         };
         RequestParamApiSelectFormationMirrorDungeon: {
             characterInfos?: components["schemas"]["RecentCharacter"][];
             formation?: components["schemas"]["Formation"][];
             isOrigin?: number;
         };
-        ResponseResultApiSelectFormationMirrorDungeon: {
-            saveInfo?: components["schemas"]["MirrorOriginSaveInfo"];
-        };
-        ResponseResultApiRecreateThemeFloorPoolMirrorDungeon: {
-            saveInfo?: components["schemas"]["MirrorOriginSaveInfo"];
+        RequestParamApiSelectRailwayDungeonBuff: {
+            dungeonId?: number;
+            selectedBuffs?: components["schemas"]["SelectedBuffs"][];
         };
         RequestParamApiSelectThemeFloorMirrorDungeon: {
             selectedIdx?: number;
             selectedThemeFoorId?: number;
         };
-        ResponseResultApiSelectThemeFloorMirrorDungeon: {
-            saveInfo?: components["schemas"]["MirrorOriginSaveInfo"];
+        RequestParamApiSellEgoGiftMirrorDungeon: {
+            id?: number;
         };
-        ResponseResultApiExitMirrorDungeon: {
-            isEndDungeon?: number;
-            isclear?: number;
-            statistics?: components["schemas"]["Statistics"][];
+        RequestParamApiSellEgoGiftStoryMirrorDungeon: {
+            id?: number;
         };
-        RequestParamApiEnterMirrorDungeonMapNode: {
-            currentnode?: components["schemas"]["Currentnode"];
-            abnormalityids?: number[];
-            participatedPIds?: number[];
-            isOrigin?: number;
-        };
-        ResponseResultApiEnterMirrorDungeonMapNode: {
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-            passingNodeIds?: number[];
-            currentNode?: components["schemas"]["Currentnode"];
-            shopInfo?: components["schemas"]["ShopInfo"];
-            egogifts?: components["schemas"]["AcquiredEgogifts"][];
-            prevdul?: components["schemas"]["PrevUnitInfo"][];
-            preves?: number[];
-            nr?: number;
-        };
-        RequestParamApiUpdateMirrorDungeonMapNode: {
-            currentnode?: components["schemas"]["Currentnode"];
-            choiceEventData?: components["schemas"]["ChoiceEventData"];
-            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
-            updatedEgoGifts?: components["schemas"]["AcquiredEgogifts"][];
-            isOrigin?: number;
-        };
-        ResponseResultApiUpdateMirrorDungeonMapNode: {
-            prevChoiceEvent?: components["schemas"]["ChoiceEventData"][];
-            currentEgoGifts?: components["schemas"]["AcquiredEgogifts"][];
-            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
-        };
-        RequestParamApiEnterMirrordungeonMapNodeBattleAfterChoice: {
-            participatedPids?: number[];
-            abnormalityids?: number[];
-            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
-            isOrigin?: number;
-        };
-        ResponseResultApiEnterMirrordungeonMapNodeBattleAfterChoice: {
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-        };
-        RequestParamApiExitMirrorDungeonMapNode: {
-            currentnode?: components["schemas"]["Currentnode"];
-            dungeonunitlist?: components["schemas"]["Dungeonunitlist1"][];
-            noderesult?: number;
-            choiceEventData?: components["schemas"]["ChoiceEventData"];
-            battlePassParameters?: components["schemas"]["BattlePassParameters"];
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-            isupdatedEgoSkillStock?: number;
-            egoSkillStockList?: components["schemas"]["EgoSkillStock"][];
-            updatedEgoGifts?: components["schemas"]["AcquiredEgogifts"][];
-            statistics?: components["schemas"]["Statistics"][];
-            usedDanteAbilityCount?: number;
-            battleStatus?: number;
-            isOrigin?: number;
-        };
-        ResponseResultApiExitMirrorDungeonMapNode: {
-            currentInfo?: components["schemas"]["CurrentInfo"];
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-        };
-        RequestParamApiUpdateMirrorDungeonUnits: {
-            dungeonunitlist?: components["schemas"]["Dungeonunitlist1"][];
-            isOrigin?: number;
-        };
-        RequestParamApiAcquireRewardEgoGiftsMirrorDungeon: {
-            selectIndexList?: number[];
-            isOrigin?: number;
-        };
-        ResponseResultApiAcquireRewardEgoGiftsMirrorDungeon: {
-            egoGifts?: components["schemas"]["AcquiredEgogifts"][];
-            remainRewardEvent?: components["schemas"]["RemainRewardEvent"][];
-            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
-            saveinfo?: components["schemas"]["MirrorOriginSaveInfo"];
-        };
-        RequestParamApiAcquireRewardEgoGiftsWithEnemyBufMirrorDungeon: {
-            selectIndexList?: number[];
-            isOrigin?: number;
-        };
-        ResponseResultApiAcquireRewardEgoGiftsWithEnemyBufMirrorDungeon: {
-            egoGifts?: components["schemas"]["AcquiredEgogifts"][];
-            remainRewardEvent?: components["schemas"]["RemainRewardEvent"][];
-            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
-            levelAdders?: number[];
-            saveinfo?: components["schemas"]["MirrorOriginSaveInfo"];
-        };
-        ResponseResultApiRejectRewardEgoGiftsMirrorDungeon: {
-            remainRewardEvent?: components["schemas"]["RemainRewardEvent"][];
-            saveinfo?: components["schemas"]["MirrorOriginSaveInfo"];
-        };
-        ResponseResultApiRejectRewardEgoGiftWithEnemyBufsMirrorDungeon: {
-            egoGifts?: components["schemas"]["AcquiredEgogifts"][];
-            levelAdders?: number[];
-            remainRewardEvent?: components["schemas"]["RemainRewardEvent"][];
-            saveinfo?: components["schemas"]["MirrorOriginSaveInfo"];
-        };
-        RequestParamApiAcquireMirrorDungeonBattleReward: {
-            selectIndexList?: number[];
-            isOrigin?: number;
-        };
-        ResponseResultApiAcquireMirrorDungeonBattleReward: {
-            saveinfo?: components["schemas"]["MirrorOriginSaveInfo"];
-        };
-        ResponseResultApiGetMirrorDungeonEgoGiftRecord: {
-            acquiredegogifts?: number[];
-            themeFloorIds?: number[];
+        RequestParamApiSendFriendRequest: {
+            receiverPublicUID?: string;
         };
         RequestParamApiSendMirrorDungeonLogError: {
             type?: number;
         };
-        RequestParamApiPurchaseHealMirrorDungeon: {
-            idx?: number;
-            pid?: number;
+        RequestParamApiSetPersonalityGacksungIllust: {
+            personalityId?: number;
+            type?: number;
         };
-        ResponseResultApiPurchaseHealMirrorDungeon: {
-            cost?: number;
-            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
-            shopInfo?: components["schemas"]["ShopInfo"];
-            usedcost?: number;
-        };
-        RequestParamApiPurchaseFormationMirrorDungeon: {
-            formation?: components["schemas"]["Formation"][];
-        };
-        ResponseResultApiPurchaseFormationMirrorDungeon: {
-            cost?: number;
-            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
-            shopInfo?: components["schemas"]["ShopInfo"];
-            prevUnitInfo?: components["schemas"]["PrevUnitInfo"];
-            usedcost?: number;
-        };
-        RequestParamApiPurchaseUpgradePersonalityMirrorDungeon: {
-            pid?: number;
-            idx?: number;
-        };
-        ResponseResultApiPurchaseUpgradePersonalityMirrorDungeon: {
-            cost?: number;
-            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
-            shopInfo?: components["schemas"]["ShopInfo"];
-            usedcost?: number;
-        };
-        RequestParamApiPurchaseEgoGiftMirrorDungeon: {
-            idx?: number;
-        };
-        ResponseResultApiPurchaseEgoGiftMirrorDungeon: {
-            cost?: number;
-            egogifts?: components["schemas"]["AcquiredEgogifts"][];
-            shopInfo?: components["schemas"]["ShopInfo"];
-            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
-            usedcost?: number;
-        };
-        RequestParamApiSellEgoGiftMirrorDungeon: {
-            id?: number;
-        };
-        ResponseResultApiSellEgoGiftMirrorDungeon: {
-            cost?: number;
-            egogifts?: components["schemas"]["AcquiredEgogifts"][];
-            shopInfo?: components["schemas"]["ShopInfo"];
-            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
-        };
-        RequestParamApiRefreshShopEgoGiftsMirrorDungeon: {
-            keyword?: string;
-            isOrigin?: number;
-        };
-        ResponseResultApiRefreshShopEgoGiftsMirrorDungeon: {
-            cost?: number;
-            shopInfo?: components["schemas"]["ShopInfo"];
-            usedcost?: number;
-        };
-        RequestParamApiGetStartBuffFInfoMirrorDungeon: {
+        RequestParamApiSkipExpDungeon: {
             dungeonid?: number;
         };
-        ResponseResultApiGetStartBuffFInfoMirrorDungeon: {
-            startBuffInfo?: components["schemas"]["StartBuffInfo"];
-        };
-        RequestParamApiPurchaseStartBuffMirrorDungeon: {
+        RequestParamApiSkipThreadDungeon: {
             dungeonid?: number;
-            buffids?: number[];
+            dungeonlevel?: number;
         };
-        ResponseResultApiPurchaseStartBuffMirrorDungeon: {
-            startBuffInfo?: components["schemas"]["StartBuffInfo"];
+        RequestParamApiUnsealMails: {
+            mailIds?: number[];
         };
-        RequestParamApiEnableSpecialStartBuffMirrorDungeon: {
-            dungeonid?: number;
-            buffids?: number[];
-        };
-        ResponseResultApiEnableSpecialStartBuffMirrorDungeon: {
-            startBuffInfo?: components["schemas"]["StartBuffInfo"];
-        };
-        RequestParamApiEnableStartBuffMirrorDungeon: {
-            dungeonid?: number;
-            buffids?: number[];
-        };
-        ResponseResultApiEnableStartBuffMirrorDungeon: {
-            startBuffInfo?: components["schemas"]["StartBuffInfo"];
-            startBufPoint?: number;
-            cost?: number;
-        };
-        RequestParamApiRemoveMirrorDungeonEgoGift: {
-            egogiftId?: number;
-        };
-        ResponseResultApiRemoveMirrorDungeonEgoGift: {
-            egs?: components["schemas"]["AcquiredEgogifts"][];
-        };
-        RequestParamApiAcquireStartEgoGiftsAndCreateThemePoolMirrorDungeon: {
-            selectedSetId?: number;
-            selectedEgoGiftIds?: number[];
-            isOrigin?: number;
-        };
-        ResponseResultApiAcquireStartEgoGiftsAndCreateThemePoolMirrorDungeon: {
-            saveInfo?: components["schemas"]["MirrorOriginSaveInfo"];
-        };
-        RequestParamApiRefreshStartEgoGiftsMirrorDungeon: {
-            isOrigin?: number;
-        };
-        ResponseResultApiRefreshStartEgoGiftsMirrorDungeon: {
-            startEgoGiftPoolSets?: components["schemas"]["StartEgoGiftPoolSets"][];
-            startEgoGiftCreatedCount?: number;
-        };
-        RequestParamApiUpgradeEgoGiftMirrorDungeon: {
-            egoGiftId?: number;
-            isOrigin?: number;
-        };
-        ResponseResultApiUpgradeEgoGiftMirrorDungeon: {
-            cost?: number;
-            egoGift?: components["schemas"]["AcquiredEgogifts"];
-            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
-            usedcost?: number;
-        };
-        RequestParamApiCombineEgoGiftMirrorDungeon: {
-            materialEgoGiftIds?: number[];
-            keyword?: string;
-            isOrigin?: number;
-        };
-        ResponseResultApiCombineEgoGiftMirrorDungeon: {
-            resultEgoGift?: components["schemas"]["AcquiredEgogifts"];
-            resultEgoGifts?: components["schemas"]["AcquiredEgogifts"][];
-            isSuccess?: boolean;
-            egoGifts?: components["schemas"]["AcquiredEgogifts"][];
-            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
-        };
-        ResponseResultApiPreviewMirrorDungeonExitReward: {
-            rewardList?: components["schemas"]["Reward"][];
-        };
-        RequestParamApiAcquireMirrorDungeonExitReward: {
-            useEnkephalinModule?: boolean;
-            chanceConsumption?: number;
-        };
-        ResponseResultApiAcquireMirrorDungeonExitReward: {
-            rewardList?: components["schemas"]["Element"][];
-            saveInfo?: components["schemas"]["MirrorOriginSaveInfo"];
-            history?: components["schemas"]["MirrorDungeonHistories"];
-            startBuffInfo?: components["schemas"]["StartBuffInfo"];
-        };
-        RequestParamApiAcquireMissionRewards: {
-            missionIds?: number[];
-        };
-        ResponseResultApiAcquireMissionRewards: {
-            acquiredElements?: components["schemas"]["Element"][];
-        };
-        RequestParamApiReportError: {
-            errorCode?: string;
-            url?: string;
-            requestJson?: string;
-            message?: string;
-        };
-        RequestParamApiSelectRailwayDungeonBuff: {
-            dungeonId?: number;
-            selectedBuffs?: components["schemas"]["SelectedBuffs"][];
-        };
-        ResponseResultApiSelectRailwayDungeonBuff: {
-            saveInfo?: components["schemas"]["RailwaySaveInfo"];
-            nodeData?: components["schemas"]["UpdateNodeDatas"];
-        };
-        RequestParamLoginGetTermsOfUseStateAll: {
-            uid?: number;
-        };
-        ResponseResultLoginGetTermsOfUseStateAll: {
-            termsOfUseStateList?: components["schemas"]["TermsOfUseState"][];
-        };
-        RequestParamLoginUpdateTermsOfUseState: {
-            uid?: number;
-            termsVersion?: number;
-            state?: number;
-        };
-        ResponseResultApiGetTheaterInfo: {
-            theaterInfo?: components["schemas"]["TheaterInfo"];
-        };
-        RequestParamApiCompleteTheaterStory: {
-            storyId?: string;
-        };
-        ResponseResultApiCompleteTheaterStory: {
-            isRewarded?: boolean;
-            acquiredElements?: components["schemas"]["Element"][];
-            theaterInfo?: components["schemas"]["TheaterInfo"];
+        RequestParamApiUpdateAbnormalityLogData: {
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+            battlePassParameters?: components["schemas"]["BattlePassParameters"];
         };
         RequestParamApiUpdateFormation: {
             formation?: components["schemas"]["Formation1"];
@@ -6885,392 +6141,1064 @@ export interface components {
         RequestParamApiUpdateLobbyCg: {
             lobbyCg?: components["schemas"]["LobbyCg"];
         };
-        ResponseResultApiGetUserBanners: {
-            banners?: components["schemas"]["Userbanners"][];
+        RequestParamApiUpdateMirrorDungeon: {
+            characterInfos?: components["schemas"]["RecentCharacter"][];
+            formation?: components["schemas"]["Formation"][];
+            isOrigin?: number;
         };
-        ResponseResultApiGetFriendsData: {
-            friendprofileList?: components["schemas"]["RecomendedFriends"][];
-            sendprofileList?: components["schemas"]["RecomendedFriends"][];
-            receiveprofileList?: components["schemas"]["RecomendedFriends"][];
+        RequestParamApiUpdateMirrorDungeonMapNode: {
+            choiceEventData?: components["schemas"]["ChoiceEventData"];
+            currentnode?: components["schemas"]["Currentnode"];
+            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
+            isOrigin?: number;
+            updatedEgoGifts?: components["schemas"]["AcquiredEgogifts"][];
         };
-        RequestParamApiFindFriend: {
-            publicUID?: string;
-        };
-        ResponseResultApiFindFriend: {
-            success?: boolean;
-            friendprofile?: components["schemas"]["RecomendedFriends"];
-        };
-        ResponseResultApiGetRecommendFriends: {
-            recomendedFriends?: components["schemas"]["RecomendedFriends"][];
-        };
-        RequestParamApiSendFriendRequest: {
-            receiverPublicUID?: string;
-        };
-        ResponseResultApiSendFriendRequest: {
-            success?: number;
-            receiverprofile?: components["schemas"]["RecomendedFriends"];
-        };
-        RequestParamApiAcceptReceivedFriendRequest: {
-            senderPublicUID?: string;
-        };
-        ResponseResultApiAcceptReceivedFriendRequest: {
-            success?: number;
-        };
-        RequestParamApiRejectReceivedFriendRequest: {
-            senderPublicUID?: string;
-        };
-        RequestParamApiCancelSentFriendRequest: {
-            receivedPublicUID?: string;
-        };
-        RequestParamApiDeleteFriend: {
-            deletedPublicUID?: string;
-        };
-        RequestParamApiGetFriendSupportPersonalities: {
-            publicUID?: string;
-        };
-        ResponseResultApiGetFriendSupportPersonalities: {
-            supportpersonalities?: components["schemas"]["Support_personalities"][];
-        };
-        RequestParamApiGetFriendSupportPersonalitiesByCharacterId: {
-            characterid?: number;
-        };
-        ResponseResultApiGetFriendSupportPersonalitiesByCharacterId: {
-            supportpersonalities?: components["schemas"]["Supportpersonalities"][];
-        };
-        RequestParamApiUpdateUserProfile: {
-            illustId?: number;
-            illustGacksungLevel?: number;
-            sentenceId?: number;
-            wordId?: number;
-            banners?: components["schemas"]["Banners"][];
-            supportPersonalities?: components["schemas"]["Support_personalities"][];
-        };
-        ResponseResultApiGetProfileTicketDecoDatas: {
-            leftBorders?: components["schemas"]["RightBorders"][];
-            rightBorders?: components["schemas"]["RightBorders"][];
-            egoBackgrounds?: components["schemas"]["EgoBackgrounds"][];
+        RequestParamApiUpdateMirrorDungeonUnits: {
+            dungeonunitlist?: components["schemas"]["Dungeonunitlist1"][];
+            isOrigin?: number;
         };
         RequestParamApiUpdateProfileTicketDeco: {
+            egoBackgroundId?: number;
             leftBorderId?: number;
             rightBorderId?: number;
-            egoBackgroundId?: number;
         };
-        ResponseResultApiUpdateProfileTicketDeco: {
-            leftBorderId?: number;
-            rightBorderId?: number;
-            egoBackgroundId?: number;
+        RequestParamApiUpdateStoryDungeonMapNode: {
+            choiceEventData?: components["schemas"]["ChoiceEventData"];
+            dungeonUnitList?: components["schemas"]["Dungeonunitlist"][];
+            updatedEgoGifts?: components["schemas"]["AcquiredEgogifts"][];
         };
-        RequestParamApiPlayVendingMachine: {
-            vendingMachineId?: number;
-            targetType?: string;
-            targetId?: number;
-            coupons?: number[];
-            isPaidByLunacy?: boolean;
-        };
-        ResponseResultApiPlayVendingMachine: {
-            itemConsumptions?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
-        };
-        RequestParamApiExchangeTwine: {
-            paidPieces?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
-        };
-        RequestParamApiEnterStoryMirrorDungeon: {
-            dungeonid?: number;
-            idx?: number;
-        };
-        ResponseResultApiEnterStoryMirrorDungeon: {
-            saveInfo?: components["schemas"]["StoryMirrorSaveInfo"];
-        };
-        RequestParamApiReEnterStoryMirrorDungeon: {
-            dungeonid?: number;
-        };
-        ResponseResultApiReEnterStoryMirrorDungeon: {
-            saveInfo?: components["schemas"]["StoryMirrorSaveInfo"];
+        RequestParamApiUpdateStoryDungeonUnits: {
+            dungeonunitlist?: components["schemas"]["Dungeonunitlist"][];
         };
         RequestParamApiUpdateStoryMirrorDungeon: {
             formation?: components["schemas"]["Formation"][];
         };
-        ResponseResultApiUpdateStoryMirrorDungeon: {
-            saveInfo?: components["schemas"]["StoryMirrorSaveInfo"];
-        };
-        ResponseResultApiExitStoryMirrorDungeon: {
-            saveInfo?: components["schemas"]["StoryMirrorSaveInfo"];
-            isclear?: number;
-            statistics?: components["schemas"]["Statistics"][];
-            cleartype?: number;
-            adduserexp?: number;
-            personalityinfos?: components["schemas"]["Personalityinfos"][];
-            normalrewards?: components["schemas"]["Element"][];
-            exrewards?: components["schemas"]["Element"][];
-            firstrewarditem?: components["schemas"]["Element"][];
-            expticket?: components["schemas"]["Element"][];
-            givebackstaminabyDefeat?: components["schemas"]["Element"];
-        };
-        RequestParamApiEnterStoryMirrorDungeonMapNode: {
-            currentnode?: components["schemas"]["Currentnode"];
-            abnormalityids?: number[];
-            participatedPIds?: number[];
-        };
-        ResponseResultApiEnterStoryMirrorDungeonMapNode: {
-            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-            passingNodeIds?: number[];
-            currentNode?: components["schemas"]["Currentnode"];
-            shopInfo?: components["schemas"]["UserStoryMirrorDungeonShopDataFormat"];
-            egogifts?: components["schemas"]["AcquiredEgogifts"][];
-            prevdul?: components["schemas"]["PrevUnitInfo"][];
-            preves?: number[];
-        };
         RequestParamApiUpdateStoryMirrorDungeonMapNode: {
-            currentnode?: components["schemas"]["Currentnode"];
             choiceEventData?: components["schemas"]["ChoiceEventData"];
+            currentnode?: components["schemas"]["Currentnode"];
             dungeonUnitList?: components["schemas"]["Dungeonunitlist2"][];
             updatedEgoGifts?: components["schemas"]["AcquiredEgogifts"][];
         };
-        ResponseResultApiUpdateStoryMirrorDungeonMapNode: {
-            prevChoiceEvent?: components["schemas"]["ChoiceEventData"][];
-            currentEgoGifts?: components["schemas"]["AcquiredEgogifts"][];
-            dungeonUnitList?: components["schemas"]["Dungeonunitlist2"][];
+        RequestParamApiUpdateStoryMirrorDungeonUnits: {
+            dungeonunitlist?: components["schemas"]["Dungeonunitlist2"][];
         };
-        RequestParamApiEnterStoryMirrorDungeonMapNodeBattleAfterChoice: {
-            participatedPids?: number[];
-            abnormalityids?: number[];
+        RequestParamApiUpdateUserProfile: {
+            banners?: components["schemas"]["Banners"][];
+            illustGacksungLevel?: number;
+            illustId?: number;
+            sentenceId?: number;
+            supportPersonalities?: components["schemas"]["Support_personalities"][];
+            wordId?: number;
+        };
+        RequestParamApiUpgradeEgoGiftMirrorDungeon: {
+            egoGiftId?: number;
+            isOrigin?: number;
+        };
+        RequestParamApiUpgradeEgoGiftStoryMirrorDungeon: {
+            egoGiftId?: number;
+        };
+        RequestParamApiUseCoupon: {
+            code?: string;
+        };
+        RequestParamApiUseEgoGacksungItem: {
+            targetEgoId?: number;
+            usingItem?: components["schemas"]["AcquiredFromLostGlobalPieces"];
+        };
+        RequestParamApiUseGachaPityPoint: {
+            gachaId?: number;
+            targetIdx?: number;
+        };
+        RequestParamApiUseItem: {
+            itemId?: number;
+            target?: components["schemas"]["Element"];
+            targetIdx?: number;
+            usage?: number;
+        };
+        RequestParamApiUsePersonalityExpItem: {
+            items?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
+            targetPersonalityId?: number;
+        };
+        RequestParamIapFinalizePurchaseAsSteam: {
+            orderId?: string;
+        };
+        RequestParamIapGetSteamWalletCurrency: {
+            steamId?: string;
+        };
+        RequestParamIapInitPurchase: {
+            productId?: string;
+        };
+        RequestParamIapInitPurchaseAsSteam: {
+            language?: string;
+            productDesc?: string;
+            productId?: string;
+            steamId?: string;
+        };
+        RequestParamIapPurchase: {
+            platform?: number;
+            productId?: string;
+            receipt?: string;
+        };
+        RequestParamIapPurchaseAsApple: {
+            productId?: string;
+            receipt?: string;
+        };
+        RequestParamIapPurchaseAsGoogle: {
+            productId?: string;
+            receipt?: string;
+        };
+        RequestParamIapPurchaseIngameProduct: {
+            igProductId?: number;
+        };
+        RequestParamLoginGetInfoOfLinkWith: {
+            password?: string;
+            targetPublicId?: string;
+        };
+        RequestParamLoginGetTermsOfUseStateAll: {
+            uid?: number;
+        };
+        RequestParamLoginLinkWithAnother: {
+            mainIsTarget?: boolean;
+            password?: string;
+            targetPublicId?: string;
+        };
+        RequestParamLoginLinkWithApple: {
+            appleToken?: string;
+            version?: string;
+        };
+        RequestParamLoginLinkWithGoogle: {
+            googleToken?: string;
+            version?: string;
+        };
+        RequestParamLoginRefreshLinkAuth: {
+            details?: string;
+        };
+        RequestParamLoginSignInAsApple: {
+            appleToken?: string;
+            deviceModel?: string;
+            version?: string;
+        };
+        RequestParamLoginSignInAsGoogle: {
+            deviceModel?: string;
+            googleToken?: string;
+            version?: string;
+        };
+        RequestParamLoginSignInAsGuest: {
+            authToken?: string;
+            deviceModel?: string;
+            guestId?: number;
+            version?: string;
+        };
+        RequestParamLoginSignInAsNewGuest: {
+            deviceModel?: string;
+        };
+        RequestParamLoginSignInAsSteam: {
+            deviceModel?: string;
+            steamToken?: string;
+            version?: string;
+        };
+        RequestParamLoginUnLinkWithAnother: {
+            accountInfo?: components["schemas"]["AccountInfo"];
+            accountType?: string;
+            isUnlinkApple?: boolean;
+            isUnlinkGoogle?: boolean;
+            isUnlinkSteam?: boolean;
+        };
+        RequestParamLoginUpdateTermsOfUseState: {
+            state?: number;
+            termsVersion?: number;
+            uid?: number;
+        };
+        RequestParamLogReportModifiedHash: {
+            hashvalue?: string;
+            platform?: string;
+        };
+        RequestParamLogReportSpeedHack: {
+            detectedDate?: string;
+            scene?: string;
+        };
+        ResponseResultApiAcceptReceivedFriendRequest: {
+            success?: number;
+        };
+        ResponseResultApiAcquireAttendanceReward: {
+            rewards?: components["schemas"]["Element"][];
+            rewardState?: number[];
+        };
+        ResponseResultApiAcquireDailyLoginReward: {
+            rewards?: components["schemas"]["Element"][];
+        };
+        ResponseResultApiAcquireHellsChickenReward: {
+            rewards?: components["schemas"]["Element"][];
+            rewardState?: number[];
+        };
+        ResponseResultApiAcquireMirrorDungeonBattleReward: {
+            saveinfo?: components["schemas"]["MirrorOriginSaveInfo"];
+        };
+        ResponseResultApiAcquireMirrorDungeonExitReward: {
+            history?: components["schemas"]["MirrorDungeonHistories"];
+            rewardList?: components["schemas"]["Element"][];
+            saveInfo?: components["schemas"]["MirrorOriginSaveInfo"];
+            startBuffInfo?: components["schemas"]["StartBuffInfo"];
+        };
+        ResponseResultApiAcquireMissionRewards: {
+            acquiredElements?: components["schemas"]["Element"][];
+        };
+        ResponseResultApiAcquireRailwayDungeonReward: {
+            rewardList?: components["schemas"]["Element"][];
+            saveInfo?: components["schemas"]["RailwaySaveInfo"];
+        };
+        ResponseResultApiAcquireRewardEgoGiftsMirrorDungeon: {
+            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
+            egoGifts?: components["schemas"]["AcquiredEgogifts"][];
+            remainRewardEvent?: components["schemas"]["RemainRewardEvent"][];
+            saveinfo?: components["schemas"]["MirrorOriginSaveInfo"];
+        };
+        ResponseResultApiAcquireRewardEgoGiftsStoryMirrorDungeon: {
             dungeonUnitList?: components["schemas"]["Dungeonunitlist2"][];
+            egoGifts?: components["schemas"]["AcquiredEgogifts"][];
+            remainRewardEvent?: components["schemas"]["RemainRewardEvent"][];
+        };
+        ResponseResultApiAcquireRewardEgoGiftsWithEnemyBufMirrorDungeon: {
+            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
+            egoGifts?: components["schemas"]["AcquiredEgogifts"][];
+            levelAdders?: number[];
+            remainRewardEvent?: components["schemas"]["RemainRewardEvent"][];
+            saveinfo?: components["schemas"]["MirrorOriginSaveInfo"];
+        };
+        ResponseResultApiAcquireStartEgoGiftsAndCreateThemePoolMirrorDungeon: {
+            saveInfo?: components["schemas"]["MirrorOriginSaveInfo"];
+        };
+        ResponseResultApiAcquireStartEgoGiftsStoryMirrorDungeon: {
+            egoGifts?: components["schemas"]["AcquiredEgogifts"][];
+            startEgoGiftCreatedCount?: number;
+            startEgoGiftPoolSets?: components["schemas"]["StartEgoGiftPoolSets"][];
+        };
+        ResponseResultApiBattlePassExLevelReward: {
+            resultElements?: components["schemas"]["Element"][];
+        };
+        ResponseResultApiBattlePassReward_ALL: {
+            resultElements?: components["schemas"]["Element"][];
+        };
+        ResponseResultApiCheckSeasonLog: {
+            seasonLog?: components["schemas"]["SeasonLog"];
+        };
+        ResponseResultApiClaimClosedGachaRewards: {
+            pityPointDataList?: components["schemas"]["PityExpirationUIPopup_PityPoint"][];
+        };
+        ResponseResultApiClaimEventReward: {
+            acquiredElements?: components["schemas"]["Element"][];
+        };
+        ResponseResultApiClaimEventReward_ALL: {
+            acquiredElements?: components["schemas"]["Element"][];
+        };
+        ResponseResultApiCombineEgoGiftMirrorDungeon: {
+            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
+            egoGifts?: components["schemas"]["AcquiredEgogifts"][];
+            isSuccess?: boolean;
+            resultEgoGift?: components["schemas"]["AcquiredEgogifts"];
+            resultEgoGifts?: components["schemas"]["AcquiredEgogifts"][];
+        };
+        ResponseResultApiCombineEgoGiftStoryMirrorDungeon: {
+            dungeonUnitList?: components["schemas"]["Dungeonunitlist2"][];
+            egoGifts?: components["schemas"]["AcquiredEgogifts"][];
+            isSuccess?: boolean;
+            resultEgoGift?: components["schemas"]["AcquiredEgogifts"];
+        };
+        ResponseResultApiCompleteTheaterStory: {
+            acquiredElements?: components["schemas"]["Element"][];
+            isRewarded?: boolean;
+            theaterInfo?: components["schemas"]["TheaterInfo"];
+        };
+        ResponseResultApiEnableSpecialStartBuffMirrorDungeon: {
+            startBuffInfo?: components["schemas"]["StartBuffInfo"];
+        };
+        ResponseResultApiEnableStartBuffMirrorDungeon: {
+            cost?: number;
+            startBuffInfo?: components["schemas"]["StartBuffInfo"];
+            startBufPoint?: number;
+        };
+        ResponseResultApiEnterExpDungeon: {
+            isclear?: number;
+        };
+        ResponseResultApiEnterMirrorDungeon: {
+            recentCharacterList?: components["schemas"]["RecentCharacter"][];
+            saveInfo?: components["schemas"]["MirrorOriginSaveInfo"];
+        };
+        ResponseResultApiEnterMirrorDungeonMapNode: {
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+            currentNode?: components["schemas"]["Currentnode"];
+            egogifts?: components["schemas"]["AcquiredEgogifts"][];
+            nr?: number;
+            passingNodeIds?: number[];
+            prevdul?: components["schemas"]["PrevUnitInfo"][];
+            preves?: number[];
+            shopInfo?: components["schemas"]["ShopInfo"];
+        };
+        ResponseResultApiEnterMirrordungeonMapNodeBattleAfterChoice: {
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+        };
+        ResponseResultApiEnterRailwayDungeon: {
+            saveInfo?: components["schemas"]["RailwaySaveInfo"];
+            startNodeData?: components["schemas"]["UpdateNodeDatas"];
+        };
+        ResponseResultApiEnterRailwayDungeonNode: {
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+            currentNodeId?: number;
+            deletedNodeIds?: number[];
+            nodeid?: number;
+            prevClearNodeId?: number;
+            prevEgoStockData?: components["schemas"]["EgoSkillStock1"][];
+            prevEnemyData?: components["schemas"]["PrevEnemyData"];
+            prevStatusData?: components["schemas"]["PrevStatusData"][];
+        };
+        ResponseResultApiEnterStageBattle: {
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+        };
+        ResponseResultApiEnterStoryDungeon: {
+            nodesRecord?: number[];
+            saveInfo?: components["schemas"]["StorySaveInfo"];
+        };
+        ResponseResultApiEnterStoryDungeonMapNode: {
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+            node?: components["schemas"]["Currentnode"];
+            nr?: number;
+        };
+        ResponseResultApiEnterStoryDungeonMapNodeBattleAfterChoice: {
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+            isAllDie?: number;
+        };
+        ResponseResultApiEnterStoryMirrorDungeon: {
+            saveInfo?: components["schemas"]["StoryMirrorSaveInfo"];
+        };
+        ResponseResultApiEnterStoryMirrorDungeonMapNode: {
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+            currentNode?: components["schemas"]["Currentnode"];
+            egogifts?: components["schemas"]["AcquiredEgogifts"][];
+            passingNodeIds?: number[];
+            prevdul?: components["schemas"]["PrevUnitInfo"][];
+            preves?: number[];
+            shopInfo?: components["schemas"]["UserStoryMirrorDungeonShopDataFormat"];
         };
         ResponseResultApiEnterStoryMirrorDungeonMapNodeBattleAfterChoice: {
             abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
         };
-        RequestParamApiExitStoryMirrorDungeonMapNode: {
-            currentnode?: components["schemas"]["Currentnode"];
-            dungeonunitlist?: components["schemas"]["Dungeonunitlist2"][];
-            noderesult?: number;
-            choiceEventData?: components["schemas"]["ChoiceEventData"];
-            battlePassParameters?: components["schemas"]["BattlePassParameters"];
+        ResponseResultApiEnterThreadDungeon: {
             abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
-            isupdatedEgoSkillStock?: number;
-            egoSkillStockList?: components["schemas"]["EgoSkillStock"][];
-            updatedEgoGifts?: components["schemas"]["AcquiredEgogifts"][];
+            isClear?: number;
+        };
+        ResponseResultApiExitExpDungeon: {
+            acquiredtickets?: components["schemas"]["Element"][];
+            clearInfo?: components["schemas"]["ExpDungeonClearInfo"];
+            personalityinfos?: components["schemas"]["Personalityinfos"][];
+            rewards?: components["schemas"]["Element"][];
+            userExp?: number;
+        };
+        ResponseResultApiExitMirrorDungeon: {
+            isclear?: number;
+            isEndDungeon?: number;
             statistics?: components["schemas"]["Statistics"][];
-            usedDanteAbilityCount?: number;
+        };
+        ResponseResultApiExitMirrorDungeonMapNode: {
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+            currentInfo?: components["schemas"]["CurrentInfo"];
+        };
+        ResponseResultApiExitRailwayDungeon: {
+            currentLog?: components["schemas"]["CurrentLog"];
+            isclear?: boolean;
+            rewards?: components["schemas"]["Element"][];
+            saveInfo?: components["schemas"]["RailwaySaveInfo"];
+        };
+        ResponseResultApiExitRailwayDungeonNode: {
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+            nodeData?: components["schemas"]["UpdateNodeDatas"];
+            saveInfo?: components["schemas"]["RailwaySaveInfo"];
+            updateNodeDatas?: components["schemas"]["UpdateNodeDatas"][];
+        };
+        ResponseResultApiExitRailwayDungeonRestNode: {
+            deletedNodeIds?: number[];
+            nodeData?: components["schemas"]["UpdateNodeDatas"];
+            saveInfo?: components["schemas"]["RailwaySaveInfo"];
+        };
+        ResponseResultApiExitStageBattle: {
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+            addexptouser?: number;
+            cleartype?: number;
+            expticket?: components["schemas"]["Element"][];
+            exrewarditem?: components["schemas"]["Element"][];
+            firstrewarditem?: components["schemas"]["Element"][];
+            givebackstaminabyDefeat?: components["schemas"]["Element"];
+            iswin?: boolean;
+            personalityinfos?: components["schemas"]["Personalityinfos"][];
+            rewarditem?: components["schemas"]["Element"][];
+            stageid?: number;
+        };
+        ResponseResultApiExitStory: {
+            exrewarditem?: components["schemas"]["Element"][];
+            rewarditem?: components["schemas"]["Element"][];
+        };
+        ResponseResultApiExitStoryDungeon: {
+            addexptouser?: number;
+            cleartype?: number;
+            expticket?: components["schemas"]["Element"][];
+            exrewarditem?: components["schemas"]["Element"][];
+            firstrewarditem?: components["schemas"]["Element"][];
+            givebackstaminabyDefeat?: components["schemas"]["Element"];
+            isGacksung?: boolean;
+            iswin?: boolean;
+            personalityinfos?: components["schemas"]["Personalityinfos"][];
+            rewarditem?: components["schemas"]["Element"][];
+            saveInfo?: components["schemas"]["StorySaveInfo"];
+            statistics?: components["schemas"]["Statistics"][];
+        };
+        ResponseResultApiExitStoryDungeonMapNode: {
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+            acquiredEgogifts?: components["schemas"]["AcquiredEgogifts"][];
+            isAllDie?: number;
+            saveInfo?: components["schemas"]["StorySaveInfo"];
+        };
+        ResponseResultApiExitStoryMirrorDungeon: {
+            adduserexp?: number;
+            cleartype?: number;
+            expticket?: components["schemas"]["Element"][];
+            exrewards?: components["schemas"]["Element"][];
+            firstrewarditem?: components["schemas"]["Element"][];
+            givebackstaminabyDefeat?: components["schemas"]["Element"];
+            isclear?: number;
+            normalrewards?: components["schemas"]["Element"][];
+            personalityinfos?: components["schemas"]["Personalityinfos"][];
+            saveInfo?: components["schemas"]["StoryMirrorSaveInfo"];
+            statistics?: components["schemas"]["Statistics"][];
         };
         ResponseResultApiExitStoryMirrorDungeonMapNode: {
-            currentInfo?: components["schemas"]["Currentinfo1"];
             abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+            currentInfo?: components["schemas"]["Currentinfo1"];
         };
-        ResponseResultApiUpdateStoryMirrorDungeonUnits: Record<string, never>;
-        RequestParamApiUpdateStoryMirrorDungeonUnits: {
-            dungeonunitlist?: components["schemas"]["Dungeonunitlist2"][];
+        ResponseResultApiExitThreadDungeon: {
+            clearInfo?: components["schemas"]["ThreadDungeonClearInfo"];
+            rewards?: components["schemas"]["Element"][];
+            userExp?: number;
         };
-        RequestParamApiAcquireRewardEgoGiftsStoryMirrorDungeon: {
-            selectIndexList?: number[];
+        ResponseResultApiFindFriend: {
+            friendprofile?: components["schemas"]["RecomendedFriends"];
+            success?: boolean;
         };
-        ResponseResultApiAcquireRewardEgoGiftsStoryMirrorDungeon: {
-            egoGifts?: components["schemas"]["AcquiredEgogifts"][];
-            remainRewardEvent?: components["schemas"]["RemainRewardEvent"][];
+        ResponseResultApiGetAbnormalityLogData: {
+            logdatas?: components["schemas"]["AbnormalityLogs"][];
+        };
+        ResponseResultApiGetAttendanceState: {
+            consumption?: number;
+            rewardState?: number[];
+        };
+        ResponseResultApiGetDailyDungeonInfo: {
+            date?: string;
+            expDungeonClearInfo?: components["schemas"]["ExpDungeonClearInfo"][];
+            threadDungeonClearInfo?: components["schemas"]["ThreadDungeonClearInfo"][];
+        };
+        ResponseResultApiGetDailyLoginState: {
+            id?: number;
+            rewardstates?: components["schemas"]["DailyLoginRewardStates"][];
+            weekid?: number;
+        };
+        ResponseResultApiGetDanteNoteState: {
+            page?: number;
+            todayPage?: number;
+        };
+        ResponseResultApiGetDungeonSaveInfoAll: {
+            mirrorDungeonClearInfos?: components["schemas"]["MirrorDungeonClearInfos"][];
+            mirrorDungeonHistories?: components["schemas"]["MirrorDungeonHistories"][];
+            mirrorOriginSaveInfo?: components["schemas"]["MirrorOriginSaveInfo"];
+            railwaySaveInfo?: components["schemas"]["RailwaySaveInfo"];
+            storyMirrorSaveInfo?: components["schemas"]["StoryMirrorSaveInfo"];
+            storySaveInfo?: components["schemas"]["StorySaveInfo"];
+        };
+        ResponseResultApiGetFriendsData: {
+            friendprofileList?: components["schemas"]["RecomendedFriends"][];
+            receiveprofileList?: components["schemas"]["RecomendedFriends"][];
+            sendprofileList?: components["schemas"]["RecomendedFriends"][];
+        };
+        ResponseResultApiGetFriendSupportPersonalities: {
+            supportpersonalities?: components["schemas"]["Support_personalities"][];
+        };
+        ResponseResultApiGetFriendSupportPersonalitiesByCharacterId: {
+            supportpersonalities?: components["schemas"]["Supportpersonalities"][];
+        };
+        ResponseResultApiGetHellsChickenState: {
+            dollsNum?: number;
+            rewardState?: number[];
+        };
+        ResponseResultApiGetMirrorDungeonEgoGiftRecord: {
+            acquiredegogifts?: number[];
+            themeFloorIds?: number[];
+        };
+        ResponseResultApiGetProfileTicketDecoDatas: {
+            egoBackgrounds?: components["schemas"]["EgoBackgrounds"][];
+            leftBorders?: components["schemas"]["RightBorders"][];
+            rightBorders?: components["schemas"]["RightBorders"][];
+        };
+        ResponseResultApiGetRailwayDungeonNodeAndLogAll: {
+            logDatas?: components["schemas"]["CurrentLog"][];
+            nodeDatas?: components["schemas"]["UpdateNodeDatas"][];
+        };
+        ResponseResultApiGetRecommendFriends: {
+            recomendedFriends?: components["schemas"]["RecomendedFriends"][];
+        };
+        ResponseResultApiGetStageProgressRateReward: {
+            rewardList?: components["schemas"]["Element"][];
+        };
+        ResponseResultApiGetStartBuffFInfoMirrorDungeon: {
+            startBuffInfo?: components["schemas"]["StartBuffInfo"];
+        };
+        ResponseResultApiGetStoryDungeonNodeRecord: {
+            nodes?: number[];
+        };
+        ResponseResultApiGetStoryDungeonSaveInfo: {
+            saveInfo?: components["schemas"]["StorySaveInfo"];
+        };
+        ResponseResultApiGetTheaterInfo: {
+            theaterInfo?: components["schemas"]["TheaterInfo"];
+        };
+        ResponseResultApiGetUserBanners: {
+            banners?: components["schemas"]["Userbanners"][];
+        };
+        ResponseResultApiGetUserCouponState: {
+            backoffdate?: string;
+            backoffduration?: number;
+            ispossiblestate?: boolean;
+        };
+        ResponseResultApiGiveUpRailwayDungeonNode: {
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+            nodeData?: components["schemas"]["UpdateNodeDatas"];
+            saveInfo?: components["schemas"]["RailwaySaveInfo"];
+        };
+        ResponseResultApiGiveUpRailwayDungeonNodeInBattle: {
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+            nodeData?: components["schemas"]["UpdateNodeDatas"];
+        };
+        ResponseResultApiLoadUserDataAll: {
+            dailyLoginId?: number;
+            dailyLoginRewardStates?: components["schemas"]["DailyLoginRewardStates"][];
+            dailyLoginWeekId?: number;
+            danteNoteTodayPage?: number;
+            date?: string;
+            egoBackgrounds?: components["schemas"]["EgoBackgrounds"][];
+            isExistReceiveFriendRequest?: boolean;
+            leftBorders?: components["schemas"]["RightBorders"][];
+            profile?: components["schemas"]["Profile"];
+            rightBorders?: components["schemas"]["RightBorders"][];
+            secession_Date?: string;
+            showedWeekByMinistory?: number;
+            userbanners?: components["schemas"]["Userbanners"][];
+        };
+        ResponseResultApiPlayGacha: {
+            gachaLogDetails?: components["schemas"]["GachaLogDetail"][];
+        };
+        ResponseResultApiPlayVendingMachine: {
+            itemConsumptions?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
+        };
+        ResponseResultApiPreviewMirrorDungeonExitReward: {
+            rewardList?: components["schemas"]["Reward"][];
+        };
+        ResponseResultApiPurchaseEgoGiftMirrorDungeon: {
+            cost?: number;
+            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
+            egogifts?: components["schemas"]["AcquiredEgogifts"][];
+            shopInfo?: components["schemas"]["ShopInfo"];
+            usedcost?: number;
+        };
+        ResponseResultApiPurchaseEgoGiftStoryMirrorDungeon: {
+            cost?: number;
             dungeonUnitList?: components["schemas"]["Dungeonunitlist2"][];
+            egogifts?: components["schemas"]["AcquiredEgogifts"][];
+            shopInfo?: components["schemas"]["UserStoryMirrorDungeonShopDataFormat"];
         };
-        RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon: Record<string, never>;
-        ResponseResultApiRejectRewardEgoGiftsStoryMirrorDungeon: {
-            remainRewardEvent?: components["schemas"]["RemainRewardEvent"][];
+        ResponseResultApiPurchaseFormationMirrorDungeon: {
+            cost?: number;
+            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
+            prevUnitInfo?: components["schemas"]["PrevUnitInfo"];
+            shopInfo?: components["schemas"]["ShopInfo"];
+            usedcost?: number;
         };
-        RequestParamApiPurchaseHealStoryMirrorDungeon: {
-            idx?: number;
-            pid?: number;
+        ResponseResultApiPurchaseFormationStoryMirrorDungeon: {
+            cost?: number;
+            dungeonUnitList?: components["schemas"]["Dungeonunitlist2"][];
+            prevUnitInfo?: components["schemas"]["PrevUnitInfo"];
+            shopInfo?: components["schemas"]["UserStoryMirrorDungeonShopDataFormat"];
+        };
+        ResponseResultApiPurchaseHealMirrorDungeon: {
+            cost?: number;
+            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
+            shopInfo?: components["schemas"]["ShopInfo"];
+            usedcost?: number;
         };
         ResponseResultApiPurchaseHealStoryMirrorDungeon: {
             cost?: number;
             dungeonUnitList?: components["schemas"]["Dungeonunitlist2"][];
             shopInfo?: components["schemas"]["UserStoryMirrorDungeonShopDataFormat"];
         };
-        RequestParamApiPurchaseFormationStoryMirrorDungeon: {
-            formation?: components["schemas"]["Formation"][];
+        ResponseResultApiPurchaseStartBuffMirrorDungeon: {
+            startBuffInfo?: components["schemas"]["StartBuffInfo"];
         };
-        ResponseResultApiPurchaseFormationStoryMirrorDungeon: {
+        ResponseResultApiPurchaseUpgradePersonalityMirrorDungeon: {
             cost?: number;
-            dungeonUnitList?: components["schemas"]["Dungeonunitlist2"][];
-            shopInfo?: components["schemas"]["UserStoryMirrorDungeonShopDataFormat"];
-            prevUnitInfo?: components["schemas"]["PrevUnitInfo"];
-        };
-        RequestParamApiPurchaseUpgradePersonalityStoryMirrorDungeon: {
-            idx?: number;
+            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
+            shopInfo?: components["schemas"]["ShopInfo"];
+            usedcost?: number;
         };
         ResponseResultApiPurchaseUpgradePersonalityStoryMirrorDungeon: {
             cost?: number;
             dungeonUnitList?: components["schemas"]["Dungeonunitlist2"][];
             shopInfo?: components["schemas"]["UserStoryMirrorDungeonShopDataFormat"];
         };
-        RequestParamApiPurchaseEgoGiftStoryMirrorDungeon: {
-            idx?: number;
+        ResponseResultApiRecreateThemeFloorPoolMirrorDungeon: {
+            saveInfo?: components["schemas"]["MirrorOriginSaveInfo"];
         };
-        ResponseResultApiPurchaseEgoGiftStoryMirrorDungeon: {
+        ResponseResultApiReEnterMirrorDungeon: {
+            saveInfo?: components["schemas"]["MirrorOriginSaveInfo"];
+        };
+        ResponseResultApiReEnterStoryDungeon: {
+            isAllDie?: number;
+            nodesRecord?: number[];
+            saveInfo?: components["schemas"]["StorySaveInfo"];
+        };
+        ResponseResultApiReEnterStoryMirrorDungeon: {
+            saveInfo?: components["schemas"]["StoryMirrorSaveInfo"];
+        };
+        ResponseResultApiRefreshMailbox: {
+            initializedMailList?: components["schemas"]["InitializedMail"][];
+        };
+        ResponseResultApiRefreshShopEgoGiftsMirrorDungeon: {
             cost?: number;
-            egogifts?: components["schemas"]["AcquiredEgogifts"][];
-            shopInfo?: components["schemas"]["UserStoryMirrorDungeonShopDataFormat"];
-            dungeonUnitList?: components["schemas"]["Dungeonunitlist2"][];
-        };
-        RequestParamApiSellEgoGiftStoryMirrorDungeon: {
-            id?: number;
-        };
-        ResponseResultApiSellEgoGiftStoryMirrorDungeon: {
-            cost?: number;
-            egogifts?: components["schemas"]["AcquiredEgogifts"][];
-            shopInfo?: components["schemas"]["UserStoryMirrorDungeonShopDataFormat"];
-            dungeonUnitList?: components["schemas"]["Dungeonunitlist2"][];
-        };
-        RequestParamApiAcquireStartEgoGiftsStoryMirrorDungeon: {
-            selectedSetId?: number;
-            selectedEgoGiftIds?: number[];
-        };
-        ResponseResultApiAcquireStartEgoGiftsStoryMirrorDungeon: {
-            egoGifts?: components["schemas"]["AcquiredEgogifts"][];
-            startEgoGiftPoolSets?: components["schemas"]["StartEgoGiftPoolSets"][];
-            startEgoGiftCreatedCount?: number;
-        };
-        RequestParamApiUpgradeEgoGiftStoryMirrorDungeon: {
-            egoGiftId?: number;
-        };
-        ResponseResultApiUpgradeEgoGiftStoryMirrorDungeon: {
-            cost?: number;
-            egoGift?: components["schemas"]["AcquiredEgogifts"];
-            dungeonUnitList?: components["schemas"]["Dungeonunitlist2"][];
-        };
-        RequestParamApiCombineEgoGiftStoryMirrorDungeon: {
-            materialEgoGiftIds?: number[];
-            keyword?: string;
-        };
-        ResponseResultApiCombineEgoGiftStoryMirrorDungeon: {
-            resultEgoGift?: components["schemas"]["AcquiredEgogifts"];
-            isSuccess?: boolean;
-            egoGifts?: components["schemas"]["AcquiredEgogifts"][];
-            dungeonUnitList?: components["schemas"]["Dungeonunitlist2"][];
-        };
-        RequestParamApiRefreshStartEgoGiftsStoryMirrorDungeon: Record<string, never>;
-        ResponseResultApiRefreshStartEgoGiftsStoryMirrorDungeon: {
-            startEgoGiftPoolSets?: components["schemas"]["StartEgoGiftPoolSets"][];
-            startEgoGiftCreatedCount?: number;
-        };
-        RequestParamApiRefreshShopEgoGiftsStoryMirrorDungeon: {
-            keyword?: string;
+            shopInfo?: components["schemas"]["ShopInfo"];
+            usedcost?: number;
         };
         ResponseResultApiRefreshShopEgoGiftsStoryMirrorDungeon: {
             cost?: number;
             shopInfo?: components["schemas"]["UserStoryMirrorDungeonShopDataFormat"];
         };
-        RequestParamApiRemoveStoryMirrorDungeonEgoGift: {
-            egogiftId?: number;
+        ResponseResultApiRefreshStartEgoGiftsMirrorDungeon: {
+            startEgoGiftCreatedCount?: number;
+            startEgoGiftPoolSets?: components["schemas"]["StartEgoGiftPoolSets"][];
+        };
+        ResponseResultApiRefreshStartEgoGiftsStoryMirrorDungeon: {
+            startEgoGiftCreatedCount?: number;
+            startEgoGiftPoolSets?: components["schemas"]["StartEgoGiftPoolSets"][];
+        };
+        ResponseResultApiRejectRewardEgoGiftsMirrorDungeon: {
+            remainRewardEvent?: components["schemas"]["RemainRewardEvent"][];
+            saveinfo?: components["schemas"]["MirrorOriginSaveInfo"];
+        };
+        ResponseResultApiRejectRewardEgoGiftsStoryMirrorDungeon: {
+            remainRewardEvent?: components["schemas"]["RemainRewardEvent"][];
+        };
+        ResponseResultApiRejectRewardEgoGiftWithEnemyBufsMirrorDungeon: {
+            egoGifts?: components["schemas"]["AcquiredEgogifts"][];
+            levelAdders?: number[];
+            remainRewardEvent?: components["schemas"]["RemainRewardEvent"][];
+            saveinfo?: components["schemas"]["MirrorOriginSaveInfo"];
+        };
+        ResponseResultApiRemoveMirrorDungeonEgoGift: {
+            egs?: components["schemas"]["AcquiredEgogifts"][];
         };
         ResponseResultApiRemoveStoryMirrorDungeonEgoGift: {
             egs?: components["schemas"]["AcquiredEgogifts"][];
         };
+        ResponseResultApiReturnSavePointStoryDungeonMap: {
+            currentInfo?: components["schemas"]["Currentinfo"];
+        };
+        ResponseResultApiSelectFormationMirrorDungeon: {
+            saveInfo?: components["schemas"]["MirrorOriginSaveInfo"];
+        };
+        ResponseResultApiSelectRailwayDungeonBuff: {
+            nodeData?: components["schemas"]["UpdateNodeDatas"];
+            saveInfo?: components["schemas"]["RailwaySaveInfo"];
+        };
+        ResponseResultApiSelectThemeFloorMirrorDungeon: {
+            saveInfo?: components["schemas"]["MirrorOriginSaveInfo"];
+        };
+        ResponseResultApiSellEgoGiftMirrorDungeon: {
+            cost?: number;
+            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
+            egogifts?: components["schemas"]["AcquiredEgogifts"][];
+            shopInfo?: components["schemas"]["ShopInfo"];
+        };
+        ResponseResultApiSellEgoGiftStoryMirrorDungeon: {
+            cost?: number;
+            dungeonUnitList?: components["schemas"]["Dungeonunitlist2"][];
+            egogifts?: components["schemas"]["AcquiredEgogifts"][];
+            shopInfo?: components["schemas"]["UserStoryMirrorDungeonShopDataFormat"];
+        };
+        ResponseResultApiSendFriendRequest: {
+            receiverprofile?: components["schemas"]["RecomendedFriends"];
+            success?: number;
+        };
+        ResponseResultApiSkipExpDungeon: {
+            rewards?: components["schemas"]["Element"][];
+            userExp?: number;
+        };
+        ResponseResultApiSkipThreadDungeon: {
+            rewards?: components["schemas"]["Element"][];
+            userExp?: number;
+        };
+        ResponseResultApiUnsealMails: {
+            attachedElements?: components["schemas"]["Element"][];
+        };
+        ResponseResultApiUpdateAbnormalityLogData: {
+            abnormalityLogs?: components["schemas"]["AbnormalityLogs"][];
+        };
+        ResponseResultApiUpdateMirrorDungeon: {
+            saveInfo?: components["schemas"]["MirrorOriginSaveInfo"];
+        };
+        ResponseResultApiUpdateMirrorDungeonMapNode: {
+            currentEgoGifts?: components["schemas"]["AcquiredEgogifts"][];
+            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
+            prevChoiceEvent?: components["schemas"]["ChoiceEventData"][];
+        };
+        ResponseResultApiUpdateProfileTicketDeco: {
+            egoBackgroundId?: number;
+            leftBorderId?: number;
+            rightBorderId?: number;
+        };
+        ResponseResultApiUpdateStoryDungeonMapNode: {
+            currentEgoGifts?: components["schemas"]["AcquiredEgogifts"][];
+            prevChoiceEvent?: components["schemas"]["ChoiceEventData"][];
+        };
+        ResponseResultApiUpdateStoryMirrorDungeon: {
+            saveInfo?: components["schemas"]["StoryMirrorSaveInfo"];
+        };
+        ResponseResultApiUpdateStoryMirrorDungeonMapNode: {
+            currentEgoGifts?: components["schemas"]["AcquiredEgogifts"][];
+            dungeonUnitList?: components["schemas"]["Dungeonunitlist2"][];
+            prevChoiceEvent?: components["schemas"]["ChoiceEventData"][];
+        };
+        ResponseResultApiUpdateStoryMirrorDungeonUnits: Record<string, never>;
+        ResponseResultApiUpgradeEgoGiftMirrorDungeon: {
+            cost?: number;
+            dungeonUnitList?: components["schemas"]["Dungeonunitlist1"][];
+            egoGift?: components["schemas"]["AcquiredEgogifts"];
+            usedcost?: number;
+        };
+        ResponseResultApiUpgradeEgoGiftStoryMirrorDungeon: {
+            cost?: number;
+            dungeonUnitList?: components["schemas"]["Dungeonunitlist2"][];
+            egoGift?: components["schemas"]["AcquiredEgogifts"];
+        };
+        ResponseResultApiUseCoupon: {
+            backoffdate?: string;
+            backoffduration?: number;
+            rewards?: components["schemas"]["Element"][];
+            state?: number;
+        };
+        ResponseResultApiUseGachaPityPoint: {
+            gachaLogDetails?: components["schemas"]["GachaLogDetail"][];
+        };
+        ResponseResultApiUseItem: {
+            pickedUpElementList?: components["schemas"]["Element"][];
+            resultElementList?: components["schemas"]["Element"][];
+        };
+        ResponseResultApiUsePersonalityExpItem: {
+            resultPersonality?: components["schemas"]["ResultPersonality"];
+        };
+        ResponseResultIapGetSteamWalletCurrency: {
+            walletCurrency?: string;
+        };
+        ResponseResultIapInitPurchase: {
+            resultState?: string;
+        };
+        ResponseResultIapUpdateSteamPendingPurchase: {
+            finalizedTransactionIds?: string[];
+        };
+        ResponseResultLogGetGachaLogAll: {
+            gachaLogs?: components["schemas"]["GachaLog"][];
+        };
+        ResponseResultLogGetMailLogAll: {
+            mailLogs?: components["schemas"]["MailLogs"][];
+        };
+        ResponseResultLoginCheckClientVersion: {
+            timeoffset?: number;
+        };
+        ResponseResultLoginGetBanDetails: {
+            endDate?: string;
+            reason?: string;
+            startDate?: string;
+        };
+        ResponseResultLoginGetInfoOfLinkWith: {
+            details?: string;
+            state?: string;
+        };
+        ResponseResultLoginGetTermsOfUseStateAll: {
+            termsOfUseStateList?: components["schemas"]["TermsOfUseState"][];
+        };
+        ResponseResultLoginLinkWithAnother: {
+            state?: string;
+        };
+        ResponseResultLoginLinkWithApple: {
+            accountInfo?: components["schemas"]["AccountInfo"];
+            userAuth?: components["schemas"]["UserAuth"];
+        };
+        ResponseResultLoginLinkWithGoogle: {
+            accountInfo?: components["schemas"]["AccountInfo"];
+            userAuth?: components["schemas"]["UserAuth"];
+        };
+        ResponseResultLoginRefreshLinkAuth: {
+            linkAuth?: components["schemas"]["LinkAuth"];
+            state?: string;
+        };
+        ResponseResultLoginSignInAsApple: {
+            accountInfo?: components["schemas"]["AccountInfo"];
+            userAuth?: components["schemas"]["UserAuth"];
+        };
+        ResponseResultLoginSignInAsGoogle: {
+            accountInfo?: components["schemas"]["AccountInfo"];
+            userAuth?: components["schemas"]["UserAuth"];
+        };
+        ResponseResultLoginSignInAsGuest: {
+            userAuth?: components["schemas"]["UserAuth"];
+        };
+        ResponseResultLoginSignInAsNewGuest: {
+            authToken?: string;
+            userAuth?: components["schemas"]["UserAuth"];
+        };
+        ResponseResultLoginSignInAsSteam: {
+            accountInfo?: components["schemas"]["AccountInfo"];
+            userAuth?: components["schemas"]["UserAuth"];
+            walletCurrency?: string;
+        };
+        ResponseResultLoginTryToSecede: {
+            secessionDate?: string;
+        };
+        ResponseResultLoginUnLinkWithAnother: {
+            accountInfo?: components["schemas"]["AccountInfo"];
+        };
+        RestStatuses: {
+            cnt?: number;
+            pid?: number;
+        };
+        ResultPersonality: {
+            acquire_time?: string;
+            exp?: number;
+            gacksung?: number;
+            gacksung_illust_type?: number;
+            level?: number;
+            order_id?: number;
+            personality_id?: number;
+        };
+        Reward: {
+            chanceConsumption?: number;
+            moduleConsumption?: number;
+            rewardList?: components["schemas"]["Element"][];
+        };
+        RightBorders: {
+            date?: string;
+            id?: number;
+        };
+        SeasonLog: {
+            acquiredFromLostGlobalPieces?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
+            acquiredFromLostPackages?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
+            acquiredFromLostPieces?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
+            date?: string;
+            lostGlobalPieces?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
+            lostPackages?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
+            lostPieces?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
+            seasonFrom?: number;
+            seasonTo?: number;
+            unreceivedBattlePassRewards?: components["schemas"]["Element"][];
+        };
+        SelectedBuffs: {
+            buffId?: number;
+            setId?: number;
+            targetId?: number;
+        };
+        ServerInfo: {
+            /** @enum {string} */
+            version?: "product";
+        };
+        ShopInfo: {
+            aesp?: number;
+            egpool?: number[];
+            fkre?: number;
+            fre?: number;
+            pcf?: number;
+            pcs?: components["schemas"]["Pcs"][];
+            peg?: number[];
+            ph?: number;
+            pup?: number;
+            rc?: number;
+            upid?: number;
+        };
+        Sin: {
+            cs?: number[];
+            rs?: number;
+            sp?: number[];
+        };
+        StartBuffInfo: {
+            bufstate?: number[];
+            dungeonid?: number;
+            enabled?: number[];
+        };
+        StartEgoGiftPoolSets: {
+            keyword?: string;
+            pool?: number[];
+            setId?: number;
+        };
+        Statistics: {
+            gd?: number;
+            id?: number;
+            rd?: number;
+        };
+        Statistics1: {
+            gd?: number;
+            id?: number;
+            rd?: number;
+        };
+        StoryMirrorSaveInfo: {
+            choiceeventlist?: number[];
+            currentinfo?: components["schemas"]["Currentinfo1"];
+            dungeonid?: number;
+            map?: components["schemas"]["DungeonMap"];
+            statistics?: components["schemas"]["Statistics"][];
+        };
+        StorySaveInfo: {
+            currentinfo?: components["schemas"]["Currentinfo"];
+            dungeonid?: number;
+        };
+        Subcss: {
+            id?: number;
+            nss?: components["schemas"]["Nss"][];
+            rss?: number[];
+        };
+        Support_personalities: {
+            egos?: components["schemas"]["Egos1"][];
+            gi?: number;
+            gl?: number;
+            idx?: number;
+            l?: number;
+            pid?: number;
+        };
+        Supportpersonalities: {
+            egos?: components["schemas"]["Egos1"][];
+            gi?: number;
+            gl?: number;
+            l?: number;
+            pid?: number;
+        };
+        Synchronized: {
+            mailContentList?: unknown[];
+            noticeList?: unknown[];
+            version?: number;
+        };
+        TermsOfUseState: {
+            state?: number;
+            version?: number;
+        };
+        Tfps: {
+            egs?: number[];
+            idx?: number;
+            tfid?: number;
+            upegs?: number[];
+        };
+        Tfs: {
+            egs?: number[];
+            f?: number;
+            idx?: number;
+            tfid?: number;
+            tid?: number;
+        };
+        TheaterInfo: {
+            rewardedIDList?: string[];
+        };
+        ThreadDungeonClearInfo: {
+            clearnumber?: number;
+            dungeonid?: number;
+            dungeonlevel?: number;
+        };
+        Turnspernode: {
+            nid?: number;
+            turn?: number;
+        };
         UpdatedFormat: {
-            isInitialized?: boolean;
-            userInfo?: components["schemas"]["UserInfo"];
-            personalityList?: components["schemas"]["ResultPersonality"][];
-            egoList?: components["schemas"]["Ego"][];
-            formationList?: components["schemas"]["Formation1"][];
-            lobbyCG?: components["schemas"]["LobbyCg"];
-            itemList?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
-            chanceList?: components["schemas"]["Chance"][];
-            battlePass?: components["schemas"]["BattlePass"];
-            mainChapterStateList?: components["schemas"]["MainChapterState"][];
-            mailList?: components["schemas"]["InitializedMail"][];
             announcer?: components["schemas"]["Announcer"];
-            membershipList?: components["schemas"]["Membership"][];
-            gachaList?: components["schemas"]["Gacha"][];
-            userUnlockCodeList?: components["schemas"]["UserUnlockCode"][];
-            eventRewardStateList?: components["schemas"]["EventRewardState"][];
-            isUpdateUserBanner?: boolean;
-            isResetMirrorDungeon?: boolean;
-            missionList?: components["schemas"]["Mission"][];
+            battlePass?: components["schemas"]["BattlePass"];
+            chanceList?: components["schemas"]["Chance"][];
             danteAbilityList?: components["schemas"]["DanteAbility"][];
+            egoList?: components["schemas"]["Ego"][];
+            eventRewardStateList?: components["schemas"]["EventRewardState"][];
+            formationList?: components["schemas"]["Formation1"][];
+            gachaList?: components["schemas"]["Gacha"][];
+            isInitialized?: boolean;
+            isResetMirrorDungeon?: boolean;
+            isUpdateUserBanner?: boolean;
+            itemList?: components["schemas"]["AcquiredFromLostGlobalPieces"][];
+            lobbyCG?: components["schemas"]["LobbyCg"];
+            mailList?: components["schemas"]["InitializedMail"][];
+            mainChapterStateList?: components["schemas"]["MainChapterState"][];
+            membershipList?: components["schemas"]["Membership"][];
+            missionList?: components["schemas"]["Mission"][];
+            personalityList?: components["schemas"]["ResultPersonality"][];
+            userInfo?: components["schemas"]["UserInfo"];
+            userUnlockCodeList?: components["schemas"]["UserUnlockCode"][];
+        };
+        UpdateNodeDatas: {
+            clearturn?: number;
+            egostocks?: components["schemas"]["EgoSkillStock1"][];
+            enemy?: components["schemas"]["PrevEnemyData"];
+            nodeid?: number;
+            nodestate?: number;
+            playturn?: number;
+            statistics?: components["schemas"]["Statistics1"][];
+            status?: components["schemas"]["PrevStatusData"][];
+        };
+        UserAuth: {
+            auth_code?: string;
+            data_version?: number;
+            db_id?: number;
+            last_login_date?: string;
+            last_update_date?: string;
+            public_id?: number;
+            uid?: number;
+        };
+        Userbanners: {
+            acquiretime?: string;
+            id?: number;
+            value?: number;
+            value2?: number;
+        };
+        UserInfo: {
+            exp?: number;
+            last_stamina_recover?: string;
+            level?: number;
+            stamina?: number;
+            uid?: number;
+        };
+        UserStoryMirrorDungeonShopDataFormat: {
+            egpool?: number[];
+            fre?: number;
+            pcf?: number;
+            peg?: number[];
+            ph?: number;
+            pup?: number;
+            rc?: number;
+            upid?: number;
+        };
+        UserUnlockCode: {
+            expireDate?: string;
+            unlockcode?: number;
         };
     };
     responses: {
-        /** @description Response for /api/GetHellsChickenState */
-        response_api_GetHellsChickenState: {
+        /** @description Response for /api/AcceptReceivedFriendRequest */
+        response_api_AcceptReceivedFriendRequest: {
             headers: {
                 [name: string]: unknown;
             };
             content: {
                 "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1173308;
+                    result?: components["schemas"]["ResponseResultApiAcceptReceivedFriendRequest"];
                     serverInfo?: components["schemas"]["ServerInfo"];
                     /** @enum {string} */
                     state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiGetHellsChickenState"];
                     synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 5719946;
-                };
-            };
-        };
-        /** @description Response for /api/AcquireHellsChickenReward */
-        response_api_AcquireHellsChickenReward: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
                     updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiAcquireHellsChickenReward"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 230314;
-                };
-            };
-        };
-        /** @description Response for /api/AcquireRailwayDungeonReward */
-        response_api_AcquireRailwayDungeonReward: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiAcquireRailwayDungeonReward"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 67;
-                };
-            };
-        };
-        /** @description Response for /api/ChangeCurrentAnnouncer */
-        response_api_ChangeCurrentAnnouncer: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/GetAttendanceState */
-        response_api_GetAttendanceState: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiGetAttendanceState"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 81;
                 };
             };
         };
@@ -7281,374 +7209,14 @@ export interface components {
             };
             content: {
                 "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiAcquireAttendanceReward"];
-                    synchronized?: components["schemas"]["Synchronized"];
                     /** @enum {integer} */
                     packetId?: 6298;
-                };
-            };
-        };
-        /** @description Response for /api/BattlePassMissionReward */
-        response_api_BattlePassMissionReward: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
+                    result?: components["schemas"]["ResponseResultApiAcquireAttendanceReward"];
                     serverInfo?: components["schemas"]["ServerInfo"];
                     /** @enum {string} */
                     state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
                     synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/BattlePassMissionRewardAll */
-        response_api_BattlePassMissionRewardAll: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
                     updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/BattlePassReward */
-        response_api_BattlePassReward: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiBattlePassReward_ALL"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 0;
-                };
-            };
-        };
-        /** @description Response for /api/BattlePassReward_ALL */
-        response_api_BattlePassReward_ALL: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiBattlePassReward_ALL"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 0;
-                };
-            };
-        };
-        /** @description Response for /api/BattlePassExLevelReward */
-        response_api_BattlePassExLevelReward: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiBattlePassExLevelReward"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 35937;
-                };
-            };
-        };
-        /** @description Response for /api/PurchaseBattlePassLevel */
-        response_api_PurchaseBattlePassLevel: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/PurchaseSpecialPassProduct */
-        response_api_PurchaseSpecialPassProduct: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/PurchaseSpecialPassProduct_IncludeLimbusPass */
-        response_api_PurchaseSpecialPassProduct_IncludeLimbusPass: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/PurchaseSpecialPassProduct_NotIncludeLimbusPass */
-        response_api_PurchaseSpecialPassProduct_NotIncludeLimbusPass: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/PurchaseBattlePassByRealLunacy */
-        response_api_PurchaseBattlePassByRealLunacy: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/UseCoupon */
-        response_api_UseCoupon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUseCoupon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 747377296875;
-                };
-            };
-        };
-        /** @description Response for /api/GetUserCouponState */
-        response_api_GetUserCouponState: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiGetUserCouponState"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 2798;
-                };
-            };
-        };
-        /** @description Response for /api/EnterExpDungeon */
-        response_api_EnterExpDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiEnterExpDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 207402;
-                };
-            };
-        };
-        /** @description Response for /api/ExitExpDungeon */
-        response_api_ExitExpDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiExitExpDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 891135;
-                };
-            };
-        };
-        /** @description Response for /api/SkipExpDungeon */
-        response_api_SkipExpDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiSkipExpDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 1323;
-                };
-            };
-        };
-        /** @description Response for /api/EnterThreadDungeon */
-        response_api_EnterThreadDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiEnterThreadDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 63;
-                };
-            };
-        };
-        /** @description Response for /api/ExitThreadDungeon */
-        response_api_ExitThreadDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiExitThreadDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 1508;
-                };
-            };
-        };
-        /** @description Response for /api/GetDailyDungeonInfo */
-        response_api_GetDailyDungeonInfo: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiGetDailyDungeonInfo"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 4867;
-                };
-            };
-        };
-        /** @description Response for /api/SkipThreadDungeon */
-        response_api_SkipThreadDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiSkipThreadDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 16711644;
-                };
-            };
-        };
-        /** @description Response for /api/GetDailyLoginState */
-        response_api_GetDailyLoginState: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiGetDailyLoginState"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 4077;
                 };
             };
         };
@@ -7659,1706 +7227,32 @@ export interface components {
             };
             content: {
                 "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
+                    /** @enum {integer} */
+                    packetId?: 0;
                     result?: components["schemas"]["ResponseResultApiAcquireDailyLoginReward"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 0;
-                };
-            };
-        };
-        /** @description Response for /api/GetDanteNoteState */
-        response_api_GetDanteNoteState: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiGetDanteNoteState"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 84;
-                };
-            };
-        };
-        /** @description Response for /api/SkipTutorial */
-        response_api_SkipTutorial: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/GetStageProgressRateReward */
-        response_api_GetStageProgressRateReward: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiGetStageProgressRateReward"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 24;
-                };
-            };
-        };
-        /** @description Response for /api/EnterStageBattle */
-        response_api_EnterStageBattle: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiEnterStageBattle"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 1415;
-                };
-            };
-        };
-        /** @description Response for /api/ExitStageBattle */
-        response_api_ExitStageBattle: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiExitStageBattle"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 1327;
-                };
-            };
-        };
-        /** @description Response for /api/GetDungeonSaveInfoAll */
-        response_api_GetDungeonSaveInfoAll: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiGetDungeonSaveInfoAll"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 2551;
-                };
-            };
-        };
-        /** @description Response for /api/GetStoryDungeonSaveInfo */
-        response_api_GetStoryDungeonSaveInfo: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiGetStoryDungeonSaveInfo"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 81746504;
-                };
-            };
-        };
-        /** @description Response for /api/EnterStoryDungeon */
-        response_api_EnterStoryDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiEnterStoryDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 2586;
-                };
-            };
-        };
-        /** @description Response for /api/ReEnterStoryDungeon */
-        response_api_ReEnterStoryDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiReEnterStoryDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 16036966;
-                };
-            };
-        };
-        /** @description Response for /api/ExitStoryDungeon */
-        response_api_ExitStoryDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiExitStoryDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 0;
-                };
-            };
-        };
-        /** @description Response for /api/EnterStoryDungeonMapNode */
-        response_api_EnterStoryDungeonMapNode: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiEnterStoryDungeonMapNode"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 3015;
-                };
-            };
-        };
-        /** @description Response for /api/UpdateStoryDungeonMapNode */
-        response_api_UpdateStoryDungeonMapNode: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryDungeonMapNode"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 3695;
-                };
-            };
-        };
-        /** @description Response for /api/EnterStoryDungeonMapNodeBattleAfterChoice */
-        response_api_EnterStoryDungeonMapNodeBattleAfterChoice: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiEnterStoryDungeonMapNodeBattleAfterChoice"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 1225;
-                };
-            };
-        };
-        /** @description Response for /api/ExitStoryDungeonMapNode */
-        response_api_ExitStoryDungeonMapNode: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiExitStoryDungeonMapNode"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 1848;
-                };
-            };
-        };
-        /** @description Response for /api/UpdateStoryDungeonUnits */
-        response_api_UpdateStoryDungeonUnits: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/ReturnSavePointStoryDungeonMap */
-        response_api_ReturnSavePointStoryDungeonMap: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiReturnSavePointStoryDungeonMap"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 4327;
-                };
-            };
-        };
-        /** @description Response for /api/ExitStory */
-        response_api_ExitStory: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiExitStory"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 5196312;
-                };
-            };
-        };
-        /** @description Response for /api/GetAbnormalityLogData */
-        response_api_GetAbnormalityLogData: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiGetAbnormalityLogData"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 6484;
-                };
-            };
-        };
-        /** @description Response for /api/UpdateAbnormalityLogData */
-        response_api_UpdateAbnormalityLogData: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateAbnormalityLogData"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 7616;
-                };
-            };
-        };
-        /** @description Response for /api/GetStoryDungeonNodeRecord */
-        response_api_GetStoryDungeonNodeRecord: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiGetStoryDungeonNodeRecord"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 1932;
-                };
-            };
-        };
-        /** @description Response for /api/EnterRailwayDungeon */
-        response_api_EnterRailwayDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiEnterRailwayDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 256;
-                };
-            };
-        };
-        /** @description Response for /api/EnterRailwayDungeonNode */
-        response_api_EnterRailwayDungeonNode: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiEnterRailwayDungeonNode"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 1672028;
-                };
-            };
-        };
-        /** @description Response for /api/GetRailwayDungeonNodeAndLogAll */
-        response_api_GetRailwayDungeonNodeAndLogAll: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiGetRailwayDungeonNodeAndLogAll"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 4188;
-                };
-            };
-        };
-        /** @description Response for /api/ClaimEventReward */
-        response_api_ClaimEventReward: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiClaimEventReward"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 872;
-                };
-            };
-        };
-        /** @description Response for /api/ClaimEventReward_ALL */
-        response_api_ClaimEventReward_ALL: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiClaimEventReward_ALL"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 1033;
-                };
-            };
-        };
-        /** @description Response for /api/ExitRailwayDungeonNode */
-        response_api_ExitRailwayDungeonNode: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiExitRailwayDungeonNode"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 26069;
-                };
-            };
-        };
-        /** @description Response for /api/ExitRailwayDungeonRestNode */
-        response_api_ExitRailwayDungeonRestNode: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiExitRailwayDungeonRestNode"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 1397;
-                };
-            };
-        };
-        /** @description Response for /api/PlayGacha */
-        response_api_PlayGacha: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiPlayGacha"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 571787;
-                };
-            };
-        };
-        /** @description Response for /log/GetGachaLogAll */
-        response_log_GetGachaLogAll: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultLogGetGachaLogAll"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 0;
-                };
-            };
-        };
-        /** @description Response for /api/UseGachaPityPoint */
-        response_api_UseGachaPityPoint: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUseGachaPityPoint"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 767;
-                };
-            };
-        };
-        /** @description Response for /api/ClaimClosedGachaRewards */
-        response_api_ClaimClosedGachaRewards: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiClaimClosedGachaRewards"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 0;
-                };
-            };
-        };
-        /** @description Response for /api/ExitRailwayDungeon */
-        response_api_ExitRailwayDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiExitRailwayDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 4321;
-                };
-            };
-        };
-        /** @description Response for /api/GiveUpRailwayDungeonNode */
-        response_api_GiveUpRailwayDungeonNode: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiGiveUpRailwayDungeonNode"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 740080;
-                };
-            };
-        };
-        /** @description Response for /api/GiveUpRailwayDungeonNodeInBattle */
-        response_api_GiveUpRailwayDungeonNodeInBattle: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiGiveUpRailwayDungeonNodeInBattle"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 1846;
-                };
-            };
-        };
-        /** @description Response for /iap/Purchase */
-        response_iap_Purchase: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /iap/InitPurchase */
-        response_iap_InitPurchase: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultIapInitPurchase"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 1501;
-                };
-            };
-        };
-        /** @description Response for /iap/InitPurchaseAsSteam */
-        response_iap_InitPurchaseAsSteam: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /iap/FinalizePurchaseAsSteam */
-        response_iap_FinalizePurchaseAsSteam: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /iap/UpdateSteamPendingPurchase */
-        response_iap_UpdateSteamPendingPurchase: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultIapUpdateSteamPendingPurchase"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 177;
-                };
-            };
-        };
-        /** @description Response for /iap/GetSteamWalletCurrency */
-        response_iap_GetSteamWalletCurrency: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultIapGetSteamWalletCurrency"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 4874;
-                };
-            };
-        };
-        /** @description Response for /iap/PurchaseAsGoogle */
-        response_iap_PurchaseAsGoogle: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /iap/PurchaseAsApple */
-        response_iap_PurchaseAsApple: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /iap/PurchaseIngameProduct */
-        response_iap_PurchaseIngameProduct: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/UseItem */
-        response_api_UseItem: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUseItem"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 7762392000;
-                };
-            };
-        };
-        /** @description Response for /api/PurchaseEnkephalinModule */
-        response_api_PurchaseEnkephalinModule: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/PurchaseEnkephalin */
-        response_api_PurchaseEnkephalin: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/PersonalityGacksung */
-        response_api_PersonalityGacksung: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/SetPersonalityGacksungIllust */
-        response_api_SetPersonalityGacksungIllust: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/EgoGacksung */
-        response_api_EgoGacksung: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/UsePersonalityExpItem */
-        response_api_UsePersonalityExpItem: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUsePersonalityExpItem"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 878;
-                };
-            };
-        };
-        /** @description Response for /api/UseEgoGacksungItem */
-        response_api_UseEgoGacksungItem: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/PersonalityGacksungWithItems */
-        response_api_PersonalityGacksungWithItems: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/EgoGacksungWithItems */
-        response_api_EgoGacksungWithItems: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/LoadUserDataAll */
-        response_api_LoadUserDataAll: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiLoadUserDataAll"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 5892;
-                };
-            };
-        };
-        /** @description Response for /api/CheckSeasonLog */
-        response_api_CheckSeasonLog: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiCheckSeasonLog"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 59314125;
-                };
-            };
-        };
-        /** @description Response for /api/ConfirmedSeasonLog */
-        response_api_ConfirmedSeasonLog: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /login/SignInAsGuest */
-        response_login_SignInAsGuest: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultLoginSignInAsGuest"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 3000;
-                };
-            };
-        };
-        /** @description Response for /login/SignInAsNewGuest */
-        response_login_SignInAsNewGuest: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultLoginSignInAsNewGuest"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 0;
-                };
-            };
-        };
-        /** @description Response for /login/SignInAsGoogle */
-        response_login_SignInAsGoogle: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultLoginSignInAsGoogle"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 980;
-                };
-            };
-        };
-        /** @description Response for /login/LinkWithGoogle */
-        response_login_LinkWithGoogle: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultLoginLinkWithGoogle"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 4800;
-                };
-            };
-        };
-        /** @description Response for /login/SignInAsApple */
-        response_login_SignInAsApple: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultLoginSignInAsApple"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 58301;
-                };
-            };
-        };
-        /** @description Response for /login/LinkWithApple */
-        response_login_LinkWithApple: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultLoginLinkWithApple"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 9735176;
-                };
-            };
-        };
-        /** @description Response for /login/SignInAsSteam */
-        response_login_SignInAsSteam: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultLoginSignInAsSteam"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 234;
-                };
-            };
-        };
-        /** @description Response for /login/RefreshLinkAuth */
-        response_login_RefreshLinkAuth: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultLoginRefreshLinkAuth"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 35935;
-                };
-            };
-        };
-        /** @description Response for /login/GetInfoOfLinkWith */
-        response_login_GetInfoOfLinkWith: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultLoginGetInfoOfLinkWith"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 653972001;
-                };
-            };
-        };
-        /** @description Response for /login/LinkWithAnother */
-        response_login_LinkWithAnother: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultLoginLinkWithAnother"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 63235067830;
-                };
-            };
-        };
-        /** @description Response for /login/TryToSecede */
-        response_login_TryToSecede: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultLoginTryToSecede"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 6794;
-                };
-            };
-        };
-        /** @description Response for /login/CancelSecession */
-        response_login_CancelSecession: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /login/CheckClientVersion */
-        response_login_CheckClientVersion: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultLoginCheckClientVersion"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 499849;
-                };
-            };
-        };
-        /** @description Response for /login/GetBanDetails */
-        response_login_GetBanDetails: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultLoginGetBanDetails"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 0;
-                };
-            };
-        };
-        /** @description Response for /login/UnLinkWithAnother */
-        response_login_UnLinkWithAnother: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultLoginUnLinkWithAnother"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 7976023992;
-                };
-            };
-        };
-        /** @description Response for /api/RefreshMailbox */
-        response_api_RefreshMailbox: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiRefreshMailbox"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 1326;
-                };
-            };
-        };
-        /** @description Response for /api/UnsealMails */
-        response_api_UnsealMails: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUnsealMails"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 0;
-                };
-            };
-        };
-        /** @description Response for /log/GetMailLogAll */
-        response_log_GetMailLogAll: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultLogGetMailLogAll"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 0;
-                };
-            };
-        };
-        /** @description Response for /log/ReportSpeedHack */
-        response_log_ReportSpeedHack: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /log/ReportModifiedHash */
-        response_log_ReportModifiedHash: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/SaveMiniStoryWeek */
-        response_api_SaveMiniStoryWeek: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/CompleteMinistory */
-        response_api_CompleteMinistory: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/EnterMirrorDungeon */
-        response_api_EnterMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiEnterMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 6401;
-                };
-            };
-        };
-        /** @description Response for /api/ReEnterMirrorDungeon */
-        response_api_ReEnterMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiReEnterMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 1896129;
-                };
-            };
-        };
-        /** @description Response for /api/UpdateMirrorDungeon */
-        response_api_UpdateMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 184;
-                };
-            };
-        };
-        /** @description Response for /api/SelectFormationMirrorDungeon */
-        response_api_SelectFormationMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiSelectFormationMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 3728;
-                };
-            };
-        };
-        /** @description Response for /api/RecreateThemeFloorPoolMirrorDungeon */
-        response_api_RecreateThemeFloorPoolMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiRecreateThemeFloorPoolMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 4292468;
-                };
-            };
-        };
-        /** @description Response for /api/SelectThemeFloorMirrorDungeon */
-        response_api_SelectThemeFloorMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiSelectThemeFloorMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 15978612;
-                };
-            };
-        };
-        /** @description Response for /api/ExitMirrorDungeon */
-        response_api_ExitMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiExitMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 624;
-                };
-            };
-        };
-        /** @description Response for /api/EnterMirrorDungeonMapNode */
-        response_api_EnterMirrorDungeonMapNode: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiEnterMirrorDungeonMapNode"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 321651;
-                };
-            };
-        };
-        /** @description Response for /api/UpdateMirrorDungeonMapNode */
-        response_api_UpdateMirrorDungeonMapNode: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateMirrorDungeonMapNode"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 0;
-                };
-            };
-        };
-        /** @description Response for /api/EnterMirrordungeonMapNodeBattleAfterChoice */
-        response_api_EnterMirrordungeonMapNodeBattleAfterChoice: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiEnterMirrordungeonMapNodeBattleAfterChoice"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 0;
-                };
-            };
-        };
-        /** @description Response for /api/ExitMirrorDungeonMapNode */
-        response_api_ExitMirrorDungeonMapNode: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiExitMirrorDungeonMapNode"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 14440000;
-                };
-            };
-        };
-        /** @description Response for /api/UpdateMirrorDungeonUnits */
-        response_api_UpdateMirrorDungeonUnits: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
                     serverInfo?: components["schemas"]["ServerInfo"];
                     /** @enum {string} */
                     state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
                     synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/AcquireRewardEgoGiftsMirrorDungeon */
-        response_api_AcquireRewardEgoGiftsMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
                     updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiAcquireRewardEgoGiftsMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 9744;
                 };
             };
         };
-        /** @description Response for /api/AcquireRewardEgoGiftsWithEnemyBufMirrorDungeon */
-        response_api_AcquireRewardEgoGiftsWithEnemyBufMirrorDungeon: {
+        /** @description Response for /api/AcquireHellsChickenReward */
+        response_api_AcquireHellsChickenReward: {
             headers: {
                 [name: string]: unknown;
             };
             content: {
                 "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiAcquireRewardEgoGiftsWithEnemyBufMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
                     /** @enum {integer} */
-                    packetId?: 599;
-                };
-            };
-        };
-        /** @description Response for /api/RejectRewardEgoGiftsMirrorDungeon */
-        response_api_RejectRewardEgoGiftsMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
+                    packetId?: 230314;
+                    result?: components["schemas"]["ResponseResultApiAcquireHellsChickenReward"];
                     serverInfo?: components["schemas"]["ServerInfo"];
                     /** @enum {string} */
                     state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiRejectRewardEgoGiftsMirrorDungeon"];
                     synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 1995;
-                };
-            };
-        };
-        /** @description Response for /api/RejectRewardEgoGiftWithEnemyBufsMirrorDungeon */
-        response_api_RejectRewardEgoGiftWithEnemyBufsMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
                     updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiRejectRewardEgoGiftWithEnemyBufsMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 1281;
                 };
             };
         };
@@ -9369,356 +7263,14 @@ export interface components {
             };
             content: {
                 "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiAcquireMirrorDungeonBattleReward"];
-                    synchronized?: components["schemas"]["Synchronized"];
                     /** @enum {integer} */
                     packetId?: 5780;
-                };
-            };
-        };
-        /** @description Response for /api/GetMirrorDungeonEgoGiftRecord */
-        response_api_GetMirrorDungeonEgoGiftRecord: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
+                    result?: components["schemas"]["ResponseResultApiAcquireMirrorDungeonBattleReward"];
                     serverInfo?: components["schemas"]["ServerInfo"];
                     /** @enum {string} */
                     state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiGetMirrorDungeonEgoGiftRecord"];
                     synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 0;
-                };
-            };
-        };
-        /** @description Response for /api/SendMirrorDungeonLogError */
-        response_api_SendMirrorDungeonLogError: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
                     updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/SendMirrorDungeonShopExit */
-        response_api_SendMirrorDungeonShopExit: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/PurchaseHealMirrorDungeon */
-        response_api_PurchaseHealMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiPurchaseHealMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 0;
-                };
-            };
-        };
-        /** @description Response for /api/PurchaseFormationMirrorDungeon */
-        response_api_PurchaseFormationMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiPurchaseFormationMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 2067798879;
-                };
-            };
-        };
-        /** @description Response for /api/PurchaseUpgradePersonalityMirrorDungeon */
-        response_api_PurchaseUpgradePersonalityMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiPurchaseUpgradePersonalityMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 2886;
-                };
-            };
-        };
-        /** @description Response for /api/PurchaseEgoGiftMirrorDungeon */
-        response_api_PurchaseEgoGiftMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiPurchaseEgoGiftMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 61;
-                };
-            };
-        };
-        /** @description Response for /api/SellEgoGiftMirrorDungeon */
-        response_api_SellEgoGiftMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiSellEgoGiftMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 102240627776;
-                };
-            };
-        };
-        /** @description Response for /api/RefreshShopEgoGiftsMirrorDungeon */
-        response_api_RefreshShopEgoGiftsMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiRefreshShopEgoGiftsMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 8805624625;
-                };
-            };
-        };
-        /** @description Response for /api/GetStartBuffFInfoMirrorDungeon */
-        response_api_GetStartBuffFInfoMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiGetStartBuffFInfoMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 10734;
-                };
-            };
-        };
-        /** @description Response for /api/PurchaseStartBuffMirrorDungeon */
-        response_api_PurchaseStartBuffMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiPurchaseStartBuffMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 1319;
-                };
-            };
-        };
-        /** @description Response for /api/EnableSpecialStartBuffMirrorDungeon */
-        response_api_EnableSpecialStartBuffMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiEnableSpecialStartBuffMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 2016400;
-                };
-            };
-        };
-        /** @description Response for /api/EnableStartBuffMirrorDungeon */
-        response_api_EnableStartBuffMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiEnableStartBuffMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 2730;
-                };
-            };
-        };
-        /** @description Response for /api/RemoveMirrorDungeonEgoGift */
-        response_api_RemoveMirrorDungeonEgoGift: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiRemoveMirrorDungeonEgoGift"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 25569824;
-                };
-            };
-        };
-        /** @description Response for /api/AcquireStartEgoGiftsAndCreateThemePoolMirrorDungeon */
-        response_api_AcquireStartEgoGiftsAndCreateThemePoolMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiAcquireStartEgoGiftsAndCreateThemePoolMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 631628712;
-                };
-            };
-        };
-        /** @description Response for /api/RefreshStartEgoGiftsMirrorDungeon */
-        response_api_RefreshStartEgoGiftsMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiRefreshStartEgoGiftsMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 1249;
-                };
-            };
-        };
-        /** @description Response for /api/UpgradeEgoGiftMirrorDungeon */
-        response_api_UpgradeEgoGiftMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpgradeEgoGiftMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 0;
-                };
-            };
-        };
-        /** @description Response for /api/CombineEgoGiftMirrorDungeon */
-        response_api_CombineEgoGiftMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiCombineEgoGiftMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 856;
-                };
-            };
-        };
-        /** @description Response for /api/PreviewMirrorDungeonExitReward */
-        response_api_PreviewMirrorDungeonExitReward: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiPreviewMirrorDungeonExitReward"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 0;
                 };
             };
         };
@@ -9729,14 +7281,14 @@ export interface components {
             };
             content: {
                 "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1449;
+                    result?: components["schemas"]["ResponseResultApiAcquireMirrorDungeonExitReward"];
                     serverInfo?: components["schemas"]["ServerInfo"];
                     /** @enum {string} */
                     state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiAcquireMirrorDungeonExitReward"];
                     synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 1449;
+                    updated?: components["schemas"]["UpdatedFormat"];
                 };
             };
         };
@@ -9747,626 +7299,50 @@ export interface components {
             };
             content: {
                 "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiAcquireMissionRewards"];
-                    synchronized?: components["schemas"]["Synchronized"];
                     /** @enum {integer} */
                     packetId?: 2614779;
+                    result?: components["schemas"]["ResponseResultApiAcquireMissionRewards"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
                 };
             };
         };
-        /** @description Response for /api/ReportError */
-        response_api_ReportError: {
+        /** @description Response for /api/AcquireRailwayDungeonReward */
+        response_api_AcquireRailwayDungeonReward: {
             headers: {
                 [name: string]: unknown;
             };
             content: {
                 "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 67;
+                    result?: components["schemas"]["ResponseResultApiAcquireRailwayDungeonReward"];
                     serverInfo?: components["schemas"]["ServerInfo"];
                     /** @enum {string} */
                     state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
                     synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
+                    updated?: components["schemas"]["UpdatedFormat"];
                 };
             };
         };
-        /** @description Response for /api/SelectRailwayDungeonBuff */
-        response_api_SelectRailwayDungeonBuff: {
+        /** @description Response for /api/AcquireRewardEgoGiftsMirrorDungeon */
+        response_api_AcquireRewardEgoGiftsMirrorDungeon: {
             headers: {
                 [name: string]: unknown;
             };
             content: {
                 "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 9744;
+                    result?: components["schemas"]["ResponseResultApiAcquireRewardEgoGiftsMirrorDungeon"];
                     serverInfo?: components["schemas"]["ServerInfo"];
                     /** @enum {string} */
                     state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiSelectRailwayDungeonBuff"];
                     synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 3655;
-                };
-            };
-        };
-        /** @description Response for /api/FetchLatestSynchronousData */
-        response_api_FetchLatestSynchronousData: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
                     updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /login/GetTermsOfUseStateAll */
-        response_login_GetTermsOfUseStateAll: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultLoginGetTermsOfUseStateAll"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 2044;
-                };
-            };
-        };
-        /** @description Response for /login/UpdateTermsOfUseState */
-        response_login_UpdateTermsOfUseState: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/GetTheaterInfo */
-        response_api_GetTheaterInfo: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiGetTheaterInfo"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 7921;
-                };
-            };
-        };
-        /** @description Response for /api/CompleteTheaterStory */
-        response_api_CompleteTheaterStory: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiCompleteTheaterStory"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 8091;
-                };
-            };
-        };
-        /** @description Response for /api/UpdateFormation */
-        response_api_UpdateFormation: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/UpdateLobbyCg */
-        response_api_UpdateLobbyCg: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/GetUserBanners */
-        response_api_GetUserBanners: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiGetUserBanners"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 127072;
-                };
-            };
-        };
-        /** @description Response for /api/GetFriendsData */
-        response_api_GetFriendsData: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiGetFriendsData"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 19612;
-                };
-            };
-        };
-        /** @description Response for /api/FindFriend */
-        response_api_FindFriend: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiFindFriend"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 4780;
-                };
-            };
-        };
-        /** @description Response for /api/GetRecommendFriends */
-        response_api_GetRecommendFriends: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiGetRecommendFriends"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 4099;
-                };
-            };
-        };
-        /** @description Response for /api/SendFriendRequest */
-        response_api_SendFriendRequest: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiSendFriendRequest"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 7237;
-                };
-            };
-        };
-        /** @description Response for /api/AcceptReceivedFriendRequest */
-        response_api_AcceptReceivedFriendRequest: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiAcceptReceivedFriendRequest"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 1173308;
-                };
-            };
-        };
-        /** @description Response for /api/RejectReceivedFriendRequest */
-        response_api_RejectReceivedFriendRequest: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/CancelSentFriendRequest */
-        response_api_CancelSentFriendRequest: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/DeleteFriend */
-        response_api_DeleteFriend: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/GetFriendSupportPersonalities */
-        response_api_GetFriendSupportPersonalities: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiGetFriendSupportPersonalities"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 297;
-                };
-            };
-        };
-        /** @description Response for /api/GetFriendSupportPersonalitiesByCharacterId */
-        response_api_GetFriendSupportPersonalitiesByCharacterId: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiGetFriendSupportPersonalitiesByCharacterId"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 63447230;
-                };
-            };
-        };
-        /** @description Response for /api/UpdateUserProfile */
-        response_api_UpdateUserProfile: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/GetProfileTicketDecoDatas */
-        response_api_GetProfileTicketDecoDatas: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiGetProfileTicketDecoDatas"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 317;
-                };
-            };
-        };
-        /** @description Response for /api/UpdateProfileTicketDeco */
-        response_api_UpdateProfileTicketDeco: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateProfileTicketDeco"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 1107310;
-                };
-            };
-        };
-        /** @description Response for /api/PlayVendingMachine */
-        response_api_PlayVendingMachine: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiPlayVendingMachine"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 1213;
-                };
-            };
-        };
-        /** @description Response for /api/ExchangeTwine */
-        response_api_ExchangeTwine: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        /** @description Response for /api/EnterStoryMirrorDungeon */
-        response_api_EnterStoryMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiEnterStoryMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 2650319;
-                };
-            };
-        };
-        /** @description Response for /api/ReEnterStoryMirrorDungeon */
-        response_api_ReEnterStoryMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiReEnterStoryMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 2;
-                };
-            };
-        };
-        /** @description Response for /api/UpdateStoryMirrorDungeon */
-        response_api_UpdateStoryMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 0;
-                };
-            };
-        };
-        /** @description Response for /api/ExitStoryMirrorDungeon */
-        response_api_ExitStoryMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiExitStoryMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 0;
-                };
-            };
-        };
-        /** @description Response for /api/EnterStoryMirrorDungeonMapNode */
-        response_api_EnterStoryMirrorDungeonMapNode: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiEnterStoryMirrorDungeonMapNode"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 11236;
-                };
-            };
-        };
-        /** @description Response for /api/UpdateStoryMirrorDungeonMapNode */
-        response_api_UpdateStoryMirrorDungeonMapNode: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonMapNode"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 16922;
-                };
-            };
-        };
-        /** @description Response for /api/EnterStoryMirrorDungeonMapNodeBattleAfterChoice */
-        response_api_EnterStoryMirrorDungeonMapNodeBattleAfterChoice: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiEnterStoryMirrorDungeonMapNodeBattleAfterChoice"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 778688000;
-                };
-            };
-        };
-        /** @description Response for /api/ExitStoryMirrorDungeonMapNode */
-        response_api_ExitStoryMirrorDungeonMapNode: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiExitStoryMirrorDungeonMapNode"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 3360;
-                };
-            };
-        };
-        /** @description Response for /api/UpdateStoryMirrorDungeonUnits */
-        response_api_UpdateStoryMirrorDungeonUnits: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: -1;
                 };
             };
         };
@@ -10377,122 +7353,50 @@ export interface components {
             };
             content: {
                 "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiAcquireRewardEgoGiftsStoryMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
                     /** @enum {integer} */
                     packetId?: 143;
+                    result?: components["schemas"]["ResponseResultApiAcquireRewardEgoGiftsStoryMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
                 };
             };
         };
-        /** @description Response for /api/RejectRewardEgoGiftsStoryMirrorDungeon */
-        response_api_RejectRewardEgoGiftsStoryMirrorDungeon: {
+        /** @description Response for /api/AcquireRewardEgoGiftsWithEnemyBufMirrorDungeon */
+        response_api_AcquireRewardEgoGiftsWithEnemyBufMirrorDungeon: {
             headers: {
                 [name: string]: unknown;
             };
             content: {
                 "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 599;
+                    result?: components["schemas"]["ResponseResultApiAcquireRewardEgoGiftsWithEnemyBufMirrorDungeon"];
                     serverInfo?: components["schemas"]["ServerInfo"];
                     /** @enum {string} */
                     state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiRejectRewardEgoGiftsStoryMirrorDungeon"];
                     synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 430;
+                    updated?: components["schemas"]["UpdatedFormat"];
                 };
             };
         };
-        /** @description Response for /api/PurchaseHealStoryMirrorDungeon */
-        response_api_PurchaseHealStoryMirrorDungeon: {
+        /** @description Response for /api/AcquireStartEgoGiftsAndCreateThemePoolMirrorDungeon */
+        response_api_AcquireStartEgoGiftsAndCreateThemePoolMirrorDungeon: {
             headers: {
                 [name: string]: unknown;
             };
             content: {
                 "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 631628712;
+                    result?: components["schemas"]["ResponseResultApiAcquireStartEgoGiftsAndCreateThemePoolMirrorDungeon"];
                     serverInfo?: components["schemas"]["ServerInfo"];
                     /** @enum {string} */
                     state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiPurchaseHealStoryMirrorDungeon"];
                     synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 8305;
-                };
-            };
-        };
-        /** @description Response for /api/PurchaseFormationStoryMirrorDungeon */
-        response_api_PurchaseFormationStoryMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
                     updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiPurchaseFormationStoryMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 1545;
-                };
-            };
-        };
-        /** @description Response for /api/PurchaseUpgradePersonalityStoryMirrorDungeon */
-        response_api_PurchaseUpgradePersonalityStoryMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiPurchaseUpgradePersonalityStoryMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 665;
-                };
-            };
-        };
-        /** @description Response for /api/PurchaseEgoGiftStoryMirrorDungeon */
-        response_api_PurchaseEgoGiftStoryMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiPurchaseEgoGiftStoryMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 13689;
-                };
-            };
-        };
-        /** @description Response for /api/SellEgoGiftStoryMirrorDungeon */
-        response_api_SellEgoGiftStoryMirrorDungeon: {
-            headers: {
-                [name: string]: unknown;
-            };
-            content: {
-                "application/json": {
-                    serverInfo?: components["schemas"]["ServerInfo"];
-                    /** @enum {string} */
-                    state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiSellEgoGiftStoryMirrorDungeon"];
-                    synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 8414975304;
                 };
             };
         };
@@ -10503,32 +7407,230 @@ export interface components {
             };
             content: {
                 "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 146689;
+                    result?: components["schemas"]["ResponseResultApiAcquireStartEgoGiftsStoryMirrorDungeon"];
                     serverInfo?: components["schemas"]["ServerInfo"];
                     /** @enum {string} */
                     state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiAcquireStartEgoGiftsStoryMirrorDungeon"];
                     synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 146689;
+                    updated?: components["schemas"]["UpdatedFormat"];
                 };
             };
         };
-        /** @description Response for /api/UpgradeEgoGiftStoryMirrorDungeon */
-        response_api_UpgradeEgoGiftStoryMirrorDungeon: {
+        /** @description Response for /api/BattlePassExLevelReward */
+        response_api_BattlePassExLevelReward: {
             headers: {
                 [name: string]: unknown;
             };
             content: {
                 "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 35937;
+                    result?: components["schemas"]["ResponseResultApiBattlePassExLevelReward"];
                     serverInfo?: components["schemas"]["ServerInfo"];
                     /** @enum {string} */
                     state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiUpgradeEgoGiftStoryMirrorDungeon"];
                     synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/BattlePassMissionReward */
+        response_api_BattlePassMissionReward: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
                     /** @enum {integer} */
-                    packetId?: 2649;
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/BattlePassMissionRewardAll */
+        response_api_BattlePassMissionRewardAll: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/BattlePassReward */
+        response_api_BattlePassReward: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 0;
+                    result?: components["schemas"]["ResponseResultApiBattlePassReward_ALL"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/BattlePassReward_ALL */
+        response_api_BattlePassReward_ALL: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 0;
+                    result?: components["schemas"]["ResponseResultApiBattlePassReward_ALL"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/CancelSentFriendRequest */
+        response_api_CancelSentFriendRequest: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ChangeCurrentAnnouncer */
+        response_api_ChangeCurrentAnnouncer: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/CheckSeasonLog */
+        response_api_CheckSeasonLog: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 59314125;
+                    result?: components["schemas"]["ResponseResultApiCheckSeasonLog"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ClaimClosedGachaRewards */
+        response_api_ClaimClosedGachaRewards: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 0;
+                    result?: components["schemas"]["ResponseResultApiClaimClosedGachaRewards"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ClaimEventReward */
+        response_api_ClaimEventReward: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 872;
+                    result?: components["schemas"]["ResponseResultApiClaimEventReward"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ClaimEventReward_ALL */
+        response_api_ClaimEventReward_ALL: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1033;
+                    result?: components["schemas"]["ResponseResultApiClaimEventReward_ALL"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/CombineEgoGiftMirrorDungeon */
+        response_api_CombineEgoGiftMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 856;
+                    result?: components["schemas"]["ResponseResultApiCombineEgoGiftMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
                 };
             };
         };
@@ -10539,32 +7641,1616 @@ export interface components {
             };
             content: {
                 "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 41756528;
+                    result?: components["schemas"]["ResponseResultApiCombineEgoGiftStoryMirrorDungeon"];
                     serverInfo?: components["schemas"]["ServerInfo"];
                     /** @enum {string} */
                     state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiCombineEgoGiftStoryMirrorDungeon"];
                     synchronized?: components["schemas"]["Synchronized"];
-                    /** @enum {integer} */
-                    packetId?: 41756528;
+                    updated?: components["schemas"]["UpdatedFormat"];
                 };
             };
         };
-        /** @description Response for /api/RefreshStartEgoGiftsStoryMirrorDungeon */
-        response_api_RefreshStartEgoGiftsStoryMirrorDungeon: {
+        /** @description Response for /api/CompleteMinistory */
+        response_api_CompleteMinistory: {
             headers: {
                 [name: string]: unknown;
             };
             content: {
                 "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
                     serverInfo?: components["schemas"]["ServerInfo"];
                     /** @enum {string} */
                     state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiRefreshStartEgoGiftsStoryMirrorDungeon"];
                     synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/CompleteTheaterStory */
+        response_api_CompleteTheaterStory: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
                     /** @enum {integer} */
-                    packetId?: 795;
+                    packetId?: 8091;
+                    result?: components["schemas"]["ResponseResultApiCompleteTheaterStory"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ConfirmedSeasonLog */
+        response_api_ConfirmedSeasonLog: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/DeleteFriend */
+        response_api_DeleteFriend: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/EgoGacksung */
+        response_api_EgoGacksung: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/EgoGacksungWithItems */
+        response_api_EgoGacksungWithItems: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/EnableSpecialStartBuffMirrorDungeon */
+        response_api_EnableSpecialStartBuffMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2016400;
+                    result?: components["schemas"]["ResponseResultApiEnableSpecialStartBuffMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/EnableStartBuffMirrorDungeon */
+        response_api_EnableStartBuffMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2730;
+                    result?: components["schemas"]["ResponseResultApiEnableStartBuffMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/EnterExpDungeon */
+        response_api_EnterExpDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 207402;
+                    result?: components["schemas"]["ResponseResultApiEnterExpDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/EnterMirrorDungeon */
+        response_api_EnterMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 6401;
+                    result?: components["schemas"]["ResponseResultApiEnterMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/EnterMirrorDungeonMapNode */
+        response_api_EnterMirrorDungeonMapNode: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 321651;
+                    result?: components["schemas"]["ResponseResultApiEnterMirrorDungeonMapNode"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/EnterMirrordungeonMapNodeBattleAfterChoice */
+        response_api_EnterMirrordungeonMapNodeBattleAfterChoice: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 0;
+                    result?: components["schemas"]["ResponseResultApiEnterMirrordungeonMapNodeBattleAfterChoice"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/EnterRailwayDungeon */
+        response_api_EnterRailwayDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 256;
+                    result?: components["schemas"]["ResponseResultApiEnterRailwayDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/EnterRailwayDungeonNode */
+        response_api_EnterRailwayDungeonNode: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1672028;
+                    result?: components["schemas"]["ResponseResultApiEnterRailwayDungeonNode"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/EnterStageBattle */
+        response_api_EnterStageBattle: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1415;
+                    result?: components["schemas"]["ResponseResultApiEnterStageBattle"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/EnterStoryDungeon */
+        response_api_EnterStoryDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2586;
+                    result?: components["schemas"]["ResponseResultApiEnterStoryDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/EnterStoryDungeonMapNode */
+        response_api_EnterStoryDungeonMapNode: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 3015;
+                    result?: components["schemas"]["ResponseResultApiEnterStoryDungeonMapNode"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/EnterStoryDungeonMapNodeBattleAfterChoice */
+        response_api_EnterStoryDungeonMapNodeBattleAfterChoice: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1225;
+                    result?: components["schemas"]["ResponseResultApiEnterStoryDungeonMapNodeBattleAfterChoice"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/EnterStoryMirrorDungeon */
+        response_api_EnterStoryMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2650319;
+                    result?: components["schemas"]["ResponseResultApiEnterStoryMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/EnterStoryMirrorDungeonMapNode */
+        response_api_EnterStoryMirrorDungeonMapNode: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 11236;
+                    result?: components["schemas"]["ResponseResultApiEnterStoryMirrorDungeonMapNode"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/EnterStoryMirrorDungeonMapNodeBattleAfterChoice */
+        response_api_EnterStoryMirrorDungeonMapNodeBattleAfterChoice: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 778688000;
+                    result?: components["schemas"]["ResponseResultApiEnterStoryMirrorDungeonMapNodeBattleAfterChoice"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/EnterThreadDungeon */
+        response_api_EnterThreadDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 63;
+                    result?: components["schemas"]["ResponseResultApiEnterThreadDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ExchangeTwine */
+        response_api_ExchangeTwine: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ExitExpDungeon */
+        response_api_ExitExpDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 891135;
+                    result?: components["schemas"]["ResponseResultApiExitExpDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ExitMirrorDungeon */
+        response_api_ExitMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 624;
+                    result?: components["schemas"]["ResponseResultApiExitMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ExitMirrorDungeonMapNode */
+        response_api_ExitMirrorDungeonMapNode: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 14440000;
+                    result?: components["schemas"]["ResponseResultApiExitMirrorDungeonMapNode"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ExitRailwayDungeon */
+        response_api_ExitRailwayDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 4321;
+                    result?: components["schemas"]["ResponseResultApiExitRailwayDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ExitRailwayDungeonNode */
+        response_api_ExitRailwayDungeonNode: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 26069;
+                    result?: components["schemas"]["ResponseResultApiExitRailwayDungeonNode"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ExitRailwayDungeonRestNode */
+        response_api_ExitRailwayDungeonRestNode: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1397;
+                    result?: components["schemas"]["ResponseResultApiExitRailwayDungeonRestNode"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ExitStageBattle */
+        response_api_ExitStageBattle: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1327;
+                    result?: components["schemas"]["ResponseResultApiExitStageBattle"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ExitStory */
+        response_api_ExitStory: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 5196312;
+                    result?: components["schemas"]["ResponseResultApiExitStory"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ExitStoryDungeon */
+        response_api_ExitStoryDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 0;
+                    result?: components["schemas"]["ResponseResultApiExitStoryDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ExitStoryDungeonMapNode */
+        response_api_ExitStoryDungeonMapNode: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1848;
+                    result?: components["schemas"]["ResponseResultApiExitStoryDungeonMapNode"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ExitStoryMirrorDungeon */
+        response_api_ExitStoryMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 0;
+                    result?: components["schemas"]["ResponseResultApiExitStoryMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ExitStoryMirrorDungeonMapNode */
+        response_api_ExitStoryMirrorDungeonMapNode: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 3360;
+                    result?: components["schemas"]["ResponseResultApiExitStoryMirrorDungeonMapNode"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ExitThreadDungeon */
+        response_api_ExitThreadDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1508;
+                    result?: components["schemas"]["ResponseResultApiExitThreadDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/FetchLatestSynchronousData */
+        response_api_FetchLatestSynchronousData: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/FindFriend */
+        response_api_FindFriend: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 4780;
+                    result?: components["schemas"]["ResponseResultApiFindFriend"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/GetAbnormalityLogData */
+        response_api_GetAbnormalityLogData: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 6484;
+                    result?: components["schemas"]["ResponseResultApiGetAbnormalityLogData"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/GetAttendanceState */
+        response_api_GetAttendanceState: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 81;
+                    result?: components["schemas"]["ResponseResultApiGetAttendanceState"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/GetDailyDungeonInfo */
+        response_api_GetDailyDungeonInfo: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 4867;
+                    result?: components["schemas"]["ResponseResultApiGetDailyDungeonInfo"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/GetDailyLoginState */
+        response_api_GetDailyLoginState: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 4077;
+                    result?: components["schemas"]["ResponseResultApiGetDailyLoginState"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/GetDanteNoteState */
+        response_api_GetDanteNoteState: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 84;
+                    result?: components["schemas"]["ResponseResultApiGetDanteNoteState"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/GetDungeonSaveInfoAll */
+        response_api_GetDungeonSaveInfoAll: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2551;
+                    result?: components["schemas"]["ResponseResultApiGetDungeonSaveInfoAll"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/GetFriendsData */
+        response_api_GetFriendsData: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 19612;
+                    result?: components["schemas"]["ResponseResultApiGetFriendsData"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/GetFriendSupportPersonalities */
+        response_api_GetFriendSupportPersonalities: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 297;
+                    result?: components["schemas"]["ResponseResultApiGetFriendSupportPersonalities"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/GetFriendSupportPersonalitiesByCharacterId */
+        response_api_GetFriendSupportPersonalitiesByCharacterId: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 63447230;
+                    result?: components["schemas"]["ResponseResultApiGetFriendSupportPersonalitiesByCharacterId"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/GetHellsChickenState */
+        response_api_GetHellsChickenState: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 5719946;
+                    result?: components["schemas"]["ResponseResultApiGetHellsChickenState"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/GetMirrorDungeonEgoGiftRecord */
+        response_api_GetMirrorDungeonEgoGiftRecord: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 0;
+                    result?: components["schemas"]["ResponseResultApiGetMirrorDungeonEgoGiftRecord"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/GetProfileTicketDecoDatas */
+        response_api_GetProfileTicketDecoDatas: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 317;
+                    result?: components["schemas"]["ResponseResultApiGetProfileTicketDecoDatas"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/GetRailwayDungeonNodeAndLogAll */
+        response_api_GetRailwayDungeonNodeAndLogAll: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 4188;
+                    result?: components["schemas"]["ResponseResultApiGetRailwayDungeonNodeAndLogAll"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/GetRecommendFriends */
+        response_api_GetRecommendFriends: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 4099;
+                    result?: components["schemas"]["ResponseResultApiGetRecommendFriends"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/GetStageProgressRateReward */
+        response_api_GetStageProgressRateReward: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 24;
+                    result?: components["schemas"]["ResponseResultApiGetStageProgressRateReward"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/GetStartBuffFInfoMirrorDungeon */
+        response_api_GetStartBuffFInfoMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 10734;
+                    result?: components["schemas"]["ResponseResultApiGetStartBuffFInfoMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/GetStoryDungeonNodeRecord */
+        response_api_GetStoryDungeonNodeRecord: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1932;
+                    result?: components["schemas"]["ResponseResultApiGetStoryDungeonNodeRecord"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/GetStoryDungeonSaveInfo */
+        response_api_GetStoryDungeonSaveInfo: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 81746504;
+                    result?: components["schemas"]["ResponseResultApiGetStoryDungeonSaveInfo"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/GetTheaterInfo */
+        response_api_GetTheaterInfo: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 7921;
+                    result?: components["schemas"]["ResponseResultApiGetTheaterInfo"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/GetUserBanners */
+        response_api_GetUserBanners: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 127072;
+                    result?: components["schemas"]["ResponseResultApiGetUserBanners"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/GetUserCouponState */
+        response_api_GetUserCouponState: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2798;
+                    result?: components["schemas"]["ResponseResultApiGetUserCouponState"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/GiveUpRailwayDungeonNode */
+        response_api_GiveUpRailwayDungeonNode: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 740080;
+                    result?: components["schemas"]["ResponseResultApiGiveUpRailwayDungeonNode"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/GiveUpRailwayDungeonNodeInBattle */
+        response_api_GiveUpRailwayDungeonNodeInBattle: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1846;
+                    result?: components["schemas"]["ResponseResultApiGiveUpRailwayDungeonNodeInBattle"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/LoadUserDataAll */
+        response_api_LoadUserDataAll: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 5892;
+                    result?: components["schemas"]["ResponseResultApiLoadUserDataAll"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/PersonalityGacksung */
+        response_api_PersonalityGacksung: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/PersonalityGacksungWithItems */
+        response_api_PersonalityGacksungWithItems: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/PlayGacha */
+        response_api_PlayGacha: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 571787;
+                    result?: components["schemas"]["ResponseResultApiPlayGacha"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/PlayVendingMachine */
+        response_api_PlayVendingMachine: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1213;
+                    result?: components["schemas"]["ResponseResultApiPlayVendingMachine"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/PreviewMirrorDungeonExitReward */
+        response_api_PreviewMirrorDungeonExitReward: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 0;
+                    result?: components["schemas"]["ResponseResultApiPreviewMirrorDungeonExitReward"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/PurchaseBattlePassByRealLunacy */
+        response_api_PurchaseBattlePassByRealLunacy: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/PurchaseBattlePassLevel */
+        response_api_PurchaseBattlePassLevel: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/PurchaseEgoGiftMirrorDungeon */
+        response_api_PurchaseEgoGiftMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 61;
+                    result?: components["schemas"]["ResponseResultApiPurchaseEgoGiftMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/PurchaseEgoGiftStoryMirrorDungeon */
+        response_api_PurchaseEgoGiftStoryMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 13689;
+                    result?: components["schemas"]["ResponseResultApiPurchaseEgoGiftStoryMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/PurchaseEnkephalin */
+        response_api_PurchaseEnkephalin: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/PurchaseEnkephalinModule */
+        response_api_PurchaseEnkephalinModule: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/PurchaseFormationMirrorDungeon */
+        response_api_PurchaseFormationMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2067798879;
+                    result?: components["schemas"]["ResponseResultApiPurchaseFormationMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/PurchaseFormationStoryMirrorDungeon */
+        response_api_PurchaseFormationStoryMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1545;
+                    result?: components["schemas"]["ResponseResultApiPurchaseFormationStoryMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/PurchaseHealMirrorDungeon */
+        response_api_PurchaseHealMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 0;
+                    result?: components["schemas"]["ResponseResultApiPurchaseHealMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/PurchaseHealStoryMirrorDungeon */
+        response_api_PurchaseHealStoryMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 8305;
+                    result?: components["schemas"]["ResponseResultApiPurchaseHealStoryMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/PurchaseSpecialPassProduct */
+        response_api_PurchaseSpecialPassProduct: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/PurchaseSpecialPassProduct_IncludeLimbusPass */
+        response_api_PurchaseSpecialPassProduct_IncludeLimbusPass: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/PurchaseSpecialPassProduct_NotIncludeLimbusPass */
+        response_api_PurchaseSpecialPassProduct_NotIncludeLimbusPass: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/PurchaseStartBuffMirrorDungeon */
+        response_api_PurchaseStartBuffMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1319;
+                    result?: components["schemas"]["ResponseResultApiPurchaseStartBuffMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/PurchaseUpgradePersonalityMirrorDungeon */
+        response_api_PurchaseUpgradePersonalityMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2886;
+                    result?: components["schemas"]["ResponseResultApiPurchaseUpgradePersonalityMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/PurchaseUpgradePersonalityStoryMirrorDungeon */
+        response_api_PurchaseUpgradePersonalityStoryMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 665;
+                    result?: components["schemas"]["ResponseResultApiPurchaseUpgradePersonalityStoryMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/RecreateThemeFloorPoolMirrorDungeon */
+        response_api_RecreateThemeFloorPoolMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 4292468;
+                    result?: components["schemas"]["ResponseResultApiRecreateThemeFloorPoolMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ReEnterMirrorDungeon */
+        response_api_ReEnterMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1896129;
+                    result?: components["schemas"]["ResponseResultApiReEnterMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ReEnterStoryDungeon */
+        response_api_ReEnterStoryDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 16036966;
+                    result?: components["schemas"]["ResponseResultApiReEnterStoryDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ReEnterStoryMirrorDungeon */
+        response_api_ReEnterStoryMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2;
+                    result?: components["schemas"]["ResponseResultApiReEnterStoryMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/RefreshMailbox */
+        response_api_RefreshMailbox: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1326;
+                    result?: components["schemas"]["ResponseResultApiRefreshMailbox"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/RefreshShopEgoGiftsMirrorDungeon */
+        response_api_RefreshShopEgoGiftsMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 8805624625;
+                    result?: components["schemas"]["ResponseResultApiRefreshShopEgoGiftsMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
                 };
             };
         };
@@ -10575,14 +9261,140 @@ export interface components {
             };
             content: {
                 "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 18496;
+                    result?: components["schemas"]["ResponseResultApiRefreshShopEgoGiftsStoryMirrorDungeon"];
                     serverInfo?: components["schemas"]["ServerInfo"];
                     /** @enum {string} */
                     state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiRefreshShopEgoGiftsStoryMirrorDungeon"];
                     synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/RefreshStartEgoGiftsMirrorDungeon */
+        response_api_RefreshStartEgoGiftsMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
                     /** @enum {integer} */
-                    packetId?: 18496;
+                    packetId?: 1249;
+                    result?: components["schemas"]["ResponseResultApiRefreshStartEgoGiftsMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/RefreshStartEgoGiftsStoryMirrorDungeon */
+        response_api_RefreshStartEgoGiftsStoryMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 795;
+                    result?: components["schemas"]["ResponseResultApiRefreshStartEgoGiftsStoryMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/RejectReceivedFriendRequest */
+        response_api_RejectReceivedFriendRequest: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/RejectRewardEgoGiftsMirrorDungeon */
+        response_api_RejectRewardEgoGiftsMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1995;
+                    result?: components["schemas"]["ResponseResultApiRejectRewardEgoGiftsMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/RejectRewardEgoGiftsStoryMirrorDungeon */
+        response_api_RejectRewardEgoGiftsStoryMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 430;
+                    result?: components["schemas"]["ResponseResultApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/RejectRewardEgoGiftWithEnemyBufsMirrorDungeon */
+        response_api_RejectRewardEgoGiftWithEnemyBufsMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1281;
+                    result?: components["schemas"]["ResponseResultApiRejectRewardEgoGiftWithEnemyBufsMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/RemoveMirrorDungeonEgoGift */
+        response_api_RemoveMirrorDungeonEgoGift: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 25569824;
+                    result?: components["schemas"]["ResponseResultApiRemoveMirrorDungeonEgoGift"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
                 };
             };
         };
@@ -10593,1917 +9405,3105 @@ export interface components {
             };
             content: {
                 "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 666711392256;
+                    result?: components["schemas"]["ResponseResultApiRemoveStoryMirrorDungeonEgoGift"];
                     serverInfo?: components["schemas"]["ServerInfo"];
                     /** @enum {string} */
                     state?: "ok";
-                    updated?: components["schemas"]["UpdatedFormat"];
-                    result?: components["schemas"]["ResponseResultApiRemoveStoryMirrorDungeonEgoGift"];
                     synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ReportError */
+        response_api_ReportError: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
                     /** @enum {integer} */
-                    packetId?: 666711392256;
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/ReturnSavePointStoryDungeonMap */
+        response_api_ReturnSavePointStoryDungeonMap: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 4327;
+                    result?: components["schemas"]["ResponseResultApiReturnSavePointStoryDungeonMap"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/SaveMiniStoryWeek */
+        response_api_SaveMiniStoryWeek: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/SelectFormationMirrorDungeon */
+        response_api_SelectFormationMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 3728;
+                    result?: components["schemas"]["ResponseResultApiSelectFormationMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/SelectRailwayDungeonBuff */
+        response_api_SelectRailwayDungeonBuff: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 3655;
+                    result?: components["schemas"]["ResponseResultApiSelectRailwayDungeonBuff"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/SelectThemeFloorMirrorDungeon */
+        response_api_SelectThemeFloorMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 15978612;
+                    result?: components["schemas"]["ResponseResultApiSelectThemeFloorMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/SellEgoGiftMirrorDungeon */
+        response_api_SellEgoGiftMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 102240627776;
+                    result?: components["schemas"]["ResponseResultApiSellEgoGiftMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/SellEgoGiftStoryMirrorDungeon */
+        response_api_SellEgoGiftStoryMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 8414975304;
+                    result?: components["schemas"]["ResponseResultApiSellEgoGiftStoryMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/SendFriendRequest */
+        response_api_SendFriendRequest: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 7237;
+                    result?: components["schemas"]["ResponseResultApiSendFriendRequest"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/SendMirrorDungeonLogError */
+        response_api_SendMirrorDungeonLogError: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/SendMirrorDungeonShopExit */
+        response_api_SendMirrorDungeonShopExit: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/SetPersonalityGacksungIllust */
+        response_api_SetPersonalityGacksungIllust: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/SkipExpDungeon */
+        response_api_SkipExpDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1323;
+                    result?: components["schemas"]["ResponseResultApiSkipExpDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/SkipThreadDungeon */
+        response_api_SkipThreadDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 16711644;
+                    result?: components["schemas"]["ResponseResultApiSkipThreadDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/SkipTutorial */
+        response_api_SkipTutorial: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/UnsealMails */
+        response_api_UnsealMails: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 0;
+                    result?: components["schemas"]["ResponseResultApiUnsealMails"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/UpdateAbnormalityLogData */
+        response_api_UpdateAbnormalityLogData: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 7616;
+                    result?: components["schemas"]["ResponseResultApiUpdateAbnormalityLogData"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/UpdateFormation */
+        response_api_UpdateFormation: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/UpdateLobbyCg */
+        response_api_UpdateLobbyCg: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/UpdateMirrorDungeon */
+        response_api_UpdateMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 184;
+                    result?: components["schemas"]["ResponseResultApiUpdateMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/UpdateMirrorDungeonMapNode */
+        response_api_UpdateMirrorDungeonMapNode: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 0;
+                    result?: components["schemas"]["ResponseResultApiUpdateMirrorDungeonMapNode"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/UpdateMirrorDungeonUnits */
+        response_api_UpdateMirrorDungeonUnits: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/UpdateProfileTicketDeco */
+        response_api_UpdateProfileTicketDeco: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1107310;
+                    result?: components["schemas"]["ResponseResultApiUpdateProfileTicketDeco"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/UpdateStoryDungeonMapNode */
+        response_api_UpdateStoryDungeonMapNode: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 3695;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryDungeonMapNode"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/UpdateStoryDungeonUnits */
+        response_api_UpdateStoryDungeonUnits: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/UpdateStoryMirrorDungeon */
+        response_api_UpdateStoryMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 0;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/UpdateStoryMirrorDungeonMapNode */
+        response_api_UpdateStoryMirrorDungeonMapNode: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 16922;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonMapNode"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/UpdateStoryMirrorDungeonUnits */
+        response_api_UpdateStoryMirrorDungeonUnits: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/UpdateUserProfile */
+        response_api_UpdateUserProfile: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/UpgradeEgoGiftMirrorDungeon */
+        response_api_UpgradeEgoGiftMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 0;
+                    result?: components["schemas"]["ResponseResultApiUpgradeEgoGiftMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/UpgradeEgoGiftStoryMirrorDungeon */
+        response_api_UpgradeEgoGiftStoryMirrorDungeon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2649;
+                    result?: components["schemas"]["ResponseResultApiUpgradeEgoGiftStoryMirrorDungeon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/UseCoupon */
+        response_api_UseCoupon: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 747377296875;
+                    result?: components["schemas"]["ResponseResultApiUseCoupon"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/UseEgoGacksungItem */
+        response_api_UseEgoGacksungItem: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/UseGachaPityPoint */
+        response_api_UseGachaPityPoint: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 767;
+                    result?: components["schemas"]["ResponseResultApiUseGachaPityPoint"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/UseItem */
+        response_api_UseItem: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 7762392000;
+                    result?: components["schemas"]["ResponseResultApiUseItem"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /api/UsePersonalityExpItem */
+        response_api_UsePersonalityExpItem: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 878;
+                    result?: components["schemas"]["ResponseResultApiUsePersonalityExpItem"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /iap/FinalizePurchaseAsSteam */
+        response_iap_FinalizePurchaseAsSteam: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /iap/GetSteamWalletCurrency */
+        response_iap_GetSteamWalletCurrency: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 4874;
+                    result?: components["schemas"]["ResponseResultIapGetSteamWalletCurrency"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /iap/InitPurchase */
+        response_iap_InitPurchase: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1501;
+                    result?: components["schemas"]["ResponseResultIapInitPurchase"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /iap/InitPurchaseAsSteam */
+        response_iap_InitPurchaseAsSteam: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /iap/Purchase */
+        response_iap_Purchase: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /iap/PurchaseAsApple */
+        response_iap_PurchaseAsApple: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /iap/PurchaseAsGoogle */
+        response_iap_PurchaseAsGoogle: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /iap/PurchaseIngameProduct */
+        response_iap_PurchaseIngameProduct: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /iap/UpdateSteamPendingPurchase */
+        response_iap_UpdateSteamPendingPurchase: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 177;
+                    result?: components["schemas"]["ResponseResultIapUpdateSteamPendingPurchase"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /log/GetGachaLogAll */
+        response_log_GetGachaLogAll: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 0;
+                    result?: components["schemas"]["ResponseResultLogGetGachaLogAll"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /log/GetMailLogAll */
+        response_log_GetMailLogAll: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 0;
+                    result?: components["schemas"]["ResponseResultLogGetMailLogAll"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /log/ReportModifiedHash */
+        response_log_ReportModifiedHash: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /log/ReportSpeedHack */
+        response_log_ReportSpeedHack: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /login/CancelSecession */
+        response_login_CancelSecession: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /login/CheckClientVersion */
+        response_login_CheckClientVersion: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 499849;
+                    result?: components["schemas"]["ResponseResultLoginCheckClientVersion"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /login/GetBanDetails */
+        response_login_GetBanDetails: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 0;
+                    result?: components["schemas"]["ResponseResultLoginGetBanDetails"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /login/GetInfoOfLinkWith */
+        response_login_GetInfoOfLinkWith: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 653972001;
+                    result?: components["schemas"]["ResponseResultLoginGetInfoOfLinkWith"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /login/GetTermsOfUseStateAll */
+        response_login_GetTermsOfUseStateAll: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2044;
+                    result?: components["schemas"]["ResponseResultLoginGetTermsOfUseStateAll"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /login/LinkWithAnother */
+        response_login_LinkWithAnother: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 63235067830;
+                    result?: components["schemas"]["ResponseResultLoginLinkWithAnother"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /login/LinkWithApple */
+        response_login_LinkWithApple: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 9735176;
+                    result?: components["schemas"]["ResponseResultLoginLinkWithApple"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /login/LinkWithGoogle */
+        response_login_LinkWithGoogle: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 4800;
+                    result?: components["schemas"]["ResponseResultLoginLinkWithGoogle"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /login/RefreshLinkAuth */
+        response_login_RefreshLinkAuth: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 35935;
+                    result?: components["schemas"]["ResponseResultLoginRefreshLinkAuth"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /login/SignInAsApple */
+        response_login_SignInAsApple: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 58301;
+                    result?: components["schemas"]["ResponseResultLoginSignInAsApple"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /login/SignInAsGoogle */
+        response_login_SignInAsGoogle: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 980;
+                    result?: components["schemas"]["ResponseResultLoginSignInAsGoogle"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /login/SignInAsGuest */
+        response_login_SignInAsGuest: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 3000;
+                    result?: components["schemas"]["ResponseResultLoginSignInAsGuest"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /login/SignInAsNewGuest */
+        response_login_SignInAsNewGuest: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 0;
+                    result?: components["schemas"]["ResponseResultLoginSignInAsNewGuest"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /login/SignInAsSteam */
+        response_login_SignInAsSteam: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 234;
+                    result?: components["schemas"]["ResponseResultLoginSignInAsSteam"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /login/TryToSecede */
+        response_login_TryToSecede: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 6794;
+                    result?: components["schemas"]["ResponseResultLoginTryToSecede"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /login/UnLinkWithAnother */
+        response_login_UnLinkWithAnother: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 7976023992;
+                    result?: components["schemas"]["ResponseResultLoginUnLinkWithAnother"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
+                };
+            };
+        };
+        /** @description Response for /login/UpdateTermsOfUseState */
+        response_login_UpdateTermsOfUseState: {
+            headers: {
+                [name: string]: unknown;
+            };
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    result?: components["schemas"]["ResponseResultApiUpdateStoryMirrorDungeonUnits"];
+                    serverInfo?: components["schemas"]["ServerInfo"];
+                    /** @enum {string} */
+                    state?: "ok";
+                    synchronized?: components["schemas"]["Synchronized"];
+                    updated?: components["schemas"]["UpdatedFormat"];
                 };
             };
         };
     };
     parameters: never;
     requestBodies: {
-        request_api_GetHellsChickenState: {
+        request_api_AcceptReceivedFriendRequest: {
             content: {
                 "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
                     /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_AcquireHellsChickenReward: {
-            content: {
-                "application/json": {
+                    packetId?: 4130;
+                    parameters?: components["schemas"]["RequestParamApiAcceptReceivedFriendRequest"];
                     userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiAcquireHellsChickenReward"];
-                    /** @enum {integer} */
-                    packetId?: 114;
-                };
-            };
-        };
-        request_api_AcquireRailwayDungeonReward: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiAcquireRailwayDungeonReward"];
-                    /** @enum {integer} */
-                    packetId?: 1224;
-                };
-            };
-        };
-        request_api_ChangeCurrentAnnouncer: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiChangeCurrentAnnouncer"];
-                    /** @enum {integer} */
-                    packetId?: 110502144;
-                };
-            };
-        };
-        request_api_GetAttendanceState: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
                 };
             };
         };
         request_api_AcquireAttendanceReward: {
             content: {
                 "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiAcquireAttendanceReward"];
                     /** @enum {integer} */
                     packetId?: 0;
-                };
-            };
-        };
-        request_api_BattlePassMissionReward: {
-            content: {
-                "application/json": {
+                    parameters?: components["schemas"]["RequestParamApiAcquireAttendanceReward"];
                     userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiBattlePassMissionReward"];
-                    /** @enum {integer} */
-                    packetId?: 103;
-                };
-            };
-        };
-        request_api_BattlePassMissionRewardAll: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_BattlePassReward: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiBattlePassReward"];
-                    /** @enum {integer} */
-                    packetId?: 5574;
-                };
-            };
-        };
-        request_api_BattlePassReward_ALL: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_BattlePassExLevelReward: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_PurchaseBattlePassLevel: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiPurchaseBattlePassLevel"];
-                    /** @enum {integer} */
-                    packetId?: 3600;
-                };
-            };
-        };
-        request_api_PurchaseSpecialPassProduct: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_PurchaseSpecialPassProduct_IncludeLimbusPass: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_PurchaseSpecialPassProduct_NotIncludeLimbusPass: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_PurchaseBattlePassByRealLunacy: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_UseCoupon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiUseCoupon"];
-                    /** @enum {integer} */
-                    packetId?: 2111209;
-                };
-            };
-        };
-        request_api_GetUserCouponState: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_EnterExpDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiEnterExpDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 104;
-                };
-            };
-        };
-        request_api_ExitExpDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiExitExpDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 3634;
-                };
-            };
-        };
-        request_api_SkipExpDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiSkipExpDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 24577728;
-                };
-            };
-        };
-        request_api_EnterThreadDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiEnterThreadDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 95006081547;
-                };
-            };
-        };
-        request_api_ExitThreadDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiExitThreadDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 1474;
-                };
-            };
-        };
-        request_api_GetDailyDungeonInfo: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_SkipThreadDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiSkipThreadDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 60;
-                };
-            };
-        };
-        request_api_GetDailyLoginState: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
                 };
             };
         };
         request_api_AcquireDailyLoginReward: {
             content: {
                 "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiAcquireDailyLoginReward"];
                     /** @enum {integer} */
                     packetId?: 10000;
-                };
-            };
-        };
-        request_api_GetDanteNoteState: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_SkipTutorial: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_GetStageProgressRateReward: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiGetStageProgressRateReward"];
-                    /** @enum {integer} */
-                    packetId?: 834897;
-                };
-            };
-        };
-        request_api_EnterStageBattle: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiEnterStageBattle"];
-                    /** @enum {integer} */
-                    packetId?: 531505;
-                };
-            };
-        };
-        request_api_ExitStageBattle: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiExitStageBattle"];
-                    /** @enum {integer} */
-                    packetId?: 30;
-                };
-            };
-        };
-        request_api_GetDungeonSaveInfoAll: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiGetDungeonSaveInfoAll"];
-                    /** @enum {integer} */
-                    packetId?: 2279;
-                };
-            };
-        };
-        request_api_GetStoryDungeonSaveInfo: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_EnterStoryDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiEnterStoryDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 36443;
-                };
-            };
-        };
-        request_api_ReEnterStoryDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiReEnterStoryDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 970299;
-                };
-            };
-        };
-        request_api_ExitStoryDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiExitStoryDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 7323;
-                };
-            };
-        };
-        request_api_EnterStoryDungeonMapNode: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiEnterStoryDungeonMapNode"];
-                    /** @enum {integer} */
-                    packetId?: 366;
-                };
-            };
-        };
-        request_api_UpdateStoryDungeonMapNode: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiUpdateStoryDungeonMapNode"];
-                    /** @enum {integer} */
-                    packetId?: 81796;
-                };
-            };
-        };
-        request_api_EnterStoryDungeonMapNodeBattleAfterChoice: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiEnterStoryDungeonMapNodeBattleAfterChoice"];
-                    /** @enum {integer} */
-                    packetId?: 1511;
-                };
-            };
-        };
-        request_api_ExitStoryDungeonMapNode: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiExitStoryDungeonMapNode"];
-                    /** @enum {integer} */
-                    packetId?: 2214;
-                };
-            };
-        };
-        request_api_UpdateStoryDungeonUnits: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiUpdateStoryDungeonUnits"];
-                    /** @enum {integer} */
-                    packetId?: 13511184;
-                };
-            };
-        };
-        request_api_ReturnSavePointStoryDungeonMap: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_ExitStory: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiExitStory"];
-                    /** @enum {integer} */
-                    packetId?: 495627;
-                };
-            };
-        };
-        request_api_GetAbnormalityLogData: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiGetAbnormalityLogData"];
-                    /** @enum {integer} */
-                    packetId?: 6084;
-                };
-            };
-        };
-        request_api_UpdateAbnormalityLogData: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiUpdateAbnormalityLogData"];
-                    /** @enum {integer} */
-                    packetId?: 1726563;
-                };
-            };
-        };
-        request_api_GetStoryDungeonNodeRecord: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiGetStoryDungeonNodeRecord"];
-                    /** @enum {integer} */
-                    packetId?: 26010000;
-                };
-            };
-        };
-        request_api_EnterRailwayDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiEnterRailwayDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 13;
-                };
-            };
-        };
-        request_api_EnterRailwayDungeonNode: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiEnterRailwayDungeonNode"];
-                    /** @enum {integer} */
-                    packetId?: 59353;
-                };
-            };
-        };
-        request_api_GetRailwayDungeonNodeAndLogAll: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiGetRailwayDungeonNodeAndLogAll"];
-                    /** @enum {integer} */
-                    packetId?: 2577;
-                };
-            };
-        };
-        request_api_ClaimEventReward: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiClaimEventReward"];
-                    /** @enum {integer} */
-                    packetId?: 1849639;
-                };
-            };
-        };
-        request_api_ClaimEventReward_ALL: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiClaimEventReward_ALL"];
-                    /** @enum {integer} */
-                    packetId?: 6682225;
-                };
-            };
-        };
-        request_api_ExitRailwayDungeonNode: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiExitRailwayDungeonNode"];
-                    /** @enum {integer} */
-                    packetId?: 550;
-                };
-            };
-        };
-        request_api_ExitRailwayDungeonRestNode: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiExitRailwayDungeonRestNode"];
-                    /** @enum {integer} */
-                    packetId?: 19800;
-                };
-            };
-        };
-        request_api_PlayGacha: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiPlayGacha"];
-                    /** @enum {integer} */
-                    packetId?: 860;
-                };
-            };
-        };
-        request_log_GetGachaLogAll: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_UseGachaPityPoint: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiUseGachaPityPoint"];
-                    /** @enum {integer} */
-                    packetId?: 353;
-                };
-            };
-        };
-        request_api_ClaimClosedGachaRewards: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_ExitRailwayDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiExitRailwayDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 2681;
-                };
-            };
-        };
-        request_api_GiveUpRailwayDungeonNode: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiGiveUpRailwayDungeonNode"];
-                    /** @enum {integer} */
-                    packetId?: 17172736;
-                };
-            };
-        };
-        request_api_GiveUpRailwayDungeonNodeInBattle: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiGiveUpRailwayDungeonNodeInBattle"];
-                    /** @enum {integer} */
-                    packetId?: 166496;
-                };
-            };
-        };
-        request_iap_Purchase: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamIapPurchase"];
-                    /** @enum {integer} */
-                    packetId?: 46;
-                };
-            };
-        };
-        request_iap_InitPurchase: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamIapInitPurchase"];
-                    /** @enum {integer} */
-                    packetId?: 13528;
-                };
-            };
-        };
-        request_iap_InitPurchaseAsSteam: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamIapInitPurchaseAsSteam"];
-                    /** @enum {integer} */
-                    packetId?: 701;
-                };
-            };
-        };
-        request_iap_FinalizePurchaseAsSteam: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamIapFinalizePurchaseAsSteam"];
-                    /** @enum {integer} */
-                    packetId?: 45499314;
-                };
-            };
-        };
-        request_iap_UpdateSteamPendingPurchase: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_iap_GetSteamWalletCurrency: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamIapGetSteamWalletCurrency"];
-                    /** @enum {integer} */
-                    packetId?: 24897034;
-                };
-            };
-        };
-        request_iap_PurchaseAsGoogle: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamIapPurchaseAsGoogle"];
-                    /** @enum {integer} */
-                    packetId?: 45;
-                };
-            };
-        };
-        request_iap_PurchaseAsApple: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamIapPurchaseAsApple"];
-                    /** @enum {integer} */
-                    packetId?: 731432701;
-                };
-            };
-        };
-        request_iap_PurchaseIngameProduct: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamIapPurchaseIngameProduct"];
-                    /** @enum {integer} */
-                    packetId?: 774400;
-                };
-            };
-        };
-        request_api_UseItem: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiUseItem"];
-                    /** @enum {integer} */
-                    packetId?: 2506;
-                };
-            };
-        };
-        request_api_PurchaseEnkephalinModule: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiPurchaseEnkephalinModule"];
-                    /** @enum {integer} */
-                    packetId?: 387309;
-                };
-            };
-        };
-        request_api_PurchaseEnkephalin: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiPurchaseEnkephalin"];
-                    /** @enum {integer} */
-                    packetId?: 6264;
-                };
-            };
-        };
-        request_api_PersonalityGacksung: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiPersonalityGacksung"];
-                    /** @enum {integer} */
-                    packetId?: 1679;
-                };
-            };
-        };
-        request_api_SetPersonalityGacksungIllust: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiSetPersonalityGacksungIllust"];
-                    /** @enum {integer} */
-                    packetId?: 138;
-                };
-            };
-        };
-        request_api_EgoGacksung: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiEgoGacksung"];
-                    /** @enum {integer} */
-                    packetId?: 9449476;
-                };
-            };
-        };
-        request_api_UsePersonalityExpItem: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiUsePersonalityExpItem"];
-                    /** @enum {integer} */
-                    packetId?: 1354;
-                };
-            };
-        };
-        request_api_UseEgoGacksungItem: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiUseEgoGacksungItem"];
-                    /** @enum {integer} */
-                    packetId?: 2809;
-                };
-            };
-        };
-        request_api_PersonalityGacksungWithItems: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiPersonalityGacksungWithItems"];
-                    /** @enum {integer} */
-                    packetId?: 830587;
-                };
-            };
-        };
-        request_api_EgoGacksungWithItems: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiEgoGacksungWithItems"];
-                    /** @enum {integer} */
-                    packetId?: 20938;
-                };
-            };
-        };
-        request_api_LoadUserDataAll: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_CheckSeasonLog: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_ConfirmedSeasonLog: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_login_SignInAsGuest: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamLoginSignInAsGuest"];
-                    /** @enum {integer} */
-                    packetId?: 135005697000;
-                };
-            };
-        };
-        request_login_SignInAsNewGuest: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamLoginSignInAsNewGuest"];
-                    /** @enum {integer} */
-                    packetId?: 983040;
-                };
-            };
-        };
-        request_login_SignInAsGoogle: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamLoginSignInAsGoogle"];
-                    /** @enum {integer} */
-                    packetId?: 6505;
-                };
-            };
-        };
-        request_login_LinkWithGoogle: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamLoginLinkWithGoogle"];
-                    /** @enum {integer} */
-                    packetId?: 8374;
-                };
-            };
-        };
-        request_login_SignInAsApple: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamLoginSignInAsApple"];
-                    /** @enum {integer} */
-                    packetId?: 3428;
-                };
-            };
-        };
-        request_login_LinkWithApple: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamLoginLinkWithApple"];
-                    /** @enum {integer} */
-                    packetId?: 4123;
-                };
-            };
-        };
-        request_login_SignInAsSteam: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamLoginSignInAsSteam"];
-                    /** @enum {integer} */
-                    packetId?: 1115136;
-                };
-            };
-        };
-        request_login_RefreshLinkAuth: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamLoginRefreshLinkAuth"];
-                    /** @enum {integer} */
-                    packetId?: 9363600;
-                };
-            };
-        };
-        request_login_GetInfoOfLinkWith: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamLoginGetInfoOfLinkWith"];
-                    /** @enum {integer} */
-                    packetId?: 441;
-                };
-            };
-        };
-        request_login_LinkWithAnother: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamLoginLinkWithAnother"];
-                    /** @enum {integer} */
-                    packetId?: 914;
-                };
-            };
-        };
-        request_login_TryToSecede: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_login_CancelSecession: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_login_CheckClientVersion: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_login_GetBanDetails: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_login_UnLinkWithAnother: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamLoginUnLinkWithAnother"];
-                    /** @enum {integer} */
-                    packetId?: 314908;
-                };
-            };
-        };
-        request_api_RefreshMailbox: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_UnsealMails: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiUnsealMails"];
-                    /** @enum {integer} */
-                    packetId?: 6780723;
-                };
-            };
-        };
-        request_log_GetMailLogAll: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_log_ReportSpeedHack: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamLogReportSpeedHack"];
-                    /** @enum {integer} */
-                    packetId?: 1322550;
-                };
-            };
-        };
-        request_log_ReportModifiedHash: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamLogReportModifiedHash"];
-                    /** @enum {integer} */
-                    packetId?: 779;
-                };
-            };
-        };
-        request_api_SaveMiniStoryWeek: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiSaveMiniStoryWeek"];
-                    /** @enum {integer} */
-                    packetId?: 10496;
-                };
-            };
-        };
-        request_api_CompleteMinistory: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiCompleteMinistory"];
-                    /** @enum {integer} */
-                    packetId?: 8580;
-                };
-            };
-        };
-        request_api_EnterMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiEnterMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 1044;
-                };
-            };
-        };
-        request_api_ReEnterMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiReEnterMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 17656804;
-                };
-            };
-        };
-        request_api_UpdateMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiUpdateMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 877;
-                };
-            };
-        };
-        request_api_SelectFormationMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiSelectFormationMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 2394;
-                };
-            };
-        };
-        request_api_RecreateThemeFloorPoolMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_SelectThemeFloorMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiSelectThemeFloorMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 26244;
-                };
-            };
-        };
-        request_api_ExitMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_EnterMirrorDungeonMapNode: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiEnterMirrorDungeonMapNode"];
-                    /** @enum {integer} */
-                    packetId?: 435;
-                };
-            };
-        };
-        request_api_UpdateMirrorDungeonMapNode: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiUpdateMirrorDungeonMapNode"];
-                    /** @enum {integer} */
-                    packetId?: 0;
-                };
-            };
-        };
-        request_api_EnterMirrordungeonMapNodeBattleAfterChoice: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiEnterMirrordungeonMapNodeBattleAfterChoice"];
-                    /** @enum {integer} */
-                    packetId?: 4639;
-                };
-            };
-        };
-        request_api_ExitMirrorDungeonMapNode: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiExitMirrorDungeonMapNode"];
-                    /** @enum {integer} */
-                    packetId?: 1162056;
-                };
-            };
-        };
-        request_api_UpdateMirrorDungeonUnits: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiUpdateMirrorDungeonUnits"];
-                    /** @enum {integer} */
-                    packetId?: 0;
-                };
-            };
-        };
-        request_api_AcquireRewardEgoGiftsMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiAcquireRewardEgoGiftsMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 6943319;
-                };
-            };
-        };
-        request_api_AcquireRewardEgoGiftsWithEnemyBufMirrorDungeon: {
-            content: {
-                "application/json": {
+                    parameters?: components["schemas"]["RequestParamApiAcquireDailyLoginReward"];
                     userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiAcquireRewardEgoGiftsWithEnemyBufMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 2540;
                 };
             };
         };
-        request_api_RejectRewardEgoGiftsMirrorDungeon: {
+        request_api_AcquireHellsChickenReward: {
             content: {
                 "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
                     /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_RejectRewardEgoGiftWithEnemyBufsMirrorDungeon: {
-            content: {
-                "application/json": {
+                    packetId?: 114;
+                    parameters?: components["schemas"]["RequestParamApiAcquireHellsChickenReward"];
                     userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
                 };
             };
         };
         request_api_AcquireMirrorDungeonBattleReward: {
             content: {
                 "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiAcquireMirrorDungeonBattleReward"];
                     /** @enum {integer} */
                     packetId?: 6060;
-                };
-            };
-        };
-        request_api_GetMirrorDungeonEgoGiftRecord: {
-            content: {
-                "application/json": {
+                    parameters?: components["schemas"]["RequestParamApiAcquireMirrorDungeonBattleReward"];
                     userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_SendMirrorDungeonLogError: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiSendMirrorDungeonLogError"];
-                    /** @enum {integer} */
-                    packetId?: 476100;
-                };
-            };
-        };
-        request_api_SendMirrorDungeonShopExit: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_PurchaseHealMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiPurchaseHealMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 657072;
-                };
-            };
-        };
-        request_api_PurchaseFormationMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiPurchaseFormationMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 8428;
-                };
-            };
-        };
-        request_api_PurchaseUpgradePersonalityMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiPurchaseUpgradePersonalityMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 33;
-                };
-            };
-        };
-        request_api_PurchaseEgoGiftMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiPurchaseEgoGiftMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 258;
-                };
-            };
-        };
-        request_api_SellEgoGiftMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiSellEgoGiftMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 423;
-                };
-            };
-        };
-        request_api_RefreshShopEgoGiftsMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRefreshShopEgoGiftsMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 12684;
-                };
-            };
-        };
-        request_api_GetStartBuffFInfoMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiGetStartBuffFInfoMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 1003;
-                };
-            };
-        };
-        request_api_PurchaseStartBuffMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiPurchaseStartBuffMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 29808;
-                };
-            };
-        };
-        request_api_EnableSpecialStartBuffMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiEnableSpecialStartBuffMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 31464;
-                };
-            };
-        };
-        request_api_EnableStartBuffMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiEnableStartBuffMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 72462;
-                };
-            };
-        };
-        request_api_RemoveMirrorDungeonEgoGift: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRemoveMirrorDungeonEgoGift"];
-                    /** @enum {integer} */
-                    packetId?: 5872;
-                };
-            };
-        };
-        request_api_AcquireStartEgoGiftsAndCreateThemePoolMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiAcquireStartEgoGiftsAndCreateThemePoolMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 944;
-                };
-            };
-        };
-        request_api_RefreshStartEgoGiftsMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRefreshStartEgoGiftsMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 151;
-                };
-            };
-        };
-        request_api_UpgradeEgoGiftMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiUpgradeEgoGiftMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 7585;
-                };
-            };
-        };
-        request_api_CombineEgoGiftMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiCombineEgoGiftMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 9801;
-                };
-            };
-        };
-        request_api_PreviewMirrorDungeonExitReward: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
                 };
             };
         };
         request_api_AcquireMirrorDungeonExitReward: {
             content: {
                 "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiAcquireMirrorDungeonExitReward"];
                     /** @enum {integer} */
                     packetId?: 2148485;
+                    parameters?: components["schemas"]["RequestParamApiAcquireMirrorDungeonExitReward"];
+                    userAuth?: components["schemas"]["UserAuth"];
                 };
             };
         };
         request_api_AcquireMissionRewards: {
             content: {
                 "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiAcquireMissionRewards"];
                     /** @enum {integer} */
                     packetId?: 2264;
+                    parameters?: components["schemas"]["RequestParamApiAcquireMissionRewards"];
+                    userAuth?: components["schemas"]["UserAuth"];
                 };
             };
         };
-        request_api_ReportError: {
+        request_api_AcquireRailwayDungeonReward: {
             content: {
                 "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiReportError"];
                     /** @enum {integer} */
-                    packetId?: 34038816;
+                    packetId?: 1224;
+                    parameters?: components["schemas"]["RequestParamApiAcquireRailwayDungeonReward"];
+                    userAuth?: components["schemas"]["UserAuth"];
                 };
             };
         };
-        request_api_SelectRailwayDungeonBuff: {
+        request_api_AcquireRewardEgoGiftsMirrorDungeon: {
             content: {
                 "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiSelectRailwayDungeonBuff"];
                     /** @enum {integer} */
-                    packetId?: 16665390;
-                };
-            };
-        };
-        request_api_FetchLatestSynchronousData: {
-            content: {
-                "application/json": {
+                    packetId?: 6943319;
+                    parameters?: components["schemas"]["RequestParamApiAcquireRewardEgoGiftsMirrorDungeon"];
                     userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_login_GetTermsOfUseStateAll: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamLoginGetTermsOfUseStateAll"];
-                    /** @enum {integer} */
-                    packetId?: 0;
-                };
-            };
-        };
-        request_login_UpdateTermsOfUseState: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamLoginUpdateTermsOfUseState"];
-                    /** @enum {integer} */
-                    packetId?: 2359502;
-                };
-            };
-        };
-        request_api_GetTheaterInfo: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_CompleteTheaterStory: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiCompleteTheaterStory"];
-                    /** @enum {integer} */
-                    packetId?: 2232;
-                };
-            };
-        };
-        request_api_UpdateFormation: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiUpdateFormation"];
-                    /** @enum {integer} */
-                    packetId?: 6;
-                };
-            };
-        };
-        request_api_UpdateLobbyCg: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiUpdateLobbyCg"];
-                    /** @enum {integer} */
-                    packetId?: 59;
-                };
-            };
-        };
-        request_api_GetUserBanners: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_GetFriendsData: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_FindFriend: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiFindFriend"];
-                    /** @enum {integer} */
-                    packetId?: 1172;
-                };
-            };
-        };
-        request_api_GetRecommendFriends: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_SendFriendRequest: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiSendFriendRequest"];
-                    /** @enum {integer} */
-                    packetId?: 6591796785;
-                };
-            };
-        };
-        request_api_AcceptReceivedFriendRequest: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiAcceptReceivedFriendRequest"];
-                    /** @enum {integer} */
-                    packetId?: 4130;
-                };
-            };
-        };
-        request_api_RejectReceivedFriendRequest: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectReceivedFriendRequest"];
-                    /** @enum {integer} */
-                    packetId?: 1820;
-                };
-            };
-        };
-        request_api_CancelSentFriendRequest: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiCancelSentFriendRequest"];
-                    /** @enum {integer} */
-                    packetId?: 528;
-                };
-            };
-        };
-        request_api_DeleteFriend: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiDeleteFriend"];
-                    /** @enum {integer} */
-                    packetId?: 470112;
-                };
-            };
-        };
-        request_api_GetFriendSupportPersonalities: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiGetFriendSupportPersonalities"];
-                    /** @enum {integer} */
-                    packetId?: 540;
-                };
-            };
-        };
-        request_api_GetFriendSupportPersonalitiesByCharacterId: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiGetFriendSupportPersonalitiesByCharacterId"];
-                    /** @enum {integer} */
-                    packetId?: 784;
-                };
-            };
-        };
-        request_api_UpdateUserProfile: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiUpdateUserProfile"];
-                    /** @enum {integer} */
-                    packetId?: 86;
-                };
-            };
-        };
-        request_api_GetProfileTicketDecoDatas: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_UpdateProfileTicketDeco: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiUpdateProfileTicketDeco"];
-                    /** @enum {integer} */
-                    packetId?: 6331625;
-                };
-            };
-        };
-        request_api_PlayVendingMachine: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiPlayVendingMachine"];
-                    /** @enum {integer} */
-                    packetId?: 553525;
-                };
-            };
-        };
-        request_api_ExchangeTwine: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiExchangeTwine"];
-                    /** @enum {integer} */
-                    packetId?: 0;
-                };
-            };
-        };
-        request_api_EnterStoryMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiEnterStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 1201;
-                };
-            };
-        };
-        request_api_ReEnterStoryMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiReEnterStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 743;
-                };
-            };
-        };
-        request_api_UpdateStoryMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiUpdateStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 218;
-                };
-            };
-        };
-        request_api_ExitStoryMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: -1;
-                };
-            };
-        };
-        request_api_EnterStoryMirrorDungeonMapNode: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiEnterStoryMirrorDungeonMapNode"];
-                    /** @enum {integer} */
-                    packetId?: 53;
-                };
-            };
-        };
-        request_api_UpdateStoryMirrorDungeonMapNode: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiUpdateStoryMirrorDungeonMapNode"];
-                    /** @enum {integer} */
-                    packetId?: 9825875;
-                };
-            };
-        };
-        request_api_EnterStoryMirrorDungeonMapNodeBattleAfterChoice: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiEnterStoryMirrorDungeonMapNodeBattleAfterChoice"];
-                    /** @enum {integer} */
-                    packetId?: 159;
-                };
-            };
-        };
-        request_api_ExitStoryMirrorDungeonMapNode: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiExitStoryMirrorDungeonMapNode"];
-                    /** @enum {integer} */
-                    packetId?: 12797239;
-                };
-            };
-        };
-        request_api_UpdateStoryMirrorDungeonUnits: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiUpdateStoryMirrorDungeonUnits"];
-                    /** @enum {integer} */
-                    packetId?: 338608872936;
                 };
             };
         };
         request_api_AcquireRewardEgoGiftsStoryMirrorDungeon: {
             content: {
                 "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiAcquireRewardEgoGiftsStoryMirrorDungeon"];
                     /** @enum {integer} */
                     packetId?: 1551;
+                    parameters?: components["schemas"]["RequestParamApiAcquireRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
                 };
             };
         };
-        request_api_RejectRewardEgoGiftsStoryMirrorDungeon: {
+        request_api_AcquireRewardEgoGiftsWithEnemyBufMirrorDungeon: {
             content: {
                 "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
                     /** @enum {integer} */
-                    packetId?: -1;
+                    packetId?: 2540;
+                    parameters?: components["schemas"]["RequestParamApiAcquireRewardEgoGiftsWithEnemyBufMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
                 };
             };
         };
-        request_api_PurchaseHealStoryMirrorDungeon: {
+        request_api_AcquireStartEgoGiftsAndCreateThemePoolMirrorDungeon: {
             content: {
                 "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiPurchaseHealStoryMirrorDungeon"];
                     /** @enum {integer} */
-                    packetId?: 2664;
-                };
-            };
-        };
-        request_api_PurchaseFormationStoryMirrorDungeon: {
-            content: {
-                "application/json": {
+                    packetId?: 944;
+                    parameters?: components["schemas"]["RequestParamApiAcquireStartEgoGiftsAndCreateThemePoolMirrorDungeon"];
                     userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiPurchaseFormationStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 1989;
-                };
-            };
-        };
-        request_api_PurchaseUpgradePersonalityStoryMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiPurchaseUpgradePersonalityStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 126;
-                };
-            };
-        };
-        request_api_PurchaseEgoGiftStoryMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiPurchaseEgoGiftStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 3080;
-                };
-            };
-        };
-        request_api_SellEgoGiftStoryMirrorDungeon: {
-            content: {
-                "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiSellEgoGiftStoryMirrorDungeon"];
-                    /** @enum {integer} */
-                    packetId?: 2140369;
                 };
             };
         };
         request_api_AcquireStartEgoGiftsStoryMirrorDungeon: {
             content: {
                 "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiAcquireStartEgoGiftsStoryMirrorDungeon"];
                     /** @enum {integer} */
                     packetId?: 186169411;
+                    parameters?: components["schemas"]["RequestParamApiAcquireStartEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
                 };
             };
         };
-        request_api_UpgradeEgoGiftStoryMirrorDungeon: {
+        request_api_BattlePassExLevelReward: {
             content: {
                 "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiUpgradeEgoGiftStoryMirrorDungeon"];
                     /** @enum {integer} */
-                    packetId?: 27000783;
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_BattlePassMissionReward: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 103;
+                    parameters?: components["schemas"]["RequestParamApiBattlePassMissionReward"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_BattlePassMissionRewardAll: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_BattlePassReward: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 5574;
+                    parameters?: components["schemas"]["RequestParamApiBattlePassReward"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_BattlePassReward_ALL: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_CancelSentFriendRequest: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 528;
+                    parameters?: components["schemas"]["RequestParamApiCancelSentFriendRequest"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ChangeCurrentAnnouncer: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 110502144;
+                    parameters?: components["schemas"]["RequestParamApiChangeCurrentAnnouncer"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_CheckSeasonLog: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ClaimClosedGachaRewards: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ClaimEventReward: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1849639;
+                    parameters?: components["schemas"]["RequestParamApiClaimEventReward"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ClaimEventReward_ALL: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 6682225;
+                    parameters?: components["schemas"]["RequestParamApiClaimEventReward_ALL"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_CombineEgoGiftMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 9801;
+                    parameters?: components["schemas"]["RequestParamApiCombineEgoGiftMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
                 };
             };
         };
         request_api_CombineEgoGiftStoryMirrorDungeon: {
             content: {
                 "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiCombineEgoGiftStoryMirrorDungeon"];
                     /** @enum {integer} */
                     packetId?: 4928031;
+                    parameters?: components["schemas"]["RequestParamApiCombineEgoGiftStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
                 };
             };
         };
-        request_api_RefreshStartEgoGiftsStoryMirrorDungeon: {
+        request_api_CompleteMinistory: {
             content: {
                 "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRefreshStartEgoGiftsStoryMirrorDungeon"];
                     /** @enum {integer} */
-                    packetId?: 2169;
+                    packetId?: 8580;
+                    parameters?: components["schemas"]["RequestParamApiCompleteMinistory"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_CompleteTheaterStory: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2232;
+                    parameters?: components["schemas"]["RequestParamApiCompleteTheaterStory"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ConfirmedSeasonLog: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_DeleteFriend: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 470112;
+                    parameters?: components["schemas"]["RequestParamApiDeleteFriend"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_EgoGacksung: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 9449476;
+                    parameters?: components["schemas"]["RequestParamApiEgoGacksung"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_EgoGacksungWithItems: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 20938;
+                    parameters?: components["schemas"]["RequestParamApiEgoGacksungWithItems"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_EnableSpecialStartBuffMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 31464;
+                    parameters?: components["schemas"]["RequestParamApiEnableSpecialStartBuffMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_EnableStartBuffMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 72462;
+                    parameters?: components["schemas"]["RequestParamApiEnableStartBuffMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_EnterExpDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 104;
+                    parameters?: components["schemas"]["RequestParamApiEnterExpDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_EnterMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1044;
+                    parameters?: components["schemas"]["RequestParamApiEnterMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_EnterMirrorDungeonMapNode: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 435;
+                    parameters?: components["schemas"]["RequestParamApiEnterMirrorDungeonMapNode"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_EnterMirrordungeonMapNodeBattleAfterChoice: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 4639;
+                    parameters?: components["schemas"]["RequestParamApiEnterMirrordungeonMapNodeBattleAfterChoice"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_EnterRailwayDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 13;
+                    parameters?: components["schemas"]["RequestParamApiEnterRailwayDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_EnterRailwayDungeonNode: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 59353;
+                    parameters?: components["schemas"]["RequestParamApiEnterRailwayDungeonNode"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_EnterStageBattle: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 531505;
+                    parameters?: components["schemas"]["RequestParamApiEnterStageBattle"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_EnterStoryDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 36443;
+                    parameters?: components["schemas"]["RequestParamApiEnterStoryDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_EnterStoryDungeonMapNode: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 366;
+                    parameters?: components["schemas"]["RequestParamApiEnterStoryDungeonMapNode"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_EnterStoryDungeonMapNodeBattleAfterChoice: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1511;
+                    parameters?: components["schemas"]["RequestParamApiEnterStoryDungeonMapNodeBattleAfterChoice"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_EnterStoryMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1201;
+                    parameters?: components["schemas"]["RequestParamApiEnterStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_EnterStoryMirrorDungeonMapNode: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 53;
+                    parameters?: components["schemas"]["RequestParamApiEnterStoryMirrorDungeonMapNode"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_EnterStoryMirrorDungeonMapNodeBattleAfterChoice: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 159;
+                    parameters?: components["schemas"]["RequestParamApiEnterStoryMirrorDungeonMapNodeBattleAfterChoice"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_EnterThreadDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 95006081547;
+                    parameters?: components["schemas"]["RequestParamApiEnterThreadDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ExchangeTwine: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 0;
+                    parameters?: components["schemas"]["RequestParamApiExchangeTwine"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ExitExpDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 3634;
+                    parameters?: components["schemas"]["RequestParamApiExitExpDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ExitMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ExitMirrorDungeonMapNode: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1162056;
+                    parameters?: components["schemas"]["RequestParamApiExitMirrorDungeonMapNode"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ExitRailwayDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2681;
+                    parameters?: components["schemas"]["RequestParamApiExitRailwayDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ExitRailwayDungeonNode: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 550;
+                    parameters?: components["schemas"]["RequestParamApiExitRailwayDungeonNode"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ExitRailwayDungeonRestNode: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 19800;
+                    parameters?: components["schemas"]["RequestParamApiExitRailwayDungeonRestNode"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ExitStageBattle: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 30;
+                    parameters?: components["schemas"]["RequestParamApiExitStageBattle"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ExitStory: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 495627;
+                    parameters?: components["schemas"]["RequestParamApiExitStory"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ExitStoryDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 7323;
+                    parameters?: components["schemas"]["RequestParamApiExitStoryDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ExitStoryDungeonMapNode: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2214;
+                    parameters?: components["schemas"]["RequestParamApiExitStoryDungeonMapNode"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ExitStoryMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ExitStoryMirrorDungeonMapNode: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 12797239;
+                    parameters?: components["schemas"]["RequestParamApiExitStoryMirrorDungeonMapNode"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ExitThreadDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1474;
+                    parameters?: components["schemas"]["RequestParamApiExitThreadDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_FetchLatestSynchronousData: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_FindFriend: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1172;
+                    parameters?: components["schemas"]["RequestParamApiFindFriend"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_GetAbnormalityLogData: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 6084;
+                    parameters?: components["schemas"]["RequestParamApiGetAbnormalityLogData"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_GetAttendanceState: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_GetDailyDungeonInfo: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_GetDailyLoginState: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_GetDanteNoteState: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_GetDungeonSaveInfoAll: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2279;
+                    parameters?: components["schemas"]["RequestParamApiGetDungeonSaveInfoAll"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_GetFriendsData: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_GetFriendSupportPersonalities: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 540;
+                    parameters?: components["schemas"]["RequestParamApiGetFriendSupportPersonalities"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_GetFriendSupportPersonalitiesByCharacterId: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 784;
+                    parameters?: components["schemas"]["RequestParamApiGetFriendSupportPersonalitiesByCharacterId"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_GetHellsChickenState: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_GetMirrorDungeonEgoGiftRecord: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_GetProfileTicketDecoDatas: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_GetRailwayDungeonNodeAndLogAll: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2577;
+                    parameters?: components["schemas"]["RequestParamApiGetRailwayDungeonNodeAndLogAll"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_GetRecommendFriends: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_GetStageProgressRateReward: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 834897;
+                    parameters?: components["schemas"]["RequestParamApiGetStageProgressRateReward"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_GetStartBuffFInfoMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1003;
+                    parameters?: components["schemas"]["RequestParamApiGetStartBuffFInfoMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_GetStoryDungeonNodeRecord: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 26010000;
+                    parameters?: components["schemas"]["RequestParamApiGetStoryDungeonNodeRecord"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_GetStoryDungeonSaveInfo: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_GetTheaterInfo: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_GetUserBanners: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_GetUserCouponState: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_GiveUpRailwayDungeonNode: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 17172736;
+                    parameters?: components["schemas"]["RequestParamApiGiveUpRailwayDungeonNode"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_GiveUpRailwayDungeonNodeInBattle: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 166496;
+                    parameters?: components["schemas"]["RequestParamApiGiveUpRailwayDungeonNodeInBattle"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_LoadUserDataAll: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_PersonalityGacksung: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1679;
+                    parameters?: components["schemas"]["RequestParamApiPersonalityGacksung"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_PersonalityGacksungWithItems: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 830587;
+                    parameters?: components["schemas"]["RequestParamApiPersonalityGacksungWithItems"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_PlayGacha: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 860;
+                    parameters?: components["schemas"]["RequestParamApiPlayGacha"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_PlayVendingMachine: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 553525;
+                    parameters?: components["schemas"]["RequestParamApiPlayVendingMachine"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_PreviewMirrorDungeonExitReward: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_PurchaseBattlePassByRealLunacy: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_PurchaseBattlePassLevel: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 3600;
+                    parameters?: components["schemas"]["RequestParamApiPurchaseBattlePassLevel"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_PurchaseEgoGiftMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 258;
+                    parameters?: components["schemas"]["RequestParamApiPurchaseEgoGiftMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_PurchaseEgoGiftStoryMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 3080;
+                    parameters?: components["schemas"]["RequestParamApiPurchaseEgoGiftStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_PurchaseEnkephalin: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 6264;
+                    parameters?: components["schemas"]["RequestParamApiPurchaseEnkephalin"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_PurchaseEnkephalinModule: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 387309;
+                    parameters?: components["schemas"]["RequestParamApiPurchaseEnkephalinModule"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_PurchaseFormationMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 8428;
+                    parameters?: components["schemas"]["RequestParamApiPurchaseFormationMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_PurchaseFormationStoryMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1989;
+                    parameters?: components["schemas"]["RequestParamApiPurchaseFormationStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_PurchaseHealMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 657072;
+                    parameters?: components["schemas"]["RequestParamApiPurchaseHealMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_PurchaseHealStoryMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2664;
+                    parameters?: components["schemas"]["RequestParamApiPurchaseHealStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_PurchaseSpecialPassProduct: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_PurchaseSpecialPassProduct_IncludeLimbusPass: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_PurchaseSpecialPassProduct_NotIncludeLimbusPass: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_PurchaseStartBuffMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 29808;
+                    parameters?: components["schemas"]["RequestParamApiPurchaseStartBuffMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_PurchaseUpgradePersonalityMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 33;
+                    parameters?: components["schemas"]["RequestParamApiPurchaseUpgradePersonalityMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_PurchaseUpgradePersonalityStoryMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 126;
+                    parameters?: components["schemas"]["RequestParamApiPurchaseUpgradePersonalityStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_RecreateThemeFloorPoolMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ReEnterMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 17656804;
+                    parameters?: components["schemas"]["RequestParamApiReEnterMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ReEnterStoryDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 970299;
+                    parameters?: components["schemas"]["RequestParamApiReEnterStoryDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ReEnterStoryMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 743;
+                    parameters?: components["schemas"]["RequestParamApiReEnterStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_RefreshMailbox: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_RefreshShopEgoGiftsMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 12684;
+                    parameters?: components["schemas"]["RequestParamApiRefreshShopEgoGiftsMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
                 };
             };
         };
         request_api_RefreshShopEgoGiftsStoryMirrorDungeon: {
             content: {
                 "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRefreshShopEgoGiftsStoryMirrorDungeon"];
                     /** @enum {integer} */
                     packetId?: 3771;
+                    parameters?: components["schemas"]["RequestParamApiRefreshShopEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_RefreshStartEgoGiftsMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 151;
+                    parameters?: components["schemas"]["RequestParamApiRefreshStartEgoGiftsMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_RefreshStartEgoGiftsStoryMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2169;
+                    parameters?: components["schemas"]["RequestParamApiRefreshStartEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_RejectReceivedFriendRequest: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1820;
+                    parameters?: components["schemas"]["RequestParamApiRejectReceivedFriendRequest"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_RejectRewardEgoGiftsMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_RejectRewardEgoGiftsStoryMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_RejectRewardEgoGiftWithEnemyBufsMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_RemoveMirrorDungeonEgoGift: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 5872;
+                    parameters?: components["schemas"]["RequestParamApiRemoveMirrorDungeonEgoGift"];
+                    userAuth?: components["schemas"]["UserAuth"];
                 };
             };
         };
         request_api_RemoveStoryMirrorDungeonEgoGift: {
             content: {
                 "application/json": {
-                    userAuth?: components["schemas"]["UserAuth"];
-                    parameters?: components["schemas"]["RequestParamApiRemoveStoryMirrorDungeonEgoGift"];
                     /** @enum {integer} */
                     packetId?: 15;
+                    parameters?: components["schemas"]["RequestParamApiRemoveStoryMirrorDungeonEgoGift"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ReportError: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 34038816;
+                    parameters?: components["schemas"]["RequestParamApiReportError"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_ReturnSavePointStoryDungeonMap: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_SaveMiniStoryWeek: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 10496;
+                    parameters?: components["schemas"]["RequestParamApiSaveMiniStoryWeek"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_SelectFormationMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2394;
+                    parameters?: components["schemas"]["RequestParamApiSelectFormationMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_SelectRailwayDungeonBuff: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 16665390;
+                    parameters?: components["schemas"]["RequestParamApiSelectRailwayDungeonBuff"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_SelectThemeFloorMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 26244;
+                    parameters?: components["schemas"]["RequestParamApiSelectThemeFloorMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_SellEgoGiftMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 423;
+                    parameters?: components["schemas"]["RequestParamApiSellEgoGiftMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_SellEgoGiftStoryMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2140369;
+                    parameters?: components["schemas"]["RequestParamApiSellEgoGiftStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_SendFriendRequest: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 6591796785;
+                    parameters?: components["schemas"]["RequestParamApiSendFriendRequest"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_SendMirrorDungeonLogError: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 476100;
+                    parameters?: components["schemas"]["RequestParamApiSendMirrorDungeonLogError"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_SendMirrorDungeonShopExit: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_SetPersonalityGacksungIllust: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 138;
+                    parameters?: components["schemas"]["RequestParamApiSetPersonalityGacksungIllust"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_SkipExpDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 24577728;
+                    parameters?: components["schemas"]["RequestParamApiSkipExpDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_SkipThreadDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 60;
+                    parameters?: components["schemas"]["RequestParamApiSkipThreadDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_SkipTutorial: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_UnsealMails: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 6780723;
+                    parameters?: components["schemas"]["RequestParamApiUnsealMails"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_UpdateAbnormalityLogData: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1726563;
+                    parameters?: components["schemas"]["RequestParamApiUpdateAbnormalityLogData"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_UpdateFormation: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 6;
+                    parameters?: components["schemas"]["RequestParamApiUpdateFormation"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_UpdateLobbyCg: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 59;
+                    parameters?: components["schemas"]["RequestParamApiUpdateLobbyCg"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_UpdateMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 877;
+                    parameters?: components["schemas"]["RequestParamApiUpdateMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_UpdateMirrorDungeonMapNode: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 0;
+                    parameters?: components["schemas"]["RequestParamApiUpdateMirrorDungeonMapNode"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_UpdateMirrorDungeonUnits: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 0;
+                    parameters?: components["schemas"]["RequestParamApiUpdateMirrorDungeonUnits"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_UpdateProfileTicketDeco: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 6331625;
+                    parameters?: components["schemas"]["RequestParamApiUpdateProfileTicketDeco"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_UpdateStoryDungeonMapNode: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 81796;
+                    parameters?: components["schemas"]["RequestParamApiUpdateStoryDungeonMapNode"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_UpdateStoryDungeonUnits: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 13511184;
+                    parameters?: components["schemas"]["RequestParamApiUpdateStoryDungeonUnits"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_UpdateStoryMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 218;
+                    parameters?: components["schemas"]["RequestParamApiUpdateStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_UpdateStoryMirrorDungeonMapNode: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 9825875;
+                    parameters?: components["schemas"]["RequestParamApiUpdateStoryMirrorDungeonMapNode"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_UpdateStoryMirrorDungeonUnits: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 338608872936;
+                    parameters?: components["schemas"]["RequestParamApiUpdateStoryMirrorDungeonUnits"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_UpdateUserProfile: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 86;
+                    parameters?: components["schemas"]["RequestParamApiUpdateUserProfile"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_UpgradeEgoGiftMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 7585;
+                    parameters?: components["schemas"]["RequestParamApiUpgradeEgoGiftMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_UpgradeEgoGiftStoryMirrorDungeon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 27000783;
+                    parameters?: components["schemas"]["RequestParamApiUpgradeEgoGiftStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_UseCoupon: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2111209;
+                    parameters?: components["schemas"]["RequestParamApiUseCoupon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_UseEgoGacksungItem: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2809;
+                    parameters?: components["schemas"]["RequestParamApiUseEgoGacksungItem"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_UseGachaPityPoint: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 353;
+                    parameters?: components["schemas"]["RequestParamApiUseGachaPityPoint"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_UseItem: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2506;
+                    parameters?: components["schemas"]["RequestParamApiUseItem"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_api_UsePersonalityExpItem: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1354;
+                    parameters?: components["schemas"]["RequestParamApiUsePersonalityExpItem"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_iap_FinalizePurchaseAsSteam: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 45499314;
+                    parameters?: components["schemas"]["RequestParamIapFinalizePurchaseAsSteam"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_iap_GetSteamWalletCurrency: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 24897034;
+                    parameters?: components["schemas"]["RequestParamIapGetSteamWalletCurrency"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_iap_InitPurchase: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 13528;
+                    parameters?: components["schemas"]["RequestParamIapInitPurchase"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_iap_InitPurchaseAsSteam: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 701;
+                    parameters?: components["schemas"]["RequestParamIapInitPurchaseAsSteam"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_iap_Purchase: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 46;
+                    parameters?: components["schemas"]["RequestParamIapPurchase"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_iap_PurchaseAsApple: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 731432701;
+                    parameters?: components["schemas"]["RequestParamIapPurchaseAsApple"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_iap_PurchaseAsGoogle: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 45;
+                    parameters?: components["schemas"]["RequestParamIapPurchaseAsGoogle"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_iap_PurchaseIngameProduct: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 774400;
+                    parameters?: components["schemas"]["RequestParamIapPurchaseIngameProduct"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_iap_UpdateSteamPendingPurchase: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_log_GetGachaLogAll: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_log_GetMailLogAll: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_log_ReportModifiedHash: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 779;
+                    parameters?: components["schemas"]["RequestParamLogReportModifiedHash"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_log_ReportSpeedHack: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1322550;
+                    parameters?: components["schemas"]["RequestParamLogReportSpeedHack"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_login_CancelSecession: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_login_CheckClientVersion: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_login_GetBanDetails: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_login_GetInfoOfLinkWith: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 441;
+                    parameters?: components["schemas"]["RequestParamLoginGetInfoOfLinkWith"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_login_GetTermsOfUseStateAll: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 0;
+                    parameters?: components["schemas"]["RequestParamLoginGetTermsOfUseStateAll"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_login_LinkWithAnother: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 914;
+                    parameters?: components["schemas"]["RequestParamLoginLinkWithAnother"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_login_LinkWithApple: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 4123;
+                    parameters?: components["schemas"]["RequestParamLoginLinkWithApple"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_login_LinkWithGoogle: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 8374;
+                    parameters?: components["schemas"]["RequestParamLoginLinkWithGoogle"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_login_RefreshLinkAuth: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 9363600;
+                    parameters?: components["schemas"]["RequestParamLoginRefreshLinkAuth"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_login_SignInAsApple: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 3428;
+                    parameters?: components["schemas"]["RequestParamLoginSignInAsApple"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_login_SignInAsGoogle: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 6505;
+                    parameters?: components["schemas"]["RequestParamLoginSignInAsGoogle"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_login_SignInAsGuest: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 135005697000;
+                    parameters?: components["schemas"]["RequestParamLoginSignInAsGuest"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_login_SignInAsNewGuest: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 983040;
+                    parameters?: components["schemas"]["RequestParamLoginSignInAsNewGuest"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_login_SignInAsSteam: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 1115136;
+                    parameters?: components["schemas"]["RequestParamLoginSignInAsSteam"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_login_TryToSecede: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: -1;
+                    parameters?: components["schemas"]["RequestParamApiRejectRewardEgoGiftsStoryMirrorDungeon"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_login_UnLinkWithAnother: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 314908;
+                    parameters?: components["schemas"]["RequestParamLoginUnLinkWithAnother"];
+                    userAuth?: components["schemas"]["UserAuth"];
+                };
+            };
+        };
+        request_login_UpdateTermsOfUseState: {
+            content: {
+                "application/json": {
+                    /** @enum {integer} */
+                    packetId?: 2359502;
+                    parameters?: components["schemas"]["RequestParamLoginUpdateTermsOfUseState"];
+                    userAuth?: components["schemas"]["UserAuth"];
                 };
             };
         };
