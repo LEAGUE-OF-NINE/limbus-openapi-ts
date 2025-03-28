@@ -6,7 +6,7 @@ import sys
 # File Paths
 OAPI_SRC_FILE_PATH = "./limbus-openapi/limbus.yaml"
 OAPI_GEN_FILE_NAME = "oapi-gen.ts"
-PACKET_OUT_FILE_NAME = "packet-types.ts"
+PACKET_TYPES_FILE = "packet-types.ts"
 FORMAT_TYPES_FILE = "format-types.ts"
 ENDPOINT_FILE = "endpoint.ts"
 
@@ -53,7 +53,7 @@ ts_content = re.sub(r'^\s*export type (ResponseResponse|ResponseResult|RequestBo
 format_match = re.search(r"pathItems: never;\n}([\s\S]+?)export type \$defs = Record<string, never>;", ts_content)
 if format_match:
     with open(FORMAT_TYPES_FILE, "w", encoding="utf-8") as format_file:
-        format_file.write(f'import type {{ components }} from "./{OAPI_GEN_FILE_NAME}";\n' + format_match.group(1).strip())
+        format_file.write(f'import type {{ components }} from "./{OAPI_GEN_FILE_NAME}";\n' + format_match.group(1).strip() + "\n")
     print(f"Generated: {FORMAT_TYPES_FILE}")
     ts_content = ts_content.replace(format_match.group(0), "pathItems: never;\n}\nexport type $defs = Record<string, never>;")
 
@@ -61,7 +61,7 @@ if format_match:
 endpoint_match = re.search(r"export enum Endpoint \{[\s\S]+?\}", ts_content)
 if endpoint_match:
     with open(ENDPOINT_FILE, "w", encoding="utf-8") as endpoint_file:
-        endpoint_file.write(endpoint_match.group(0))
+        endpoint_file.write(endpoint_match.group(0) + "\n")
     print(f"Generated: {ENDPOINT_FILE}")
     ts_content = ts_content.replace(endpoint_match.group(0) + "\n", "")
 
@@ -88,8 +88,8 @@ for c in caps:
     )
 
 # Write packet-types.ts
-with open(PACKET_OUT_FILE_NAME, "w", encoding="utf-8") as output_file:
+with open(PACKET_TYPES_FILE, "w", encoding="utf-8") as output_file:
     output_file.write(f'import type {{ paths }} from "./{OAPI_GEN_FILE_NAME}";\n' + "\n".join(sorted(output_lines)) + "\n")
 
-print(f"Generated: {PACKET_OUT_FILE_NAME}")
+print(f"Generated: {PACKET_TYPES_FILE}")
 print(f"Skipped packet-type: {skipped}")
